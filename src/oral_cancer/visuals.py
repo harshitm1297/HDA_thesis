@@ -116,3 +116,55 @@ def phase4_figures(result_dir: Path, patient_scores: pd.DataFrame, pathway_resul
                 draw.rectangle((x0, y0, x0 + cell, y0 + cell), fill=color)
         image.save(figure_dir / "consensus_clustering.png")
 
+
+def phase5_performance_figure(result_dir: Path, summary: pd.DataFrame) -> None:
+    """Render compact AUC summaries without adding plotting dependencies."""
+    figure_dir = result_dir / "figures"
+    figure_dir.mkdir(parents=True, exist_ok=True)
+    auc = summary.loc[summary["metric"] == "roc_auc"].sort_values("median").copy()
+    width, row_height, left, right = 980, 34, 330, 70
+    height = 70 + row_height * len(auc)
+    image = Image.new("RGB", (width, height), "white")
+    draw = ImageDraw.Draw(image)
+    draw.text((20, 18), "Repeated nested outer-test ROC AUC", fill="#111827")
+    x0, x1 = left, width - right
+    for tick in np.linspace(0.5, 1.0, 6):
+        x = x0 + (tick - 0.5) / 0.5 * (x1 - x0)
+        draw.line((x, 44, x, height - 25), fill="#E5E7EB")
+        draw.text((x - 10, height - 20), f"{tick:.1f}", fill="#4B5563")
+    for row, (_, item) in enumerate(auc.iterrows()):
+        y = 52 + row * row_height
+        label = f"{item['view']} / {item['model']}"
+        draw.text((20, y - 6), label[:48], fill="#111827")
+        low = x0 + (max(0.5, float(item["interval_low"])) - 0.5) / 0.5 * (x1 - x0)
+        high = x0 + (max(0.5, float(item["interval_high"])) - 0.5) / 0.5 * (x1 - x0)
+        median = x0 + (max(0.5, float(item["median"])) - 0.5) / 0.5 * (x1 - x0)
+        draw.line((low, y, high, y), fill="#64748B", width=3)
+        draw.ellipse((median - 5, y - 5, median + 5, y + 5), fill="#0F766E")
+    image.save(figure_dir / "nested_auc_summary.png")
+
+
+def phase5_permutation_figure(result_dir: Path, permutation: pd.DataFrame, observed_auc: float) -> None:
+    figure_dir = result_dir / "figures"
+    figure_dir.mkdir(parents=True, exist_ok=True)
+    values = permutation["roc_auc"].to_numpy(dtype=float)
+    width, height, margin = 850, 520, 65
+    image = Image.new("RGB", (width, height), "white")
+    draw = ImageDraw.Draw(image)
+    draw.text((margin, 20), "Paired-label permutation null for the primary nested pipeline", fill="#111827")
+    bins = np.linspace(0, 1, 21)
+    counts, _ = np.histogram(values, bins=bins)
+    maximum = max(int(counts.max()), 1)
+    plot_width, plot_height = width - 2 * margin, height - 2 * margin
+    for index, count in enumerate(counts):
+        x_left = margin + index / len(counts) * plot_width
+        x_right = margin + (index + 1) / len(counts) * plot_width - 2
+        y_top = height - margin - count / maximum * plot_height
+        draw.rectangle((x_left, y_top, x_right, height - margin), fill="#94A3B8")
+    observed_x = margin + np.clip(observed_auc, 0, 1) * plot_width
+    draw.line((observed_x, margin, observed_x, height - margin), fill="#DC2626", width=4)
+    label_x = observed_x - 135 if observed_auc > 0.8 else observed_x + 5
+    draw.text((label_x, margin + 8), f"observed AUC {observed_auc:.3f}", fill="#991B1B")
+    draw.line((margin, height - margin, width - margin, height - margin), fill="#374151", width=2)
+    image.save(figure_dir / "paired_permutation_null.png")
+

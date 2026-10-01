@@ -1,0 +1,16 @@
+{
+  "checks": {
+    "all_probabilities_finite": true,
+    "each_repeat_has_all_84_samples_per_pipeline": true,
+    "every_outer_fold_has_seven_complete_pairs": true,
+    "no_phase3_or_phase4_supervised_filter": true
+  },
+  "inner_folds": 5,
+  "outer_folds": 6,
+  "outer_predictions": 18900,
+  "outer_repeats": 25,
+  "patients": 42,
+  "phase": 5,
+  "stage": "nested_validation",
+  "status": "PASS"
+}
