@@ -1,0 +1,56 @@
+{
+  "outputs": [
+    {
+      "bytes": 408,
+      "path": "results/phase3/complete_pair_eligibility_curve.csv",
+      "sha256": "D17F342CBB494C80B9FC0DB5109EFC849506673758C659B802461586DBD6521A"
+    },
+    {
+      "bytes": 22078,
+      "path": "results/phase3/figures/abundance_volcano.png",
+      "sha256": "EA5CC414C6E8E0ECA322BCBA23BE1D781CA12DCB8225E2068308758E2638AA0C"
+    },
+    {
+      "bytes": 12468,
+      "path": "results/phase3/figures/detection_volcano.png",
+      "sha256": "B36EA517E94868D5A4594234B0686CABC273C163ABD4EFED87031850669A9BC9"
+    },
+    {
+      "bytes": 3396314,
+      "path": "results/phase3/integrated_candidate_evidence.csv",
+      "sha256": "0F35E561F79B3284F3B4138F17FF2271E7915B5C795E25B36C99E7B0DA2BCD4F"
+    },
+    {
+      "bytes": 1798428,
+      "path": "results/phase3/paired_abundance_primary.csv",
+      "sha256": "DBF63556FB6CFA5909CCFC123FC73B3252552477ED547770E3621AA3022491A1"
+    },
+    {
+      "bytes": 22507305,
+      "path": "results/phase3/paired_abundance_sensitivity.csv",
+      "sha256": "406C24FF98847E4B64AB87191C7E3AB9BA4457CB649F021173F0236630A55BDA"
+    },
+    {
+      "bytes": 698040,
+      "path": "results/phase3/paired_detection_primary.csv",
+      "sha256": "05366A5AC8A2C3C9DAA225E4AC88621D023B48208F7263F2A01C2B1A0006A622"
+    },
+    {
+      "bytes": 652570,
+      "path": "results/phase3/paired_detection_sensitivity.csv",
+      "sha256": "3094601ADEC3F208674657A99E83FFCD127172D95D9E53EF79B12281D4B0AC1B"
+    },
+    {
+      "bytes": 6834,
+      "path": "results/phase3/PHASE3_RESULTS.md",
+      "sha256": "5531B89A488569B3C178D638D28B6A8259DB31C1B2E8524C1BCBB67FC5FAB4B7"
+    },
+    {
+      "bytes": 3943,
+      "path": "results/phase3/phase3_validation.json",
+      "sha256": "EC134E88B1C460DECF972AF0B58589CA4C1DCD1D4454CD5AA208BF60CEAC6E49"
+    }
+  ],
+  "phase": 3,
+  "status": "PASS"
+}

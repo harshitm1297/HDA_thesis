@@ -1,0 +1,129 @@
+{
+  "checks": {
+    "abundance_q_values_in_range": true,
+    "confidence_intervals_ordered": true,
+    "detection_q_values_in_range": true,
+    "duplicate_and_compound_identifiers_not_tier_A": true,
+    "primary_effect_sign_is_T_minus_N": true,
+    "primary_has_no_imputation": true,
+    "primary_uses_all_42_pairs": true,
+    "sensitivity_contains_no_primary_duplicate": true
+  },
+  "config_sha256": "2E23277F99378A057CDFD1965B004905E66D8BE64B964DD389171C166ADCCB55",
+  "milestone": "M3",
+  "milestone_status": "CONDITIONAL_PENDING_FULL_PHASE2_IMPUTATION_BENCHMARK",
+  "phase": 3,
+  "primary": {
+    "abundance_bh_below_0_05": 2194,
+    "abundance_core": 669,
+    "cohort": "all_pairs",
+    "detection_bh_below_0_05": 2887,
+    "detection_core": 1831,
+    "detection_primary_core": 2549,
+    "eligible_features": 3430,
+    "minimum_complete_pairs": 30,
+    "patient_pairs": 42,
+    "representation": "log2_uncentered",
+    "tier_counts": {
+      "B_abundance": 614,
+      "C_detection_pattern": 1827,
+      "not_tiered": 5630
+    },
+    "variance_prior": {
+      "degrees_freedom": 3.7756535019489794,
+      "feature_count": 3430,
+      "scale": 0.7179181334530093
+    }
+  },
+  "sensitivity_variance_priors": [
+    {
+      "cohort": "all_pairs",
+      "degrees_freedom": 3.7280951687451926,
+      "feature_count": 4374,
+      "minimum_complete_pairs": 20,
+      "representation": "log2_uncentered",
+      "scale": 0.8175437996488956
+    },
+    {
+      "cohort": "all_pairs",
+      "degrees_freedom": 3.716225562714583,
+      "feature_count": 2845,
+      "minimum_complete_pairs": 35,
+      "representation": "log2_uncentered",
+      "scale": 0.6664469517570447
+    },
+    {
+      "cohort": "unflagged_pairs",
+      "degrees_freedom": 3.8909689336688187,
+      "feature_count": 3098,
+      "minimum_complete_pairs": 30,
+      "representation": "log2_uncentered",
+      "scale": 0.5265624523188125
+    },
+    {
+      "cohort": "unflagged_pairs",
+      "degrees_freedom": 3.6982465434943426,
+      "feature_count": 4212,
+      "minimum_complete_pairs": 20,
+      "representation": "log2_uncentered",
+      "scale": 0.6373679572158785
+    },
+    {
+      "cohort": "unflagged_pairs",
+      "degrees_freedom": 3.7295442958650975,
+      "feature_count": 1790,
+      "minimum_complete_pairs": 35,
+      "representation": "log2_uncentered",
+      "scale": 0.428049293424325
+    },
+    {
+      "cohort": "all_pairs",
+      "degrees_freedom": 6.777360358188203,
+      "feature_count": 3430,
+      "minimum_complete_pairs": 30,
+      "representation": "log2_median_centered",
+      "scale": 1.0335605908842034
+    },
+    {
+      "cohort": "all_pairs",
+      "degrees_freedom": 6.244899874032219,
+      "feature_count": 4374,
+      "minimum_complete_pairs": 20,
+      "representation": "log2_median_centered",
+      "scale": 1.1060466039560333
+    },
+    {
+      "cohort": "all_pairs",
+      "degrees_freedom": 7.0223254087546305,
+      "feature_count": 2845,
+      "minimum_complete_pairs": 35,
+      "representation": "log2_median_centered",
+      "scale": 1.0060788721606932
+    },
+    {
+      "cohort": "unflagged_pairs",
+      "degrees_freedom": 6.869020131172041,
+      "feature_count": 3098,
+      "minimum_complete_pairs": 30,
+      "representation": "log2_median_centered",
+      "scale": 0.7811332735081882
+    },
+    {
+      "cohort": "unflagged_pairs",
+      "degrees_freedom": 6.037298568830541,
+      "feature_count": 4212,
+      "minimum_complete_pairs": 20,
+      "representation": "log2_median_centered",
+      "scale": 0.8814266740526004
+    },
+    {
+      "cohort": "unflagged_pairs",
+      "degrees_freedom": 7.388308817763479,
+      "feature_count": 1790,
+      "minimum_complete_pairs": 35,
+      "representation": "log2_median_centered",
+      "scale": 0.701106076929879
+    }
+  ],
+  "status": "PASS"
+}

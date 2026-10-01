@@ -20,7 +20,7 @@ The source workbook is intentionally excluded from Git. Generated patient-level 
 1. Phase 0: research contract and immutable data model — implemented, M0 passed.
 2. Phase 1: multivariate QC and missingness intelligence — implemented, M1 passed.
 3. Phase 2: preprocessing and missing-data benchmark.
-4. Phase 3: paired abundance and detection inference.
+4. Phase 3: paired abundance and detection inference — modular no-imputation branch implemented; full M3 remains conditional on Phase 2.
 5. Phase 4: pathway interpretation and heterogeneity.
 6. Phase 5: leakage-safe AI and stable-panel discovery.
 7. Phase 6: stress testing and reproducible synthesis.

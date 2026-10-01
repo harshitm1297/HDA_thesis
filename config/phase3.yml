@@ -1,0 +1,30 @@
+{
+  "version": "1.0.0",
+  "status": "frozen-before-phase3-execution",
+  "primary_representation": "log2_uncentered",
+  "sensitivity_representations": ["log2_median_centered"],
+  "primary_cohort": "all_pairs",
+  "sensitivity_cohorts": ["unflagged_pairs"],
+  "primary_min_complete_pairs": 30,
+  "sensitivity_min_complete_pairs": [20, 35],
+  "abundance_fdr": 0.05,
+  "abundance_effect_threshold_log2": 1.0,
+  "direction_consistency_threshold": 0.70,
+  "minimum_sensitivity_sign_agreement": 0.80,
+  "minimum_sensitivity_fdr_fraction": 0.80,
+  "detection_fdr": 0.05,
+  "detection_effect_threshold": 0.20,
+  "detection_min_discordant_pairs": 10,
+  "confidence_level": 0.95,
+  "effect_sign": "tumour minus matched non-tumour",
+  "variance_model": "inverse-chi-square empirical-Bayes moderation estimated across eligible features",
+  "multiplicity_families": ["paired_abundance", "paired_detection"],
+  "selection_prohibitions": [
+    "do not choose preprocessing by discovery count",
+    "do not choose preprocessing by visual tissue separation",
+    "do not merge duplicate labels",
+    "do not split compound labels",
+    "do not impute the primary abundance test"
+  ]
+}
+
