@@ -1,0 +1,12 @@
+*.xlsx
+*.xls
+*.pdf
+~$*
+__pycache__/
+*.py[cod]
+.pytest_cache/
+tmp/
+data/interim/*
+!data/interim/.gitkeep
+phase1_outputs/
+

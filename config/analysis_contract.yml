@@ -1,0 +1,31 @@
+{
+  "version": "1.0.0",
+  "status": "frozen-at-M0",
+  "data_boundary": "Only the supplied workbook may contribute measurements, labels, cohorts, or outcomes.",
+  "independent_unit": "patient",
+  "paired_factor": "tissue_status",
+  "primary_abundance_estimand": "Mean within-patient log2 abundance difference, tumour minus matched non-tumour, among eligible complete pairs.",
+  "secondary_detection_estimand": "Within-patient difference in detection probability, tumour minus matched non-tumour.",
+  "prediction_target": "Tumour versus matched non-tumour tissue in patients wholly held out from model training.",
+  "primary_cohort": "All 42 structurally complete patient pairs; no exclusion based on downstream outcomes.",
+  "feature_identity_rule": "The source row is the quantitative unit. Duplicate labels are not merged and compound labels are not split without row-equivalence evidence.",
+  "missingness_rule": "Blank values are missing, not zero. Detection and observed abundance are analysed separately. Imputation is not part of Phase 0.",
+  "multiplicity_rule": "Abundance and detection are separate hypothesis families; each receives false-discovery-rate control in Phase 3.",
+  "validation_rule": "All preprocessing and selection learned from data must occur inside patient-grouped training folds.",
+  "prohibited_claims": [
+    "clinical diagnostic validity",
+    "population screening performance",
+    "prognosis or recurrence prediction",
+    "treatment-response prediction",
+    "stage-, grade-, HPV-, subsite-, purity-, or exposure-specific effects",
+    "causal effects",
+    "externally validated biomarker status"
+  ],
+  "known_unavailable_metadata": [
+    "stage", "grade", "histology", "oral subsite", "HPV status", "age", "sex",
+    "tobacco or betel-quid exposure", "alcohol exposure", "tumour purity",
+    "collection protocol", "sample-preparation batch", "instrument batch", "run order",
+    "technical replicates", "treatment and outcome data"
+  ]
+}
+

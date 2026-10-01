@@ -1,0 +1,15 @@
+{
+  "source_workbook": "OC_Dataset_84Sample_v2_24012024.xlsx",
+  "worksheet": "Sheet1",
+  "identifier_column": "PG.Genes",
+  "sample_regex": "^P(?P<patient>[0-9]+)(?P<tissue>[NT])$",
+  "expected_samples": 84,
+  "expected_patients": 42,
+  "expected_features": 8071,
+  "detection_definition": "finite numeric source value",
+  "abundance_transform": "log2 of strictly positive observed values; no pseudocount",
+  "tumour_minus_normal_sign": "T-N",
+  "random_seed": 20231031,
+  "research_cutoff": "2023-12-31"
+}
+

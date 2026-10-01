@@ -1,0 +1,42 @@
+{
+  "milestone": "M0",
+  "outputs": [
+    {
+      "bytes": 3802,
+      "path": "data/interim/sample_manifest.csv",
+      "sha256": "95F1F4D002C3658535D0D758F6963292DF2468C0075832BD2C8AF8EBA4547B4D"
+    },
+    {
+      "bytes": 598261,
+      "path": "data/interim/feature_manifest.csv",
+      "sha256": "BED776A75B7493DAF97169309CED0BC91C80A93015EAC69A17076453E92159E1"
+    },
+    {
+      "bytes": 793,
+      "path": "data/interim/data_dictionary.csv",
+      "sha256": "6144AD8F9ECF0A4A192D9F043060D0CAF91F7B2B192C70A21A1AE5882700BDB2"
+    },
+    {
+      "bytes": 2341021,
+      "path": "data/interim/raw_data_model.npz",
+      "sha256": "6F78F4182F5727FD3D3275DA625A9AD5C60D18EED94C8882E4358B1DE1BE7355"
+    },
+    {
+      "bytes": 1561438,
+      "path": "data/interim/paired_data_model.npz",
+      "sha256": "BAFDCEBD415CB148C16B7E917861E2D1DA4597B9DEDF38ACE136BFA5DC5CA778"
+    },
+    {
+      "bytes": 1451,
+      "path": "data/interim/data_model_metadata.json",
+      "sha256": "5180672B4B19DF4413A8DB82BC186235AEF62521159B9153CC6BDF2D33B4CAC1"
+    },
+    {
+      "bytes": 1491,
+      "path": "results/phase0/input_validation.json",
+      "sha256": "DC69932C9521EE494C3F252F7E87ED81C763B5304FE00C3F57C79D5BC9B069D6"
+    }
+  ],
+  "phase": 0,
+  "status": "PASS"
+}
