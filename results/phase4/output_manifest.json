@@ -1,0 +1,91 @@
+{
+  "outputs": [
+    {
+      "bytes": 350,
+      "path": "results/phase4/cluster_stability.csv",
+      "sha256": "F92B0AEBFB4DBA6B88EC20A674D0131BF0E59784F9B1FCD7608A5BCC7AC7DF3E"
+    },
+    {
+      "bytes": 113116,
+      "path": "results/phase4/collapsed_gene_ranking.csv",
+      "sha256": "3B27E63AFCB19626303D67E17D4E3579CB7A993F2B8053AF1B62E494847BBB56"
+    },
+    {
+      "bytes": 20181,
+      "path": "results/phase4/consensus_matrices.npz",
+      "sha256": "B3BA05BE5E5538184360AB8E554DE4D4B835C443227F352AB37A8997ABCCE41A"
+    },
+    {
+      "bytes": 93081,
+      "path": "results/phase4/feature_pathway_network_edges.csv",
+      "sha256": "A5C9E1A004D11C94B3F4831A2742FAC1C9F3DD4D084515548F11C538749C09B0"
+    },
+    {
+      "bytes": 6983,
+      "path": "results/phase4/figures/consensus_clustering.png",
+      "sha256": "CA5234665EEE4581F0615D9F84F4AAC8FDEABF47D86EE48A046DADA65007E592"
+    },
+    {
+      "bytes": 39365,
+      "path": "results/phase4/figures/pathway_evidence.png",
+      "sha256": "5F9B22563F08BFE80871943F1B6B1712FA60B5E5567CC70758B6964175211F1B"
+    },
+    {
+      "bytes": 16601,
+      "path": "results/phase4/figures/patient_change_pca.png",
+      "sha256": "206D1FB41B319110C982133DEB15B9ABD448ECE5DEF9E4C4D78654B66B1B86B2"
+    },
+    {
+      "bytes": 181758,
+      "path": "results/phase4/gene_collapse_audit.csv",
+      "sha256": "8042D86165C3B99AE2ED5BD4F17E88D18152FC698730F63287E2DAD09E6F97E3"
+    },
+    {
+      "bytes": 489454,
+      "path": "results/phase4/integrated_pathway_evidence.csv",
+      "sha256": "06E0258B05812A15DC0CAA35EFCE1DDEC18BD5620C2A1B7AE278D3D65B9F405F"
+    },
+    {
+      "bytes": 10857,
+      "path": "results/phase4/patient_change_scores.csv",
+      "sha256": "4D4D4652CA5E8B3653F6AFF8E1E99C4804E6DAAA15BACA19168CA3AC488974D9"
+    },
+    {
+      "bytes": 632158,
+      "path": "results/phase4/patient_pathway_scores.csv",
+      "sha256": "DA13B48EDFA37B02D4951DCC02FC838A91620659718E1A09E71F08B2CB3D72DD"
+    },
+    {
+      "bytes": 924,
+      "path": "results/phase4/pca_explained_variance_bootstrap.csv",
+      "sha256": "E9465A9284DCA74E367BB27B2593FBE8A8600652B3B878CF98059AD94A1D4D0B"
+    },
+    {
+      "bytes": 5933,
+      "path": "results/phase4/pca_top_loadings.csv",
+      "sha256": "0ABD02F8E5AB77DBBC67B437F6B5A9B8665CBDB0C4B45B1A84C64BCE25DB7EDB"
+    },
+    {
+      "bytes": 8986,
+      "path": "results/phase4/PHASE4_RESULTS.md",
+      "sha256": "75FDD6999E819CA562A5F6FE6EB7EEDFD828FFF320E19C4C9E815C850CD26015"
+    },
+    {
+      "bytes": 1093,
+      "path": "results/phase4/phase4_validation.json",
+      "sha256": "7479EBAA2828AE7BC8146392A188483EFAE4690D1813DC3865E4B0BF1FD7AB2A"
+    },
+    {
+      "bytes": 212030,
+      "path": "results/phase4/reactome_patient_score_tests.csv",
+      "sha256": "8350E0C5AC14803E9DB25F8AA1C1695AFAC7E40933610473CB659D9287A1C96A"
+    },
+    {
+      "bytes": 390611,
+      "path": "results/phase4/reactome_ranked_enrichment.csv",
+      "sha256": "AC3668763E04B4957572D07E55024D001B411C63BBB28681988A252A5233D662"
+    }
+  ],
+  "phase": 4,
+  "status": "PASS"
+}

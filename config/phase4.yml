@@ -1,0 +1,34 @@
+{
+  "version": "1.0.0",
+  "status": "frozen-before-phase4-execution",
+  "reactome_release": 86,
+  "reactome_release_date": "2023-09-07",
+  "reactome_gmt": "resources/reactome_v86/gmt/ReactomePathways.gmt",
+  "reactome_gmt_sha256": "1EE9790EDEA336701DC89EBAB712C1C1FCA55744A5DFDC8FEC8121C632DAD4F1",
+  "pathway_min_measured_genes": 10,
+  "pathway_max_measured_genes": 300,
+  "ranked_gsea_permutations": 1000,
+  "ranked_gsea_weight": 1.0,
+  "pathway_score_min_complete_genes": 5,
+  "pathway_score_sign_permutations": 20000,
+  "pathway_fdr": 0.05,
+  "heterogeneity_requires_all_42_pairs": true,
+  "heterogeneity_top_variable_features": 500,
+  "heterogeneity_winsor_robust_z": 5.0,
+  "pca_bootstrap_resamples": 200,
+  "clustering_variance_target": 0.70,
+  "clustering_max_pcs": 10,
+  "consensus_k_values": [2, 3, 4, 5],
+  "consensus_resamples": 200,
+  "consensus_patient_fraction": 0.80,
+  "consensus_pac_interval": [0.1, 0.9],
+  "cluster_acceptance": {
+    "maximum_pac": 0.10,
+    "minimum_within_consensus": 0.80,
+    "minimum_silhouette": 0.25,
+    "minimum_cluster_size": 5
+  },
+  "random_seed": 20231031,
+  "interpretation_label": "computational response pattern; not a clinical subtype"
+}
+

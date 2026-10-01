@@ -1,0 +1,781 @@
+pathway_id,pathway_name,feature_key,gene_symbol,edge_evidence
+R-HSA-159236,Transport of Mature mRNA derived from an Intron-Containing Transcript,F07571,U2AF2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-159236,Transport of Mature mRNA derived from an Intron-Containing Transcript,F04806,NUP155,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-159236,Transport of Mature mRNA derived from an Intron-Containing Transcript,F02110,EIF4A3,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-159236,Transport of Mature mRNA derived from an Intron-Containing Transcript,F06828,SRSF6,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-159236,Transport of Mature mRNA derived from an Intron-Containing Transcript,F07149,THOC2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-159236,Transport of Mature mRNA derived from an Intron-Containing Transcript,F01764,DDX39A,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-159236,Transport of Mature mRNA derived from an Intron-Containing Transcript,F04808,NUP188,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-159236,Transport of Mature mRNA derived from an Intron-Containing Transcript,F06818,SRRM1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-159236,Transport of Mature mRNA derived from an Intron-Containing Transcript,F05855,RBM8A,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-159236,Transport of Mature mRNA derived from an Intron-Containing Transcript,F04822,NUP93,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-159236,Transport of Mature mRNA derived from an Intron-Containing Transcript,F01765,DDX39B,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-159236,Transport of Mature mRNA derived from an Intron-Containing Transcript,F03933,MAGOHB,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-159236,Transport of Mature mRNA derived from an Intron-Containing Transcript,F06821,SRSF1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-159236,Transport of Mature mRNA derived from an Intron-Containing Transcript,F06825,SRSF3,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-159236,Transport of Mature mRNA derived from an Intron-Containing Transcript,F04807,NUP160,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-159236,Transport of Mature mRNA derived from an Intron-Containing Transcript,F07570,U2AF1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-159236,Transport of Mature mRNA derived from an Intron-Containing Transcript,F04812,NUP35,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-159236,Transport of Mature mRNA derived from an Intron-Containing Transcript,F07152,THOC6,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-159236,Transport of Mature mRNA derived from an Intron-Containing Transcript,F04805,NUP153,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-159236,Transport of Mature mRNA derived from an Intron-Containing Transcript,F04804,NUP133,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-159236,Transport of Mature mRNA derived from an Intron-Containing Transcript,F04821,NUP88,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-159236,Transport of Mature mRNA derived from an Intron-Containing Transcript,F04819,NUP62,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-159236,Transport of Mature mRNA derived from an Intron-Containing Transcript,F06826,SRSF4,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-159236,Transport of Mature mRNA derived from an Intron-Containing Transcript,F06318,SEH1L,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-159236,Transport of Mature mRNA derived from an Intron-Containing Transcript,F04811,NUP214,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-159236,Transport of Mature mRNA derived from an Intron-Containing Transcript,F04817,NUP54,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-159236,Transport of Mature mRNA derived from an Intron-Containing Transcript,F06299,SEC13,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-159236,Transport of Mature mRNA derived from an Intron-Containing Transcript,F04816,NUP50,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-159236,Transport of Mature mRNA derived from an Intron-Containing Transcript,F01846,DHX38,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-159236,Transport of Mature mRNA derived from an Intron-Containing Transcript,F07385,TPR,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-159236,Transport of Mature mRNA derived from an Intron-Containing Transcript,F05788,RANBP2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-159236,Transport of Mature mRNA derived from an Intron-Containing Transcript,F06227,SARNP,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-159236,Transport of Mature mRNA derived from an Intron-Containing Transcript,F06008,RNPS1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1169410,Antiviral mechanism by IFN-stimulated genes,F02084,EIF2AK2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1169410,Antiviral mechanism by IFN-stimulated genes,F03399,ISG15,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1169410,Antiviral mechanism by IFN-stimulated genes,F06869,STAT1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1169410,Antiviral mechanism by IFN-stimulated genes,F02093,EIF2S2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1169410,Antiviral mechanism by IFN-stimulated genes,F04834,OAS3,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1169410,Antiviral mechanism by IFN-stimulated genes,F07534,TUBB3,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1169410,Antiviral mechanism by IFN-stimulated genes,F02118,EIF4G2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1169410,Antiviral mechanism by IFN-stimulated genes,F02108,EIF4A1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1169410,Antiviral mechanism by IFN-stimulated genes,F00142,ADAR,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1169410,Antiviral mechanism by IFN-stimulated genes,F02092,EIF2S1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1169410,Antiviral mechanism by IFN-stimulated genes,F02094,EIF2S3,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1169410,Antiviral mechanism by IFN-stimulated genes,F02480,FLNB,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1169410,Antiviral mechanism by IFN-stimulated genes,F04806,NUP155,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1169410,Antiviral mechanism by IFN-stimulated genes,F07528,TUBA4B,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1169410,Antiviral mechanism by IFN-stimulated genes,F04379,MX1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1169410,Antiviral mechanism by IFN-stimulated genes,F01851,DHX9,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1169410,Antiviral mechanism by IFN-stimulated genes,F04833,OAS2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1169410,Antiviral mechanism by IFN-stimulated genes,F02117,EIF4G1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1169410,Antiviral mechanism by IFN-stimulated genes,F03334,ILF3,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1169410,Antiviral mechanism by IFN-stimulated genes,F07603,UBE2L6,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1169410,Antiviral mechanism by IFN-stimulated genes,F02110,EIF4A3,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1169410,Antiviral mechanism by IFN-stimulated genes,F00035,ABCE1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1169410,Antiviral mechanism by IFN-stimulated genes,F06871,STAT3,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1169410,Antiviral mechanism by IFN-stimulated genes,F07537,TUBB6,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1169410,Antiviral mechanism by IFN-stimulated genes,F03333,ILF2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1169410,Antiviral mechanism by IFN-stimulated genes,F05948,RIGI,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1169408,ISG15 antiviral mechanism,F02084,EIF2AK2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1169408,ISG15 antiviral mechanism,F03399,ISG15,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1169408,ISG15 antiviral mechanism,F06869,STAT1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1169408,ISG15 antiviral mechanism,F02118,EIF4G2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1169408,ISG15 antiviral mechanism,F02108,EIF4A1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1169408,ISG15 antiviral mechanism,F02480,FLNB,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1169408,ISG15 antiviral mechanism,F04806,NUP155,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1169408,ISG15 antiviral mechanism,F04379,MX1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1169408,ISG15 antiviral mechanism,F02117,EIF4G1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1169408,ISG15 antiviral mechanism,F07603,UBE2L6,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1169408,ISG15 antiviral mechanism,F02110,EIF4A3,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1169408,ISG15 antiviral mechanism,F05948,RIGI,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1169408,ISG15 antiviral mechanism,F03199,IFIT1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1169408,ISG15 antiviral mechanism,F04808,NUP188,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1169408,ISG15 antiviral mechanism,F04822,NUP93,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1169408,ISG15 antiviral mechanism,F07427,TRIM25,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1169408,ISG15 antiviral mechanism,F04807,NUP160,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1169408,ISG15 antiviral mechanism,F03595,KPNB1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1169408,ISG15 antiviral mechanism,F04812,NUP35,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1169408,ISG15 antiviral mechanism,F04805,NUP153,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1169408,ISG15 antiviral mechanism,F04804,NUP133,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1169408,ISG15 antiviral mechanism,F04821,NUP88,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1169408,ISG15 antiviral mechanism,F04819,NUP62,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1169408,ISG15 antiviral mechanism,F06318,SEH1L,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1169408,ISG15 antiviral mechanism,F04811,NUP214,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1169408,ISG15 antiviral mechanism,F04817,NUP54,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1169408,ISG15 antiviral mechanism,F06299,SEC13,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1169408,ISG15 antiviral mechanism,F04816,NUP50,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-165054,Rev-mediated nuclear export of HIV RNA,F04806,NUP155,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-165054,Rev-mediated nuclear export of HIV RNA,F05868,RCC1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-165054,Rev-mediated nuclear export of HIV RNA,F05792,RANGAP1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-165054,Rev-mediated nuclear export of HIV RNA,F05785,RAN,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-165054,Rev-mediated nuclear export of HIV RNA,F04808,NUP188,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-165054,Rev-mediated nuclear export of HIV RNA,F04822,NUP93,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-165054,Rev-mediated nuclear export of HIV RNA,F05786,RANBP1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-165054,Rev-mediated nuclear export of HIV RNA,F07893,XPO1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-165054,Rev-mediated nuclear export of HIV RNA,F04807,NUP160,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-165054,Rev-mediated nuclear export of HIV RNA,F04812,NUP35,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-165054,Rev-mediated nuclear export of HIV RNA,F04805,NUP153,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-165054,Rev-mediated nuclear export of HIV RNA,F04804,NUP133,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-165054,Rev-mediated nuclear export of HIV RNA,F04821,NUP88,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-165054,Rev-mediated nuclear export of HIV RNA,F04819,NUP62,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-165054,Rev-mediated nuclear export of HIV RNA,F06318,SEH1L,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-165054,Rev-mediated nuclear export of HIV RNA,F04811,NUP214,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-165054,Rev-mediated nuclear export of HIV RNA,F04817,NUP54,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-165054,Rev-mediated nuclear export of HIV RNA,F06299,SEC13,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-165054,Rev-mediated nuclear export of HIV RNA,F04816,NUP50,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-177243,Interactions of Rev with host cellular proteins,F04806,NUP155,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-177243,Interactions of Rev with host cellular proteins,F05868,RCC1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-177243,Interactions of Rev with host cellular proteins,F05792,RANGAP1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-177243,Interactions of Rev with host cellular proteins,F05785,RAN,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-177243,Interactions of Rev with host cellular proteins,F04808,NUP188,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-177243,Interactions of Rev with host cellular proteins,F04822,NUP93,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-177243,Interactions of Rev with host cellular proteins,F05786,RANBP1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-177243,Interactions of Rev with host cellular proteins,F07893,XPO1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-177243,Interactions of Rev with host cellular proteins,F04807,NUP160,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-177243,Interactions of Rev with host cellular proteins,F03595,KPNB1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-177243,Interactions of Rev with host cellular proteins,F04724,NPM1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-177243,Interactions of Rev with host cellular proteins,F04812,NUP35,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-177243,Interactions of Rev with host cellular proteins,F04805,NUP153,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-177243,Interactions of Rev with host cellular proteins,F04804,NUP133,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-177243,Interactions of Rev with host cellular proteins,F04821,NUP88,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-177243,Interactions of Rev with host cellular proteins,F04819,NUP62,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-177243,Interactions of Rev with host cellular proteins,F06318,SEH1L,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-177243,Interactions of Rev with host cellular proteins,F04811,NUP214,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-177243,Interactions of Rev with host cellular proteins,F04817,NUP54,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-177243,Interactions of Rev with host cellular proteins,F06299,SEC13,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-177243,Interactions of Rev with host cellular proteins,F04816,NUP50,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-180746,Nuclear import of Rev protein,F04806,NUP155,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-180746,Nuclear import of Rev protein,F05868,RCC1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-180746,Nuclear import of Rev protein,F05785,RAN,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-180746,Nuclear import of Rev protein,F04808,NUP188,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-180746,Nuclear import of Rev protein,F04822,NUP93,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-180746,Nuclear import of Rev protein,F04807,NUP160,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-180746,Nuclear import of Rev protein,F03595,KPNB1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-180746,Nuclear import of Rev protein,F04724,NPM1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-180746,Nuclear import of Rev protein,F04812,NUP35,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-180746,Nuclear import of Rev protein,F04805,NUP153,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-180746,Nuclear import of Rev protein,F04804,NUP133,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-180746,Nuclear import of Rev protein,F04821,NUP88,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-180746,Nuclear import of Rev protein,F04819,NUP62,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-180746,Nuclear import of Rev protein,F06318,SEH1L,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-180746,Nuclear import of Rev protein,F04811,NUP214,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-180746,Nuclear import of Rev protein,F04817,NUP54,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-180746,Nuclear import of Rev protein,F06299,SEC13,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-180746,Nuclear import of Rev protein,F04816,NUP50,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-180746,Nuclear import of Rev protein,F07385,TPR,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-180746,Nuclear import of Rev protein,F05788,RANBP2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236975,Antigen processing-Cross presentation,F07022,TAPBP,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236975,Antigen processing-Cross presentation,F07020,TAP1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236975,Antigen processing-Cross presentation,F06312,SEC61A1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236975,Antigen processing-Cross presentation,F07021,TAP2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236975,Antigen processing-Cross presentation,F03017,HLA-B,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236975,Antigen processing-Cross presentation,F05585,PSMD2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236975,Antigen processing-Cross presentation,F03018,HLA-C,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236975,Antigen processing-Cross presentation,F05572,PSMB9,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236975,Antigen processing-Cross presentation,F00657,B2M,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236975,Antigen processing-Cross presentation,F03421,ITGAV,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236975,Antigen processing-Cross presentation,F05571,PSMB8,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236975,Antigen processing-Cross presentation,F03016,HLA-A,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236975,Antigen processing-Cross presentation,F06313,SEC61B,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236975,Antigen processing-Cross presentation,F01655,CYBB,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236975,Antigen processing-Cross presentation,F05594,PSME2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236975,Antigen processing-Cross presentation,F05581,PSMD11,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236975,Antigen processing-Cross presentation,F05583,PSMD13,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236975,Antigen processing-Cross presentation,F05595,PSME3,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236975,Antigen processing-Cross presentation,F00907,CALR,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236975,Antigen processing-Cross presentation,F01654,CYBA,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236975,Antigen processing-Cross presentation,F05566,PSMB3,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236975,Antigen processing-Cross presentation,F05559,PSMA4,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236975,Antigen processing-Cross presentation,F05565,PSMB2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236975,Antigen processing-Cross presentation,F04511,NCF2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236975,Antigen processing-Cross presentation,F05590,PSMD7,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236975,Antigen processing-Cross presentation,F04512,NCF4,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236975,Antigen processing-Cross presentation,F05593,PSME1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236975,Antigen processing-Cross presentation,F05582,PSMD12,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236975,Antigen processing-Cross presentation,F05574,PSMC2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236975,Antigen processing-Cross presentation,F01612,CTSS,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236975,Antigen processing-Cross presentation,F05561,PSMA6,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236975,Antigen processing-Cross presentation,F05564,PSMB10,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236975,Antigen processing-Cross presentation,F05589,PSMD6,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236975,Antigen processing-Cross presentation,F05558,PSMA3,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236975,Antigen processing-Cross presentation,F05578,PSMC6,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236975,Antigen processing-Cross presentation,F06656,SNAP23,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236975,Antigen processing-Cross presentation,F05051,PDIA3,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236975,Antigen processing-Cross presentation,F05579,PSMD1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-156590,Glutathione conjugation,F02661,GGCT,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-156590,Glutathione conjugation,F02862,GSTM3,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-156590,Glutathione conjugation,F04868,OPLAH,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-156590,Glutathione conjugation,F04111,MGST3,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-156590,Glutathione conjugation,F02666,GGT5,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-156590,Glutathione conjugation,F00251,AKR1A1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-156590,Glutathione conjugation,F02248,ESD,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-156590,Glutathione conjugation,F04110,MGST2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-156590,Glutathione conjugation,F02861,GSTM2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-173623,Classical antibody-mediated complement activation,F03266,IGKV1-5,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-173623,Classical antibody-mediated complement activation,F03299,IGLV3-19,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-173623,Classical antibody-mediated complement activation,F03229,IGHG4,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-173623,Classical antibody-mediated complement activation,F03249,IGHV3-7,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-173623,Classical antibody-mediated complement activation,F03289,IGLV1-40,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-173623,Classical antibody-mediated complement activation,F03308,IGLV8-61,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-173623,Classical antibody-mediated complement activation,F03282,IGKV4-1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-173623,Classical antibody-mediated complement activation,F03290,IGLV1-47,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-173623,Classical antibody-mediated complement activation,F03277,IGKV3-20,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-173623,Classical antibody-mediated complement activation,F03280,IGKV3D-20,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-173623,Classical antibody-mediated complement activation,F03227,IGHG2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-173623,Classical antibody-mediated complement activation,F03260,IGKC,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1474228,Degradation of the extracellular matrix,F03696,LAMC1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1474228,Degradation of the extracellular matrix,F00927,CAPN1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1474228,Degradation of the extracellular matrix,F00964,CAST,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1474228,Degradation of the extracellular matrix,F01124,CDH1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1474228,Degradation of the extracellular matrix,F01408,COL4A2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1474228,Degradation of the extracellular matrix,F03581,KLKB1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1474228,Degradation of the extracellular matrix,F01412,COL5A2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1474228,Degradation of the extracellular matrix,F00003,A2M,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1474228,Degradation of the extracellular matrix,F03152,HSPG2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1474228,Degradation of the extracellular matrix,F02388,FBN1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1474228,Degradation of the extracellular matrix,F01416,COL6A3,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1474228,Degradation of the extracellular matrix,F01396,COL18A1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1474228,Degradation of the extracellular matrix,F04641,NID1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1474228,Degradation of the extracellular matrix,F01414,COL6A1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1474228,Degradation of the extracellular matrix,F01415,COL6A2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1474228,Degradation of the extracellular matrix,F01394,COL16A1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1474228,Degradation of the extracellular matrix,F01418,COL6A6,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1474228,Degradation of the extracellular matrix,F00928,CAPN2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1474228,Degradation of the extracellular matrix,F01413,COL5A3,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1474228,Degradation of the extracellular matrix,F01405,COL2A1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1474228,Degradation of the extracellular matrix,F01411,COL5A1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1474228,Degradation of the extracellular matrix,F01398,COL1A1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1474228,Degradation of the extracellular matrix,F01399,COL1A2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1474228,Degradation of the extracellular matrix,F03692,LAMA5,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1474228,Degradation of the extracellular matrix,F01393,COL15A1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1474228,Degradation of the extracellular matrix,F01406,COL3A1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1474228,Degradation of the extracellular matrix,F01389,COL10A1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1474228,Degradation of the extracellular matrix,F00932,CAPNS1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1474228,Degradation of the extracellular matrix,F01392,COL14A1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1474228,Degradation of the extracellular matrix,F01723,DCN,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1474228,Degradation of the extracellular matrix,F01333,CMA1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-196854,Metabolism of vitamins and cofactors,F00422,APOC2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-196854,Metabolism of vitamins and cofactors,F04154,MMAB,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-196854,Metabolism of vitamins and cofactors,F00423,APOC3,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-196854,Metabolism of vitamins and cofactors,F04490,NAXE,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-196854,Metabolism of vitamins and cofactors,F01454,COQ5,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-196854,Metabolism of vitamins and cofactors,F00413,APOB,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-196854,Metabolism of vitamins and cofactors,F05311,PNPO,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-196854,Metabolism of vitamins and cofactors,F05002,PCCA,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-196854,Metabolism of vitamins and cofactors,F00426,APOE,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-196854,Metabolism of vitamins and cofactors,F05862,RBP4,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-196854,Metabolism of vitamins and cofactors,F04175,MMUT,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-196854,Metabolism of vitamins and cofactors,F03152,HSPG2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-196854,Metabolism of vitamins and cofactors,F04959,PANK4,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-196854,Metabolism of vitamins and cofactors,F01717,DCAKD,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-196854,Metabolism of vitamins and cofactors,F06768,SPR,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-196854,Metabolism of vitamins and cofactors,F04028,MCCC2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-196854,Metabolism of vitamins and cofactors,F00432,APOM,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-196854,Metabolism of vitamins and cofactors,F03181,IDH1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-196854,Metabolism of vitamins and cofactors,F00411,APOA4,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-196854,Metabolism of vitamins and cofactors,F00409,APOA1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-196854,Metabolism of vitamins and cofactors,F00410,APOA2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-196854,Metabolism of vitamins and cofactors,F07521,TTR,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-196854,Metabolism of vitamins and cofactors,F01458,COQ9,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-196854,Metabolism of vitamins and cofactors,F06447,SHMT1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-196854,Metabolism of vitamins and cofactors,F04027,MCCC1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-196854,Metabolism of vitamins and cofactors,F05003,PCCB,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-196854,Metabolism of vitamins and cofactors,F01648,CYB5A,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166786,Creation of C4 and C2 activators,F03228,IGHG3,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166786,Creation of C4 and C2 activators,F03291,IGLV1-51,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166786,Creation of C4 and C2 activators,F02422,FCN3,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166786,Creation of C4 and C2 activators,F03266,IGKV1-5,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166786,Creation of C4 and C2 activators,F03299,IGLV3-19,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166786,Creation of C4 and C2 activators,F03229,IGHG4,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166786,Creation of C4 and C2 activators,F03249,IGHV3-7,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166786,Creation of C4 and C2 activators,F03289,IGLV1-40,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166786,Creation of C4 and C2 activators,F03308,IGLV8-61,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166786,Creation of C4 and C2 activators,F03282,IGKV4-1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166786,Creation of C4 and C2 activators,F03290,IGLV1-47,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166786,Creation of C4 and C2 activators,F03277,IGKV3-20,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166786,Creation of C4 and C2 activators,F03280,IGKV3D-20,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166786,Creation of C4 and C2 activators,F03227,IGHG2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166786,Creation of C4 and C2 activators,F03260,IGKC,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166663,Initial triggering of complement,F03291,IGLV1-51,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166663,Initial triggering of complement,F02422,FCN3,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166663,Initial triggering of complement,F00846,C3,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166663,Initial triggering of complement,F03266,IGKV1-5,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166663,Initial triggering of complement,F00841,C2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166663,Initial triggering of complement,F03299,IGLV3-19,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166663,Initial triggering of complement,F03229,IGHG4,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166663,Initial triggering of complement,F03249,IGHV3-7,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166663,Initial triggering of complement,F03289,IGLV1-40,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166663,Initial triggering of complement,F03308,IGLV8-61,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166663,Initial triggering of complement,F01200,CFB,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166663,Initial triggering of complement,F03282,IGKV4-1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166663,Initial triggering of complement,F03290,IGLV1-47,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166663,Initial triggering of complement,F03277,IGKV3-20,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166663,Initial triggering of complement,F03280,IGKV3D-20,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166663,Initial triggering of complement,F03227,IGHG2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166663,Initial triggering of complement,F03260,IGKC,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166663,Initial triggering of complement,F01201,CFD,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1442490,Collagen degradation,F01416,COL6A3,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1442490,Collagen degradation,F01396,COL18A1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1442490,Collagen degradation,F01414,COL6A1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1442490,Collagen degradation,F01415,COL6A2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1442490,Collagen degradation,F01394,COL16A1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1442490,Collagen degradation,F01418,COL6A6,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1442490,Collagen degradation,F01413,COL5A3,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1442490,Collagen degradation,F01405,COL2A1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1442490,Collagen degradation,F01411,COL5A1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1442490,Collagen degradation,F01398,COL1A1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1442490,Collagen degradation,F01399,COL1A2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1442490,Collagen degradation,F01393,COL15A1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1442490,Collagen degradation,F01406,COL3A1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1442490,Collagen degradation,F01389,COL10A1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1442490,Collagen degradation,F01392,COL14A1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163210,Formation of ATP by chemiosmotic coupling,F00610,ATP5MF,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163210,Formation of ATP by chemiosmotic coupling,F00614,ATP5PB,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163210,Formation of ATP by chemiosmotic coupling,F00616,ATP5PF,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163210,Formation of ATP by chemiosmotic coupling,F00606,ATP5F1C,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163210,Formation of ATP by chemiosmotic coupling,F00611,ATP5MG,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163210,Formation of ATP by chemiosmotic coupling,F00615,ATP5PD,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163210,Formation of ATP by chemiosmotic coupling,F00617,ATP5PO,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163210,Formation of ATP by chemiosmotic coupling,F00609,ATP5ME,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163210,Formation of ATP by chemiosmotic coupling,F00604,ATP5F1A,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163210,Formation of ATP by chemiosmotic coupling,F00607,ATP5F1D,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163210,Formation of ATP by chemiosmotic coupling,F00605,ATP5F1B,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1592230,Mitochondrial biogenesis,F01906,DNAJC11,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1592230,Mitochondrial biogenesis,F03142,HSPA9,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1592230,Mitochondrial biogenesis,F06472,SIRT5,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1592230,Mitochondrial biogenesis,F04120,MICOS13,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1592230,Mitochondrial biogenesis,F06216,SAMM50,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1592230,Mitochondrial biogenesis,F01224,CHCHD3,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1592230,Mitochondrial biogenesis,F04326,MT-ATP8,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1592230,Mitochondrial biogenesis,F04325,MT-ATP6,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1592230,Mitochondrial biogenesis,F03338,IMMT,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1592230,Mitochondrial biogenesis,F04364,MTX2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1592230,Mitochondrial biogenesis,F07230,TMEM11,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1592230,Mitochondrial biogenesis,F00434,APOOL,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1592230,Mitochondrial biogenesis,F06471,SIRT3,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1592230,Mitochondrial biogenesis,F03182,IDH2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1592230,Mitochondrial biogenesis,F00610,ATP5MF,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1592230,Mitochondrial biogenesis,F00614,ATP5PB,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1592230,Mitochondrial biogenesis,F00433,APOO,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1592230,Mitochondrial biogenesis,F00616,ATP5PF,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1592230,Mitochondrial biogenesis,F00606,ATP5F1C,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1592230,Mitochondrial biogenesis,F00611,ATP5MG,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1592230,Mitochondrial biogenesis,F00615,ATP5PD,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1592230,Mitochondrial biogenesis,F07115,TFAM,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1592230,Mitochondrial biogenesis,F00617,ATP5PO,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1592230,Mitochondrial biogenesis,F00609,ATP5ME,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1592230,Mitochondrial biogenesis,F00604,ATP5F1A,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1592230,Mitochondrial biogenesis,F00607,ATP5F1D,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1592230,Mitochondrial biogenesis,F00605,ATP5F1B,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1592230,Mitochondrial biogenesis,F02711,GLUD1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166658,Complement cascade,F00838,C1R,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166658,Complement cascade,F00840,C1S,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166658,Complement cascade,F00866,C8A,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166658,Complement cascade,F00834,C1QB,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166658,Complement cascade,F01084,CD59,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166658,Complement cascade,F00871,C9,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166658,Complement cascade,F00868,C8G,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166658,Complement cascade,F00836,C1QC,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166658,Complement cascade,F07815,VTN,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166658,Complement cascade,F01203,CFH,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166658,Complement cascade,F02305,F2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166658,Complement cascade,F00833,C1QA,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166658,Complement cascade,F00849,C4B,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166658,Complement cascade,F00867,C8B,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166658,Complement cascade,F00848,C4A,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166658,Complement cascade,F01090,CD81,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166658,Complement cascade,F01491,CPN2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166658,Complement cascade,F01082,CD55,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166658,Complement cascade,F03228,IGHG3,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166658,Complement cascade,F01490,CPN1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166658,Complement cascade,F03291,IGLV1-51,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166658,Complement cascade,F02422,FCN3,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166658,Complement cascade,F01330,CLU,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166658,Complement cascade,F00846,C3,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166658,Complement cascade,F03266,IGKV1-5,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166658,Complement cascade,F00841,C2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166658,Complement cascade,F06381,SERPING1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166658,Complement cascade,F03299,IGLV3-19,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166658,Complement cascade,F03229,IGHG4,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166658,Complement cascade,F01208,CFI,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166658,Complement cascade,F03249,IGHV3-7,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166658,Complement cascade,F03289,IGLV1-40,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166658,Complement cascade,F03308,IGLV8-61,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166658,Complement cascade,F01200,CFB,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166658,Complement cascade,F03282,IGKV4-1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166658,Complement cascade,F03290,IGLV1-47,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166658,Complement cascade,F03277,IGKV3-20,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166658,Complement cascade,F03280,IGKV3D-20,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166658,Complement cascade,F03227,IGHG2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166658,Complement cascade,F03260,IGKC,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-166658,Complement cascade,F01201,CFD,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F07757,VDAC1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F04567,NDUFC2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F04325,MT-ATP6,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F01553,CS,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F04850,OGDH,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F04559,NDUFB2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F01476,COX6B1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F06286,SDHA,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F07682,UQCR10,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F04556,NDUFB1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F04550,NDUFAB1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F01658,CYC1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F04560,NDUFB3,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F04542,NDUFA3,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F06933,SUCLA2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F04564,NDUFB7,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F06290,SDHB,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F04538,NDUFA11,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F04350,MT-ND2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F04558,NDUFB11,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F04562,NDUFB5,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F01874,DLST,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F04052,ME1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F04048,MDH2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F03182,IDH2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F01868,DLD,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F04565,NDUFB8,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F07689,UQCRQ,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F00610,ATP5MF,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F04574,NDUFS7,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F04682,NNT,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F02448,FH,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F04573,NDUFS6,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F01867,DLAT,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F04569,NDUFS2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F04543,NDUFA4,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F01477,COX6C,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F04563,NDUFB6,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F04331,MT-CO2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F07685,UQCRC1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F00614,ATP5PB,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F07686,UQCRC2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F07687,UQCRFS1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F04353,MT-ND5,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F04537,NDUFA10,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F00616,ATP5PF,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F04572,NDUFS5,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F01471,COX4I1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F04547,NDUFA7,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F07684,UQCRB,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F02930,HAGH,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F04561,NDUFB4,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F04332,MT-CO3,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F04576,NDUFV1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F05048,PDHA1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F04549,NDUFA9,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F06934,SUCLG1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F00606,ATP5F1C,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F00611,ATP5MG,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F05050,PDHX,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F00615,ATP5PD,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F00085,ACO2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F04557,NDUFB10,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F00617,ATP5PO,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F04548,NDUFA8,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F01472,COX5A,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F04566,NDUFB9,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F04570,NDUFS3,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F00609,ATP5ME,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F04545,NDUFA5,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F04546,NDUFA6,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F00604,ATP5F1A,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F05049,PDHB,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F02258,ETFA,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F02261,ETFDH,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F04568,NDUFS1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F04540,NDUFA13,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F04577,NDUFV2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F04539,NDUFA12,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F00607,ATP5F1D,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F00605,ATP5F1B,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F04571,NDUFS4,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F01473,COX5B,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F04575,NDUFS8,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F02259,ETFB,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F04541,NDUFA2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1428517,The citric acid (TCA) cycle and respiratory electron transport,F06935,SUCLG2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F04559,NDUFB2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F01476,COX6B1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F06286,SDHA,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F07682,UQCR10,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F04556,NDUFB1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F04550,NDUFAB1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F01658,CYC1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F04560,NDUFB3,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F04542,NDUFA3,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F04564,NDUFB7,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F06290,SDHB,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F04538,NDUFA11,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F04350,MT-ND2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F04558,NDUFB11,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F04562,NDUFB5,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F04565,NDUFB8,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F07689,UQCRQ,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F00610,ATP5MF,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F04574,NDUFS7,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F04573,NDUFS6,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F04569,NDUFS2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F04543,NDUFA4,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F01477,COX6C,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F04563,NDUFB6,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F04331,MT-CO2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F07685,UQCRC1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F00614,ATP5PB,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F07686,UQCRC2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F07687,UQCRFS1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F04353,MT-ND5,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F04537,NDUFA10,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F00616,ATP5PF,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F04572,NDUFS5,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F01471,COX4I1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F04547,NDUFA7,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F07684,UQCRB,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F04561,NDUFB4,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F04332,MT-CO3,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F04576,NDUFV1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F04549,NDUFA9,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F00606,ATP5F1C,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F00611,ATP5MG,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F00615,ATP5PD,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F04557,NDUFB10,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F00617,ATP5PO,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F04548,NDUFA8,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F01472,COX5A,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F04566,NDUFB9,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F04570,NDUFS3,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F00609,ATP5ME,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F04545,NDUFA5,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F04546,NDUFA6,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F00604,ATP5F1A,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F02258,ETFA,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F02261,ETFDH,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F04568,NDUFS1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F04540,NDUFA13,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F04577,NDUFV2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F04539,NDUFA12,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F00607,ATP5F1D,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F00605,ATP5F1B,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F04571,NDUFS4,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F01473,COX5B,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F04575,NDUFS8,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F02259,ETFB,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-163200,"Respiratory electron transport, ATP synthesis by chemiosmotic coupling, and heat production by uncoupling proteins.",F04541,NDUFA2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236974,ER-Phagosome pathway,F07022,TAPBP,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236974,ER-Phagosome pathway,F07020,TAP1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236974,ER-Phagosome pathway,F06312,SEC61A1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236974,ER-Phagosome pathway,F07021,TAP2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236974,ER-Phagosome pathway,F03017,HLA-B,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236974,ER-Phagosome pathway,F05585,PSMD2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236974,ER-Phagosome pathway,F03018,HLA-C,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236974,ER-Phagosome pathway,F05572,PSMB9,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236974,ER-Phagosome pathway,F00657,B2M,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236974,ER-Phagosome pathway,F05571,PSMB8,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236974,ER-Phagosome pathway,F03016,HLA-A,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236974,ER-Phagosome pathway,F06313,SEC61B,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236974,ER-Phagosome pathway,F05594,PSME2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236974,ER-Phagosome pathway,F05581,PSMD11,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236974,ER-Phagosome pathway,F05583,PSMD13,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236974,ER-Phagosome pathway,F05595,PSME3,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236974,ER-Phagosome pathway,F00907,CALR,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236974,ER-Phagosome pathway,F05566,PSMB3,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236974,ER-Phagosome pathway,F05559,PSMA4,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236974,ER-Phagosome pathway,F05565,PSMB2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236974,ER-Phagosome pathway,F05590,PSMD7,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236974,ER-Phagosome pathway,F05593,PSME1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236974,ER-Phagosome pathway,F05582,PSMD12,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236974,ER-Phagosome pathway,F05574,PSMC2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236974,ER-Phagosome pathway,F05561,PSMA6,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236974,ER-Phagosome pathway,F05564,PSMB10,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236974,ER-Phagosome pathway,F05589,PSMD6,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236974,ER-Phagosome pathway,F05558,PSMA3,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236974,ER-Phagosome pathway,F05578,PSMC6,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236974,ER-Phagosome pathway,F06656,SNAP23,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236974,ER-Phagosome pathway,F05051,PDIA3,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1236974,ER-Phagosome pathway,F05579,PSMD1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1268020,Mitochondrial protein import,F05204,PITRM1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1268020,Mitochondrial protein import,F03142,HSPA9,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1268020,Mitochondrial protein import,F07350,TOMM70,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1268020,Mitochondrial protein import,F07180,TIMM9,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1268020,Mitochondrial protein import,F03185,IDH3G,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1268020,Mitochondrial protein import,F06216,SAMM50,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1268020,Mitochondrial protein import,F01224,CHCHD3,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1268020,Mitochondrial protein import,F07757,VDAC1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1268020,Mitochondrial protein import,F01553,CS,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1268020,Mitochondrial protein import,F00714,BCS1L,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1268020,Mitochondrial protein import,F01658,CYC1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1268020,Mitochondrial protein import,F04364,MTX2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1268020,Mitochondrial protein import,F01373,COA4,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1268020,Mitochondrial protein import,F07178,TIMM8A,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1268020,Mitochondrial protein import,F06513,SLC25A12,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1268020,Mitochondrial protein import,F04565,NDUFB8,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1268020,Mitochondrial protein import,F07170,TIMM13,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1268020,Mitochondrial protein import,F00085,ACO2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1268020,Mitochondrial protein import,F00604,ATP5F1A,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1268020,Mitochondrial protein import,F06525,SLC25A4,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1268020,Mitochondrial protein import,F00605,ATP5F1B,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-164938,Nef-mediates down modulation of cell surface receptors by recruiting them to clathrin adapters,F00383,AP2A1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-164938,Nef-mediates down modulation of cell surface receptors by recruiting them to clathrin adapters,F00657,B2M,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-164938,Nef-mediates down modulation of cell surface receptors by recruiting them to clathrin adapters,F03016,HLA-A,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-164938,Nef-mediates down modulation of cell surface receptors by recruiting them to clathrin adapters,F00378,AP1M1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-164938,Nef-mediates down modulation of cell surface receptors by recruiting them to clathrin adapters,F00376,AP1G1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-164938,Nef-mediates down modulation of cell surface receptors by recruiting them to clathrin adapters,F00385,AP2B1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F02311,F9,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F00598,ATP2A2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F00599,ATP2A3,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F06803,SRI,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F01535,CRK,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F00969,CAV1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F02031,ECM1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F00367,ANXA5,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F06359,SERPINA4,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F05723,RAB27B,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F05793,RAP1A,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F06251,SCCPDH,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F06922,STX4,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F03530,KIF13B,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F02303,F13A1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F06882,STIM1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F00535,ARRB1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F00364,ANXA2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F07362,TOR4A,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F05699,QSOX1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F05081,PECAM1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F02733,GNAQ,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F04635,NHLRC2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F03103,HRG,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F03291,IGLV1-51,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F01051,CD109,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F00597,ATP2A1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F05486,PRKAR1A,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F00938,CAPZA2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F00434,APOOL,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F01069,CD36,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F03581,KLKB1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F01330,CLU,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F06360,SERPINA5,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F06183,S100A10,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F00283,ALDOA,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F03434,ITIH4,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F07819,VWF,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F02741,GNG12,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F00413,APOB,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F00003,A2M,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F03266,IGKV1-5,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F06328,SELENOP,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F02166,ENDOD1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F06929,STXBP3,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F03230,IGHM,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F06376,SERPIND1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F06381,SERPING1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F03299,IGLV3-19,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F05483,PRKACA,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F06708,SOD1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F03586,KNG1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F00118,ACTN2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F03456,JCHAIN,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F02302,F12,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F00594,ATP1B1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F07518,TTN,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F03249,IGHV3-7,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F03289,IGLV1-40,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F04879,ORM1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F07114,TF,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F04880,ORM2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F03308,IGLV8-61,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F01095,CD9,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F03282,IGKV4-1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F03290,IGLV1-47,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F00223,AHSG,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F00409,APOA1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F03979,MAPK3,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F06375,SERPINC1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F03277,IGKV3-20,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F03280,IGKV3D-20,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F00002,A1BG,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F03260,IGKC,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F03286,IGLL1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F03225,IGHA1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F06358,SERPINA3,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F01398,COL1A1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F01201,CFD,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F00265,ALB,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F06354,SERPINA1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F00238,AK3,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F05431,PPP2R5A,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F01399,COL1A2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F01303,CLEC3B,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F02070,EHD2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F05488,PRKAR2A,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F06371,SERPINB6,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F02726,GNA11,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-109582,Hemostasis,F04105,MGLL,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-140837,Intrinsic Pathway of Fibrin Clot Formation,F03581,KLKB1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-140837,Intrinsic Pathway of Fibrin Clot Formation,F06360,SERPINA5,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-140837,Intrinsic Pathway of Fibrin Clot Formation,F07819,VWF,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-140837,Intrinsic Pathway of Fibrin Clot Formation,F00003,A2M,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-140837,Intrinsic Pathway of Fibrin Clot Formation,F06376,SERPIND1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-140837,Intrinsic Pathway of Fibrin Clot Formation,F06381,SERPING1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-140837,Intrinsic Pathway of Fibrin Clot Formation,F03586,KNG1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-140837,Intrinsic Pathway of Fibrin Clot Formation,F02302,F12,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-140837,Intrinsic Pathway of Fibrin Clot Formation,F06375,SERPINC1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-164952,The role of Nef in HIV-1 replication and disease pathogenesis,F04944,PAK2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-164952,The role of Nef in HIV-1 replication and disease pathogenesis,F00383,AP2A1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-164952,The role of Nef in HIV-1 replication and disease pathogenesis,F00657,B2M,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-164952,The role of Nef in HIV-1 replication and disease pathogenesis,F03016,HLA-A,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-164952,The role of Nef in HIV-1 replication and disease pathogenesis,F00378,AP1M1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-164952,The role of Nef in HIV-1 replication and disease pathogenesis,F00376,AP1G1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-164952,The role of Nef in HIV-1 replication and disease pathogenesis,F00385,AP2B1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1834949,Cytosolic sensors of pathogen-associated DNA,F03192,IFI16,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1834949,Cytosolic sensors of pathogen-associated DNA,F05498,PRKDC,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1834949,Cytosolic sensors of pathogen-associated DNA,F04619,NFKB2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1834949,Cytosolic sensors of pathogen-associated DNA,F01851,DHX9,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1834949,Cytosolic sensors of pathogen-associated DNA,F07423,TRIM21,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1834949,Cytosolic sensors of pathogen-associated DNA,F05347,POLR2H,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1834949,Cytosolic sensors of pathogen-associated DNA,F05345,POLR2E,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1834949,Cytosolic sensors of pathogen-associated DNA,F04218,MRE11,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1834949,Cytosolic sensors of pathogen-associated DNA,F07902,XRCC5,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1834949,Cytosolic sensors of pathogen-associated DNA,F05895,RELA,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1834949,Cytosolic sensors of pathogen-associated DNA,F04618,NFKB1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1834949,Cytosolic sensors of pathogen-associated DNA,F07903,XRCC6,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1834949,Cytosolic sensors of pathogen-associated DNA,F06874,STAT6,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-190828,Gap junction trafficking,F07534,TUBB3,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-190828,Gap junction trafficking,F07528,TUBA4B,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-190828,Gap junction trafficking,F07537,TUBB6,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-190828,Gap junction trafficking,F01329,CLTC,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-190828,Gap junction trafficking,F01327,CLTA,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-190828,Gap junction trafficking,F07525,TUBA1C,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-190828,Gap junction trafficking,F00112,ACTB,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-156580,Phase II - Conjugation of compounds,F02661,GGCT,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-156580,Phase II - Conjugation of compounds,F02862,GSTM3,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-156580,Phase II - Conjugation of compounds,F04868,OPLAH,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-156580,Phase II - Conjugation of compounds,F07653,UGP2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-156580,Phase II - Conjugation of compounds,F04111,MGST3,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-156580,Phase II - Conjugation of compounds,F02666,GGT5,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-156580,Phase II - Conjugation of compounds,F00251,AKR1A1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-156580,Phase II - Conjugation of compounds,F02248,ESD,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-156580,Phase II - Conjugation of compounds,F04110,MGST2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-156580,Phase II - Conjugation of compounds,F02861,GSTM2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-156580,Phase II - Conjugation of compounds,F00042,ABHD14B,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1630316,Glycosaminoglycan metabolism,F00722,BGN,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1630316,Glycosaminoglycan metabolism,F03884,LUM,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1630316,Glycosaminoglycan metabolism,F01723,DCN,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1630316,Glycosaminoglycan metabolism,F04853,OGN,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1630316,Glycosaminoglycan metabolism,F05469,PRELP,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1852241,Organelle biogenesis and maintenance,F07933,YWHAE,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1852241,Organelle biogenesis and maintenance,F04120,MICOS13,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1852241,Organelle biogenesis and maintenance,F06216,SAMM50,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1852241,Organelle biogenesis and maintenance,F01224,CHCHD3,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1852241,Organelle biogenesis and maintenance,F04326,MT-ATP8,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1852241,Organelle biogenesis and maintenance,F00122,ACTR1A,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1852241,Organelle biogenesis and maintenance,F04325,MT-ATP6,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1852241,Organelle biogenesis and maintenance,F01729,DCTN1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1852241,Organelle biogenesis and maintenance,F02272,EXOC1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1852241,Organelle biogenesis and maintenance,F03338,IMMT,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1852241,Organelle biogenesis and maintenance,F04364,MTX2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1852241,Organelle biogenesis and maintenance,F07230,TMEM11,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1852241,Organelle biogenesis and maintenance,F00434,APOOL,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1852241,Organelle biogenesis and maintenance,F06471,SIRT3,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1852241,Organelle biogenesis and maintenance,F03182,IDH2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1852241,Organelle biogenesis and maintenance,F00610,ATP5MF,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1852241,Organelle biogenesis and maintenance,F00614,ATP5PB,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1852241,Organelle biogenesis and maintenance,F05483,PRKACA,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1852241,Organelle biogenesis and maintenance,F00433,APOO,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1852241,Organelle biogenesis and maintenance,F00616,ATP5PF,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1852241,Organelle biogenesis and maintenance,F01730,DCTN2,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1852241,Organelle biogenesis and maintenance,F00606,ATP5F1C,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1852241,Organelle biogenesis and maintenance,F00611,ATP5MG,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1852241,Organelle biogenesis and maintenance,F00615,ATP5PD,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1852241,Organelle biogenesis and maintenance,F07115,TFAM,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1852241,Organelle biogenesis and maintenance,F00617,ATP5PO,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1852241,Organelle biogenesis and maintenance,F01731,DCTN3,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1852241,Organelle biogenesis and maintenance,F00609,ATP5ME,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1852241,Organelle biogenesis and maintenance,F00604,ATP5F1A,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1852241,Organelle biogenesis and maintenance,F00607,ATP5F1D,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1852241,Organelle biogenesis and maintenance,F00605,ATP5F1B,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1852241,Organelle biogenesis and maintenance,F02016,DYNLT5,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1852241,Organelle biogenesis and maintenance,F02711,GLUD1,Reactome_v86_membership_and_ranked_leading_edge
+R-HSA-1852241,Organelle biogenesis and maintenance,F02012,DYNLL2,Reactome_v86_membership_and_ranked_leading_edge

@@ -53,3 +53,66 @@ def phase3_figures(result_dir: Path, abundance: pd.DataFrame, detection: pd.Data
         "Paired detection differences", "Detection fraction tumour minus non-tumour", "-log10 BH q-value",
     )
 
+
+def phase4_figures(result_dir: Path, patient_scores: pd.DataFrame, pathway_results: pd.DataFrame, consensus: np.ndarray | None) -> None:
+    figure_dir = result_dir / "figures"
+    figure_dir.mkdir(parents=True, exist_ok=True)
+    width, height, margin = 900, 620, 70
+    image = Image.new("RGB", (width, height), "white")
+    draw = ImageDraw.Draw(image)
+    x, y = patient_scores["PC1"].to_numpy(), patient_scores["PC2"].to_numpy()
+    xmin, xmax, ymin, ymax = float(x.min()), float(x.max()), float(y.min()), float(y.max())
+    sx = lambda value: margin + (float(value) - xmin) / max(xmax - xmin, 1e-9) * (width - 2 * margin)
+    sy = lambda value: height - margin - (float(value) - ymin) / max(ymax - ymin, 1e-9) * (height - 2 * margin)
+    draw.text((margin, 24), "Patient tumour-minus-non-tumour change PCA", fill="#111827")
+    draw.line((margin, height - margin, width - margin, height - margin), fill="#374151", width=2)
+    draw.line((margin, margin, margin, height - margin), fill="#374151", width=2)
+    for xi, yi, label in zip(x, y, patient_scores["patient_id"]):
+        draw.ellipse((sx(xi) - 4, sy(yi) - 4, sx(xi) + 4, sy(yi) + 4), fill="#0F766E")
+        draw.text((sx(xi) + 5, sy(yi) - 5), str(label), fill="#374151")
+    draw.text((width // 2 - 20, height - 30), "PC1", fill="#111827")
+    draw.text((12, height // 2), "PC2", fill="#111827")
+    image.save(figure_dir / "patient_change_pca.png")
+
+    supported = pathway_results.loc[pathway_results["supported_both_views"]].copy()
+    display_pool = supported if len(supported) >= 20 else pathway_results.copy()
+    display_pool["absolute_display_score"] = display_pool["display_score"].abs()
+    top = display_pool.sort_values(
+        ["absolute_display_score", "combined_priority", "pathway_name"],
+        ascending=[False, False, True],
+    ).head(20).sort_values("display_score").copy()
+    bar_width, bar_height = 1100, 680
+    image = Image.new("RGB", (bar_width, bar_height), "white")
+    draw = ImageDraw.Draw(image)
+    draw.text((20, 18), "Largest concordant pathway effects (ranked NES)", fill="#111827")
+    maximum = max(float(top["display_score"].abs().max()), 1e-9)
+    center = 650
+    for row, (_, item) in enumerate(top.iterrows()):
+        y0 = 48 + row * 30
+        label = str(item["pathway_name"])[:72]
+        draw.text((20, y0), label, fill="#111827")
+        length = int(abs(float(item["display_score"])) / maximum * 380)
+        color = "#DC2626" if item["display_score"] > 0 else "#2563EB"
+        if item["display_score"] > 0:
+            draw.rectangle((center, y0, center + length, y0 + 14), fill=color)
+        else:
+            draw.rectangle((center - length, y0, center, y0 + 14), fill=color)
+    draw.line((center, 42, center, bar_height - 20), fill="#6B7280", width=1)
+    image.save(figure_dir / "pathway_evidence.png")
+
+    if consensus is not None:
+        order = np.lexsort((patient_scores["PC1"].to_numpy(), patient_scores["exploratory_cluster"].to_numpy()))
+        consensus = consensus[np.ix_(order, order)]
+        n, cell, heat_margin = len(consensus), 12, 45
+        size = heat_margin + n * cell + 20
+        image = Image.new("RGB", (size, size), "white")
+        draw = ImageDraw.Draw(image)
+        draw.text((12, 12), "Consensus matrix for best evaluated k", fill="#111827")
+        for row in range(n):
+            for column in range(n):
+                value = float(np.clip(consensus[row, column], 0, 1))
+                color = (int(245 - 210 * value), int(248 - 125 * value), int(250 - 80 * value))
+                x0, y0 = heat_margin + column * cell, heat_margin + row * cell
+                draw.rectangle((x0, y0, x0 + cell, y0 + cell), fill=color)
+        image.save(figure_dir / "consensus_clustering.png")
+

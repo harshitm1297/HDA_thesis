@@ -1,0 +1,30 @@
+{
+  "accepted_cluster_k": null,
+  "best_exploratory_k": 2,
+  "checks": {
+    "all_42_patients_scored": true,
+    "cluster_labels_not_called_clinical_subtypes": true,
+    "compound_identifiers_not_expanded": true,
+    "patient_pca_uses_no_imputation": true,
+    "rank_uses_only_eligible_phase3_features": true,
+    "reactome_checksum_matches": true,
+    "reactome_release_is_pre_2024": true
+  },
+  "clustering_components": 4,
+  "heterogeneity_complete_features_available": 1350,
+  "heterogeneity_features_used": 500,
+  "measured_genes_mapped_to_reactome": 2680,
+  "measured_unambiguous_ranked_genes": 3430,
+  "milestone": "M4",
+  "milestone_status": "CONDITIONAL_ON_PHASE2_AND_FULL_M3_CLOSURE",
+  "pathways_supported_both_views": 271,
+  "patient_score_pathways_fdr": 566,
+  "patient_score_pathways_tested": 749,
+  "phase": 4,
+  "ranked_pathways_fdr": 328,
+  "ranked_pathways_tested": 783,
+  "reactome_gmt_sha256": "1EE9790EDEA336701DC89EBAB712C1C1FCA55744A5DFDC8FEC8121C632DAD4F1",
+  "reactome_pathways_total": 2630,
+  "reactome_release": 86,
+  "status": "PASS"
+}
