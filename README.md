@@ -25,3 +25,5 @@ The source workbook is intentionally excluded from Git. Generated patient-level 
 6. Phase 5: leakage-safe AI and stable-panel discovery.
 7. Phase 6: stress testing and reproducible synthesis.
 
+The pre-2024 evidence and locked evaluation rules for Phase 2 imputation and PCA are recorded in `PHASE2_MISSINGNESS_AND_PCA_EVIDENCE_2023.md`.
+
