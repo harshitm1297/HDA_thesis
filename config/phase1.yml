@@ -1,0 +1,24 @@
+{
+  "version": "1.0.0",
+  "status": "frozen-before-differential-testing",
+  "qc_feature_min_observed_fraction": 0.80,
+  "pca_winsor_limit_robust_z": 5.0,
+  "diagnostic_robust_z_threshold": 3.5,
+  "outlier_threshold_calibration": "same robust-z threshold calibrated separately within N and T to avoid treating a global tissue shift as specimen failure",
+  "flag_minimum_diagnostic_families": 2,
+  "pca_components_to_export": 5,
+  "mcd_random_starts": 128,
+  "mcd_c_steps": 30,
+  "mcd_support_fraction": 0.75,
+  "random_seed": 20231031,
+  "primary_cohort": "all 42 complete patient pairs",
+  "sensitivity_cohort": "remove entire patient pair when either specimen has at least two diagnostic-family flags",
+  "flag_families": [
+    "coverage",
+    "observed_distribution",
+    "sample_correlation",
+    "matched_pair_concordance",
+    "multivariate_structure"
+  ]
+}
+

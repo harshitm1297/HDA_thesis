@@ -16,7 +16,7 @@ The implementation deliberately does not inherit biological candidates, threshol
 python scripts/run_phase0.py
 ```
 
-The tested local runtime was Python 3.12.14 with NumPy 2.3.5, pandas 3.0.1, and openpyxl 3.1.5. Exact package pins are recorded in `environment/requirements-phase0.txt`.
+The tested local runtime was Python 3.12.14 with NumPy 2.3.5, pandas 3.0.1, and openpyxl 3.1.5. Exact package pins are recorded in `environment/requirements.txt`.
 
 ## Recorded outcome
 

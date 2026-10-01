@@ -1,0 +1,30 @@
+{
+  "checks": {
+    "all_8071_features_profiled": true,
+    "all_84_samples_profiled": true,
+    "flag_requires_two_families": true,
+    "no_full_matrix_imputation_exported": true,
+    "paired_states_sum_to_42": true,
+    "pca_used_no_tissue_labels": true,
+    "primary_cohort_retains_all_pairs": true,
+    "sensitivity_removes_whole_pairs_only": true
+  },
+  "config_sha256": "E4DA9BC3186258B958A56FEB5D5E11C5F92FDC64A9677B1E61EBBC6ABBFBDFAA",
+  "flagged_patient_pairs": 7,
+  "flagged_samples": 12,
+  "input_phase0_validation_sha256": "DC69932C9521EE494C3F252F7E87ED81C763B5304FE00C3F57C79D5BC9B069D6",
+  "milestone": "M1",
+  "pca_explained_fraction_first_five": [
+    0.2006964031187512,
+    0.0989473286512864,
+    0.07092780935776073,
+    0.0515301432879011,
+    0.04541130337922429
+  ],
+  "pca_variable_features": 3759,
+  "phase": 1,
+  "primary_pairs": 42,
+  "qc_eligible_features": 3759,
+  "sensitivity_pairs": 35,
+  "status": "PASS"
+}

@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="620">
+<rect width="100%" height="100%" fill="white"/>
+<text x="70" y="35" font-family="Arial" font-size="20" font-weight="bold">Coverage and observed abundance</text>
+<line x1="70" y1="550" x2="830" y2="550" stroke="#333"/>
+<line x1="70" y1="70" x2="70" y2="550" stroke="#333"/>
+<circle cx="830.0" cy="472.8" r="5" fill="#2563EB" fill-opacity="0.75"><title>P1N</title></circle>
+<circle cx="790.6" cy="491.2" r="5" fill="#DC2626" fill-opacity="0.75"><title>P1T</title></circle>
+<circle cx="197.9" cy="152.0" r="5" fill="#2563EB" fill-opacity="0.75"><title>P2N</title></circle>
+<circle cx="739.5" cy="510.6" r="5" fill="#DC2626" fill-opacity="0.75"><title>P2T</title></circle>
+<circle cx="527.0" cy="442.3" r="5" fill="#2563EB" fill-opacity="0.75"><title>P3N</title></circle>
+<circle cx="711.4" cy="502.6" r="5" fill="#DC2626" fill-opacity="0.75"><title>P3T</title></circle>
+<circle cx="547.3" cy="432.0" r="5" fill="#2563EB" fill-opacity="0.75"><title>P4N</title></circle>
+<circle cx="620.0" cy="414.1" r="5" fill="#DC2626" fill-opacity="0.75"><title>P4T</title></circle>
+<circle cx="413.1" cy="352.2" r="5" fill="#2563EB" fill-opacity="0.75"><title>P5N</title></circle>
+<circle cx="796.7" cy="529.1" r="5" fill="#DC2626" fill-opacity="0.75"><title>P5T</title></circle>
+<circle cx="456.4" cy="421.9" r="5" fill="#2563EB" fill-opacity="0.75"><title>P6N</title></circle>
+<circle cx="733.2" cy="486.9" r="5" fill="#DC2626" fill-opacity="0.75"><title>P6T</title></circle>
+<circle cx="491.5" cy="413.1" r="5" fill="#2563EB" fill-opacity="0.75"><title>P7N</title></circle>
+<circle cx="703.8" cy="520.5" r="5" fill="#DC2626" fill-opacity="0.75"><title>P7T</title></circle>
+<circle cx="550.3" cy="443.2" r="5" fill="#2563EB" fill-opacity="0.75"><title>P8N</title></circle>
+<circle cx="714.0" cy="506.9" r="5" fill="#DC2626" fill-opacity="0.75"><title>P8T</title></circle>
+<circle cx="715.7" cy="525.3" r="5" fill="#2563EB" fill-opacity="0.75"><title>P9N</title></circle>
+<circle cx="712.0" cy="510.3" r="5" fill="#DC2626" fill-opacity="0.75"><title>P9T</title></circle>
+<circle cx="601.6" cy="506.2" r="5" fill="#2563EB" fill-opacity="0.75"><title>P10N</title></circle>
+<circle cx="781.9" cy="526.9" r="5" fill="#DC2626" fill-opacity="0.75"><title>P10T</title></circle>
+<circle cx="315.0" cy="289.5" r="5" fill="#2563EB" fill-opacity="0.75"><title>P11N</title></circle>
+<circle cx="728.9" cy="516.3" r="5" fill="#DC2626" fill-opacity="0.75"><title>P11T</title></circle>
+<circle cx="599.3" cy="465.1" r="5" fill="#2563EB" fill-opacity="0.75"><title>P12N</title></circle>
+<circle cx="629.8" cy="493.9" r="5" fill="#DC2626" fill-opacity="0.75"><title>P12T</title></circle>
+<circle cx="518.7" cy="443.0" r="5" fill="#2563EB" fill-opacity="0.75"><title>P13N</title></circle>
+<circle cx="717.7" cy="511.8" r="5" fill="#DC2626" fill-opacity="0.75"><title>P13T</title></circle>
+<circle cx="403.6" cy="372.2" r="5" fill="#2563EB" fill-opacity="0.75"><title>P14N</title></circle>
+<circle cx="660.9" cy="496.0" r="5" fill="#DC2626" fill-opacity="0.75"><title>P14T</title></circle>
+<circle cx="503.1" cy="441.4" r="5" fill="#2563EB" fill-opacity="0.75"><title>P15N</title></circle>
+<circle cx="660.1" cy="493.5" r="5" fill="#DC2626" fill-opacity="0.75"><title>P15T</title></circle>
+<circle cx="577.6" cy="485.6" r="5" fill="#2563EB" fill-opacity="0.75"><title>P16N</title></circle>
+<circle cx="728.1" cy="528.5" r="5" fill="#DC2626" fill-opacity="0.75"><title>P16T</title></circle>
+<circle cx="634.3" cy="491.1" r="5" fill="#2563EB" fill-opacity="0.75"><title>P17N</title></circle>
+<circle cx="708.8" cy="520.4" r="5" fill="#DC2626" fill-opacity="0.75"><title>P17T</title></circle>
+<circle cx="262.7" cy="221.5" r="5" fill="#2563EB" fill-opacity="0.75"><title>P18N</title></circle>
+<circle cx="620.7" cy="457.2" r="5" fill="#DC2626" fill-opacity="0.75"><title>P18T</title></circle>
+<circle cx="204.0" cy="156.2" r="5" fill="#2563EB" fill-opacity="0.75"><title>P19N</title></circle>
+<circle cx="587.4" cy="484.2" r="5" fill="#DC2626" fill-opacity="0.75"><title>P19T</title></circle>
+<circle cx="318.9" cy="335.1" r="5" fill="#2563EB" fill-opacity="0.75"><title>P20N</title></circle>
+<circle cx="763.5" cy="527.2" r="5" fill="#DC2626" fill-opacity="0.75"><title>P20T</title></circle>
+<circle cx="126.9" cy="120.0" r="5" fill="#2563EB" fill-opacity="0.75"><title>P21N</title></circle>
+<circle cx="549.3" cy="473.9" r="5" fill="#DC2626" fill-opacity="0.75"><title>P21T</title></circle>
+<circle cx="769.2" cy="506.7" r="5" fill="#2563EB" fill-opacity="0.75"><title>P22N</title></circle>
+<circle cx="534.7" cy="444.1" r="5" fill="#DC2626" fill-opacity="0.75"><title>P22T</title></circle>
+<circle cx="215.5" cy="188.2" r="5" fill="#2563EB" fill-opacity="0.75"><title>P23N</title></circle>
+<circle cx="778.0" cy="528.4" r="5" fill="#DC2626" fill-opacity="0.75"><title>P23T</title></circle>
+<circle cx="460.9" cy="405.8" r="5" fill="#2563EB" fill-opacity="0.75"><title>P24N</title></circle>
+<circle cx="637.1" cy="484.2" r="5" fill="#DC2626" fill-opacity="0.75"><title>P24T</title></circle>
+<circle cx="359.8" cy="320.9" r="5" fill="#2563EB" fill-opacity="0.75"><title>P25N</title></circle>
+<circle cx="442.3" cy="360.8" r="5" fill="#DC2626" fill-opacity="0.75"><title>P25T</title></circle>
+<circle cx="517.4" cy="440.4" r="5" fill="#2563EB" fill-opacity="0.75"><title>P26N</title></circle>
+<circle cx="532.8" cy="457.2" r="5" fill="#DC2626" fill-opacity="0.75"><title>P26T</title></circle>
+<circle cx="480.0" cy="409.8" r="5" fill="#2563EB" fill-opacity="0.75"><title>P27N</title></circle>
+<circle cx="742.5" cy="530.5" r="5" fill="#DC2626" fill-opacity="0.75"><title>P27T</title></circle>
+<circle cx="371.1" cy="346.9" r="5" fill="#2563EB" fill-opacity="0.75"><title>P28N</title></circle>
+<circle cx="725.5" cy="522.5" r="5" fill="#DC2626" fill-opacity="0.75"><title>P28T</title></circle>
+<circle cx="430.4" cy="404.3" r="5" fill="#2563EB" fill-opacity="0.75"><title>P29N</title></circle>
+<circle cx="755.3" cy="539.5" r="5" fill="#DC2626" fill-opacity="0.75"><title>P29T</title></circle>
+<circle cx="632.8" cy="496.4" r="5" fill="#2563EB" fill-opacity="0.75"><title>P30N</title></circle>
+<circle cx="738.4" cy="531.7" r="5" fill="#DC2626" fill-opacity="0.75"><title>P30T</title></circle>
+<circle cx="70.0" cy="70.0" r="5" fill="#2563EB" fill-opacity="0.75"><title>P31N</title></circle>
+<circle cx="714.4" cy="537.1" r="5" fill="#DC2626" fill-opacity="0.75"><title>P31T</title></circle>
+<circle cx="689.5" cy="525.6" r="5" fill="#2563EB" fill-opacity="0.75"><title>P32N</title></circle>
+<circle cx="711.6" cy="528.5" r="5" fill="#DC2626" fill-opacity="0.75"><title>P32T</title></circle>
+<circle cx="545.3" cy="430.7" r="5" fill="#2563EB" fill-opacity="0.75"><title>P33N</title></circle>
+<circle cx="622.6" cy="501.6" r="5" fill="#DC2626" fill-opacity="0.75"><title>P33T</title></circle>
+<circle cx="585.4" cy="475.8" r="5" fill="#2563EB" fill-opacity="0.75"><title>P34N</title></circle>
+<circle cx="704.9" cy="528.6" r="5" fill="#DC2626" fill-opacity="0.75"><title>P34T</title></circle>
+<circle cx="694.1" cy="504.0" r="5" fill="#2563EB" fill-opacity="0.75"><title>P35N</title></circle>
+<circle cx="700.1" cy="503.6" r="5" fill="#DC2626" fill-opacity="0.75"><title>P35T</title></circle>
+<circle cx="649.7" cy="484.2" r="5" fill="#2563EB" fill-opacity="0.75"><title>P36N</title></circle>
+<circle cx="598.8" cy="464.8" r="5" fill="#DC2626" fill-opacity="0.75"><title>P36T</title></circle>
+<circle cx="437.6" cy="376.6" r="5" fill="#2563EB" fill-opacity="0.75"><title>P37N</title></circle>
+<circle cx="766.1" cy="537.0" r="5" fill="#DC2626" fill-opacity="0.75"><title>P37T</title></circle>
+<circle cx="607.0" cy="483.6" r="5" fill="#2563EB" fill-opacity="0.75"><title>P38N</title></circle>
+<circle cx="580.0" cy="478.8" r="5" fill="#DC2626" fill-opacity="0.75"><title>P38T</title></circle>
+<circle cx="545.3" cy="414.7" r="5" fill="#2563EB" fill-opacity="0.75"><title>P39N</title></circle>
+<circle cx="741.2" cy="550.0" r="5" fill="#DC2626" fill-opacity="0.75"><title>P39T</title></circle>
+<circle cx="388.4" cy="329.9" r="5" fill="#2563EB" fill-opacity="0.75"><title>P40N</title></circle>
+<circle cx="714.0" cy="533.8" r="5" fill="#DC2626" fill-opacity="0.75"><title>P40T</title></circle>
+<circle cx="442.5" cy="403.1" r="5" fill="#2563EB" fill-opacity="0.75"><title>P41N</title></circle>
+<circle cx="734.7" cy="530.8" r="5" fill="#DC2626" fill-opacity="0.75"><title>P41T</title></circle>
+<circle cx="261.4" cy="208.7" r="5" fill="#2563EB" fill-opacity="0.75"><title>P42N</title></circle>
+<circle cx="723.1" cy="547.6" r="5" fill="#DC2626" fill-opacity="0.75"><title>P42T</title></circle>
+<text x="450.0" y="602" text-anchor="middle" font-family="Arial" font-size="14">Detected-feature fraction</text>
+<text x="18" y="310.0" transform="rotate(-90 18 310.0)" text-anchor="middle" font-family="Arial" font-size="14">Median observed log2 abundance</text>
+<circle cx="730" cy="35" r="5" fill="#2563EB"/><text x="742" y="40" font-family="Arial" font-size="12">Matched non-tumour</text>
+<circle cx="730" cy="55" r="5" fill="#DC2626"/><text x="742" y="60" font-family="Arial" font-size="12">Tumour</text>
+</svg>
