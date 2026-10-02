@@ -1,0 +1,76 @@
+{
+  "computational_status": "PASS",
+  "outputs": [
+    {
+      "bytes": 2404,
+      "path": "results/phase7/abundance_redundancy_components.csv",
+      "sha256": "4A297332022FCF416EDB37359206C19605247B1E8A4F137B77CB9AD6EBEC38A6"
+    },
+    {
+      "bytes": 3601,
+      "path": "results/phase7/abundance_redundancy_edges.csv",
+      "sha256": "75559C11DF0C985D67B76354427B4AECD8D2515AC44E65AFB145C367224CCD13"
+    },
+    {
+      "bytes": 798,
+      "path": "results/phase7/abundance_sample_size_sensitivity.csv",
+      "sha256": "355DB3AA72B2AC28768E18FBDD5A9872E3D06D83AAD0734B8F8578E8AB66AB8B"
+    },
+    {
+      "bytes": 199120,
+      "path": "results/phase7/candidate_validation_readiness.csv",
+      "sha256": "1A217550C4B30F8AD02CFCE831427466F416792C036F8544F024B4ADE1AC8E59"
+    },
+    {
+      "bytes": 1586,
+      "path": "results/phase7/detection_sample_size_sensitivity.csv",
+      "sha256": "605BB52F2CDDBE2C8737CB94996049887F6C6061DD69878C8B289DE84451AEEF"
+    },
+    {
+      "bytes": 343,
+      "path": "results/phase7/environment_snapshot.json",
+      "sha256": "377C53CE1560B8FA7154C8B9B4C8A9BB0F2E5030A05F63A5F5DA68CFB725A62E"
+    },
+    {
+      "bytes": 7255,
+      "path": "results/phase7/figures/abundance_redundancy_components.png",
+      "sha256": "BDD9A2AE4BAEFB8C87990972396358E7B5B51868706041BD0C2D27F9D6270B42"
+    },
+    {
+      "bytes": 41482,
+      "path": "results/phase7/figures/pareto_fronts.png",
+      "sha256": "576F67B9DAE526F1486F1114D429E484FD07B99BCA5ABAB598577C21405034D6"
+    },
+    {
+      "bytes": 26945,
+      "path": "results/phase7/locked_handoff_shortlist.csv",
+      "sha256": "35B2F934F87FBFC15BDC9D68BE86EF0FAD84245CE3DC60DCADC0986CAD1CCA45"
+    },
+    {
+      "bytes": 1367,
+      "path": "results/phase7/phase7_claim_ledger.csv",
+      "sha256": "81F0819882548F86A917DB32FC92C96ED5A9DF46D8D48DC103799AC7E113048C"
+    },
+    {
+      "bytes": 8674,
+      "path": "results/phase7/PHASE7_RESULTS.md",
+      "sha256": "16E6D848794D6C2006D480E35CA6B25B14925534703700A8D8086F2BBA9AD414"
+    },
+    {
+      "bytes": 788,
+      "path": "results/phase7/phase7_validation.json",
+      "sha256": "CE59EC33C90181CADB05356215CD5F5BE23682182756348C193D569B47E5BD31"
+    },
+    {
+      "bytes": 3176,
+      "path": "results/phase7/prospective_validation_protocol.json",
+      "sha256": "BFCCE55D2CE0A2C7A192515A40E314D38D9932A7B5B255021B0D32BADC42CA71"
+    },
+    {
+      "bytes": 203,
+      "path": "results/phase7/reproducibility_gate.json",
+      "sha256": "D7D1502A4FB7F84C7A600CA595C5892469A7DBE7DEFE773D1738F60B89AF75F9"
+    }
+  ],
+  "phase": 7
+}

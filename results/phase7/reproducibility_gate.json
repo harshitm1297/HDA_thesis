@@ -1,0 +1,7 @@
+{
+  "compared_output_count": 11,
+  "phase": 7,
+  "same_environment_phase7_exact_reproduction": true,
+  "scope": "deterministic readiness-package generation only",
+  "validation_executed": false
+}

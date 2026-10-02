@@ -106,6 +106,14 @@ Deliverables are the robustness grid, patient-influence report, negative-control
 | M5 | Out-of-fold predictions, null results and feature stability | Phase 6 synthesis |
 | M6 | Fully traceable internal evidence package | Future independent validation, outside current scope |
 
+## Phase 7 extension — validation readiness and locked hand-off
+
+Phase 7 was added after completion of the original roadmap. It does not perform the independent validation named after M6 because no new cohort or orthogonal measurements are available. Instead, it turns the internal evidence package into a prospective hand-off that cannot be redesigned after validation outcomes are known.
+
+All Phase 6 high-priority candidates enter separate quantitative-abundance and detection-pattern decision branches. Nondominated Pareto fronts preserve competing evidence dimensions without an arbitrary weighted score. Paired-change correlation components identify redundant abundance signals and nominate one representative per component while preserving every member. A fixed-capacity hand-off freezes abundance replication anchors and detection-mechanism sentinels. Sample-size sensitivity uses generic assumed effects rather than selected discovery estimates. A machine-readable protocol fixes endpoints, multiplicity, blinding, batch recording, intended-use requirements and prohibited discovery-data reuse.
+
+Deliverables are the complete readiness table, Pareto fronts, redundancy graph, locked hand-off list, abundance and detection sample-size grids, prospective protocol, claim ledger, validation checks and reproducibility manifest. M7-readiness passes when these artifacts reproduce and every candidate remains traceable. It must retain `validation_state=not_executed` until genuinely independent patients and measurements are available.
+
 ## Minimum success criteria
 
 The project succeeds as a rigorous data-science and AI study only if it delivers all of the following:

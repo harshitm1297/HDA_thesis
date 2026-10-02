@@ -202,3 +202,42 @@ def phase6_figures(result_dir: Path, scenarios: pd.DataFrame, evidence: pd.DataF
         draw.text((270 + length, y + 4), str(int(count)), fill="#111827")
     image.save(figure_dir / "integrated_evidence_tiers.png")
 
+
+def phase7_figures(result_dir: Path, readiness: pd.DataFrame, components: pd.DataFrame) -> None:
+    """Render Pareto-front and redundancy summaries for the hand-off package."""
+    figure_dir = result_dir / "figures"
+    figure_dir.mkdir(parents=True, exist_ok=True)
+
+    counts = readiness.groupby(["follow_up_branch", "pareto_front"]).size().reset_index(name="count")
+    labels = [f"{row.follow_up_branch} / front {int(row.pareto_front)}" for row in counts.itertuples()]
+    width, row_height, left = 980, 28, 420
+    height = 70 + row_height * len(counts)
+    image = Image.new("RGB", (width, height), "white")
+    draw = ImageDraw.Draw(image)
+    draw.text((20, 18), "Phase 7 Pareto fronts within follow-up branch", fill="#111827")
+    maximum = max(int(counts["count"].max()), 1)
+    for row, (label, count) in enumerate(zip(labels, counts["count"])):
+        y = 48 + row * row_height
+        draw.text((20, y), label[:62], fill="#374151")
+        length = int(int(count) / maximum * 440)
+        draw.rectangle((left, y, left + length, y + 14), fill="#0F766E")
+        draw.text((left + length + 6, y), str(int(count)), fill="#111827")
+    image.save(figure_dir / "pareto_fronts.png")
+
+    module_sizes = components.drop_duplicates("abundance_correlation_component")["component_size"].value_counts().sort_index()
+    width, height, margin = 850, 430, 65
+    image = Image.new("RGB", (width, height), "white")
+    draw = ImageDraw.Draw(image)
+    draw.text((margin, 18), "Abundance redundancy: correlation-component sizes", fill="#111827")
+    maximum = max(int(module_sizes.max()), 1)
+    plot_width, plot_height = width - 2 * margin, height - 2 * margin
+    for index, (component_size, count) in enumerate(module_sizes.items()):
+        x0 = margin + index / max(len(module_sizes), 1) * plot_width
+        x1 = margin + (index + 0.75) / max(len(module_sizes), 1) * plot_width
+        y0 = height - margin - int(count / maximum * plot_height)
+        draw.rectangle((x0, y0, x1, height - margin), fill="#2563EB")
+        draw.text((x0, max(y0 - 18, 38)), str(int(count)), fill="#111827")
+        draw.text((x0, height - margin + 5), str(int(component_size)), fill="#374151")
+    draw.text((margin, height - 22), "Component size (bar height = number of components)", fill="#111827")
+    image.save(figure_dir / "abundance_redundancy_components.png")
+

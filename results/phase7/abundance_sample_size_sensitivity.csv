@@ -1,0 +1,9 @@
+standardized_paired_effect_assumption,target_power,two_sided_per_target_alpha,primary_target_count,required_complete_pairs,planning_status
+0.3,0.8,0.004166666666666667,12,157,assumption_grid_not_candidate_effect_estimate
+0.3,0.9,0.004166666666666667,12,196,assumption_grid_not_candidate_effect_estimate
+0.5,0.8,0.004166666666666667,12,60,assumption_grid_not_candidate_effect_estimate
+0.5,0.9,0.004166666666666667,12,73,assumption_grid_not_candidate_effect_estimate
+0.8,0.8,0.004166666666666667,12,26,assumption_grid_not_candidate_effect_estimate
+0.8,0.9,0.004166666666666667,12,32,assumption_grid_not_candidate_effect_estimate
+1.0,0.8,0.004166666666666667,12,18,assumption_grid_not_candidate_effect_estimate
+1.0,0.9,0.004166666666666667,12,22,assumption_grid_not_candidate_effect_estimate

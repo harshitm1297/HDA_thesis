@@ -1,0 +1,22 @@
+{
+  "abundance_candidates": 107,
+  "checks": {
+    "abundance_redundancy_uses_paired_changes": true,
+    "independent_validation_not_claimed": true,
+    "no_weighted_composite_score": true,
+    "only_phase6_high_priority_candidates_used": true,
+    "phase2_dependency_retained": true,
+    "sample_sizes_use_assumption_grid": true,
+    "shortlist_feature_keys_unique": true,
+    "shortlist_is_source_subset": true,
+    "source_feature_keys_unique": true
+  },
+  "computational_status": "PASS",
+  "detection_candidates": 58,
+  "locked_abundance_anchors": 12,
+  "locked_detection_sentinels": 8,
+  "milestone": "M7_readiness",
+  "milestone_status": "READINESS_PACKAGE_PASS_VALIDATION_NOT_EXECUTED_PHASE2_PENDING",
+  "phase": 7,
+  "source_high_priority_candidates": 165
+}

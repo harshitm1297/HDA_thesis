@@ -411,6 +411,14 @@ Run the pipeline twice in a clean environment with the same configuration. Requi
 
 M6 passes when a clean run reproduces every final table and figure and every substantive claim links to a workbook-derived result, sensitivity output and limitation ID.
 
+## Phase 7 extension — validation-readiness implementation
+
+`80_validation_readiness.py` consumes only the Phase 6 integrated evidence table and the validated patient-level paired-change matrix. It assigns separate abundance and detection Pareto fronts, constructs absolute-Spearman abundance redundancy components with a frozen minimum overlap, selects a fixed number of component representatives and detection sentinels, and writes a protocol whose state is `not_executed`.
+
+Sample-size tables use a frozen grid of assumed effects and powers rather than selected discovery effect estimates. The abundance table uses two-sided noncentral-t power; the detection table is an explicitly approximate McNemar planning grid. Unit tests require that source and shortlisted keys are unique, the shortlist is a subset of Phase 6 high-priority rows, no weighted composite is introduced, power behaves monotonically and the package cannot claim external validation.
+
+M7-readiness passes when all artifacts reproduce exactly and the protocol, claims and candidate rows preserve the Phase 2 dependency and absent external validation.
+
 ## Initial implementation sprint
 
 The next coding sprint should stop before differential analysis. Its concrete sequence is:

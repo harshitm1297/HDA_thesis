@@ -1,0 +1,20 @@
+{
+  "version": "1.0.0",
+  "status": "frozen-before-phase7-execution",
+  "random_seed": 20231201,
+  "source_priority_tier": "high_priority_internal",
+  "abundance_representative_slots": 12,
+  "detection_follow_up_slots": 8,
+  "abundance_minimum_complete_pairs": 35,
+  "abundance_minimum_lopo_retention": 0.90,
+  "detection_minimum_lopo_retention": 0.90,
+  "correlation_method": "spearman",
+  "correlation_absolute_threshold": 0.80,
+  "correlation_minimum_complete_pairs": 25,
+  "familywise_alpha": 0.05,
+  "planning_power": [0.80, 0.90],
+  "planning_standardized_paired_effects": [0.30, 0.50, 0.80, 1.00],
+  "planning_detection_differences": [0.10, 0.20, 0.30],
+  "planning_discordant_fractions": [0.20, 0.40, 0.60],
+  "milestone_status": "READINESS_PACKAGE_PASS_VALIDATION_NOT_EXECUTED_PHASE2_PENDING"
+}

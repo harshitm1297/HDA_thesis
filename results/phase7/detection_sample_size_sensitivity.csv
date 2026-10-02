@@ -1,0 +1,17 @@
+absolute_detection_difference_assumption,total_discordant_fraction_assumption,target_power,two_sided_per_target_alpha,primary_target_count,approximate_required_pairs,planning_status
+0.1,0.2,0.8,0.00625,8,253,normal_approximation_recalculate_with_final_assay_parameters
+0.1,0.2,0.9,0.00625,8,318,normal_approximation_recalculate_with_final_assay_parameters
+0.1,0.4,0.8,0.00625,8,509,normal_approximation_recalculate_with_final_assay_parameters
+0.1,0.4,0.9,0.00625,8,640,normal_approximation_recalculate_with_final_assay_parameters
+0.1,0.6,0.8,0.00625,8,765,normal_approximation_recalculate_with_final_assay_parameters
+0.1,0.6,0.9,0.00625,8,963,normal_approximation_recalculate_with_final_assay_parameters
+0.2,0.2,0.8,0.00625,8,61,normal_approximation_recalculate_with_final_assay_parameters
+0.2,0.2,0.9,0.00625,8,76,normal_approximation_recalculate_with_final_assay_parameters
+0.2,0.4,0.8,0.00625,8,125,normal_approximation_recalculate_with_final_assay_parameters
+0.2,0.4,0.9,0.00625,8,157,normal_approximation_recalculate_with_final_assay_parameters
+0.2,0.6,0.8,0.00625,8,189,normal_approximation_recalculate_with_final_assay_parameters
+0.2,0.6,0.9,0.00625,8,237,normal_approximation_recalculate_with_final_assay_parameters
+0.3,0.4,0.8,0.00625,8,54,normal_approximation_recalculate_with_final_assay_parameters
+0.3,0.4,0.9,0.00625,8,67,normal_approximation_recalculate_with_final_assay_parameters
+0.3,0.6,0.8,0.00625,8,83,normal_approximation_recalculate_with_final_assay_parameters
+0.3,0.6,0.9,0.00625,8,103,normal_approximation_recalculate_with_final_assay_parameters

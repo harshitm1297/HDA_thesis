@@ -1,0 +1,70 @@
+{
+  "candidate_roles": {
+    "F01333": "independent_quantitative_replication_anchor",
+    "F03043": "prospective_detection_mechanism_sentinel",
+    "F03594": "prospective_detection_mechanism_sentinel",
+    "F03622": "independent_quantitative_replication_anchor",
+    "F03953": "independent_quantitative_replication_anchor",
+    "F04105": "independent_quantitative_replication_anchor",
+    "F04501": "prospective_detection_mechanism_sentinel",
+    "F04531": "independent_quantitative_replication_anchor",
+    "F04586": "prospective_detection_mechanism_sentinel",
+    "F04698": "prospective_detection_mechanism_sentinel",
+    "F04853": "independent_quantitative_replication_anchor",
+    "F05080": "independent_quantitative_replication_anchor",
+    "F05365": "prospective_detection_mechanism_sentinel",
+    "F05469": "independent_quantitative_replication_anchor",
+    "F06382": "independent_quantitative_replication_anchor",
+    "F06564": "prospective_detection_mechanism_sentinel",
+    "F06710": "independent_quantitative_replication_anchor",
+    "F07305": "independent_quantitative_replication_anchor",
+    "F07336": "independent_quantitative_replication_anchor",
+    "F07862": "prospective_detection_mechanism_sentinel"
+  },
+  "design_requirements": [
+    "Use patients not present in the discovery workbook.",
+    "Predefine intended-use population and reference standard before recruitment.",
+    "Blind laboratory measurement and outcome adjudication to discovery ranking.",
+    "Randomize run order across tissue state and record batch, site and processing variables.",
+    "Measure locked candidates without outcome-driven reselection or threshold tuning.",
+    "Preserve patient pairing when paired tissue is the estimand.",
+    "Report failed measurements, limits of detection and all exclusions."
+  ],
+  "independent_validation_required": true,
+  "locked_candidate_feature_keys": [
+    "F05469",
+    "F01333",
+    "F04105",
+    "F06382",
+    "F06710",
+    "F07336",
+    "F03622",
+    "F04531",
+    "F07305",
+    "F04853",
+    "F05080",
+    "F03953",
+    "F04586",
+    "F06564",
+    "F03594",
+    "F04501",
+    "F03043",
+    "F04698",
+    "F07862",
+    "F05365"
+  ],
+  "multiplicity": "familywise alpha 0.05 divided across primary targets in planning tables; final protocol may use a prespecified strong-FWER method",
+  "phase": 7,
+  "phase2_dependency": "unresolved",
+  "primary_endpoints": {
+    "detection_pattern": "paired detection discordance under a prospectively fixed assay and detection threshold",
+    "quantitative_abundance": "paired log2 tumour-minus-matched-non-tumour difference for locked anchors"
+  },
+  "prohibited_reuse": [
+    "Do not call a resplit or bootstrap of the 42 discovery patients external validation.",
+    "Do not tune thresholds, candidate membership or assay processing on validation outcomes.",
+    "Do not claim screening or diagnostic accuracy without intended-use controls and an independent clinical population."
+  ],
+  "protocol_status": "prospective_template_not_executed",
+  "source_scope": "84 supplied specimens from 42 patients; no new observations"
+}

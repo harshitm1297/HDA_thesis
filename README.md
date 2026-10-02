@@ -24,6 +24,7 @@ The source workbook is intentionally excluded from Git. Generated patient-level 
 5. Phase 4: pathway interpretation and heterogeneity — implemented, computational checks passed; M4 remains conditional on Phase 2 and full M3 closure.
 6. Phase 5: leakage-safe AI and stability-ranked feature discovery — implemented, computational checks passed; no compact panel declared and M5 remains conditional on upstream closure.
 7. Phase 6: stress testing and reproducible synthesis — implemented, computational checks passed; M6 remains open pending Phase 2 and an independent clean-environment rebuild.
+8. Phase 7 extension: validation readiness and locked prospective hand-off — implemented; independent validation is explicitly not executed.
 
 The pre-2024 evidence and locked evaluation rules for Phase 2 imputation and PCA are recorded in `PHASE2_MISSINGNESS_AND_PCA_EVIDENCE_2023.md`.
 
@@ -50,4 +51,12 @@ python scripts/run_phase6.py
 ```
 
 The default command executes Phase 6 twice and compares deterministic output hashes. `python scripts/run_phase6.py --verify-against-existing` snapshots an existing completed run, reruns once and compares it, while `--reuse-existing` only revalidates and fingerprints present artifacts. The detailed results and project-level synthesis are in `results/phase6/PHASE6_RESULTS.md` and `results/phase6/FINAL_SCIENTIFIC_SYNTHESIS.md`; implementation safeguards are recorded in `records/PHASE6_IMPLEMENTATION_RECORD.md`.
+
+## Reproduce Phase 7
+
+```powershell
+python scripts/run_phase7.py
+```
+
+Phase 7 creates deterministic Pareto fronts, abundance redundancy components, a 20-item locked hand-off, prospective sample-size sensitivity grids and a machine-readable future validation protocol. It uses no new patient observations and does not claim external validation. Results are documented in `results/phase7/PHASE7_RESULTS.md`; implementation details are in `records/PHASE7_IMPLEMENTATION_RECORD.md`.
 
