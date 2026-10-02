@@ -1,0 +1,24 @@
+{
+  "checks": {
+    "every_row_has_limitations_and_allowed_claim": true,
+    "joins_use_feature_key": true,
+    "missing_evidence_not_filled_with_zero": true,
+    "no_external_validation_claim": true,
+    "one_integrated_row_per_source_feature": true,
+    "pathway_robustness_available": true,
+    "phase2_gap_keeps_m6_open": true
+  },
+  "claim_ledger_rows": 14,
+  "computational_status": "PASS",
+  "integrated_feature_rows": 8071,
+  "milestone": "M6",
+  "milestone_status": "IMPLEMENTED_NOT_CLOSED_PHASE2_AND_FULL_CLEAN_ENVIRONMENT_GATES_PENDING",
+  "phase": 6,
+  "priority_counts": {
+    "high_priority_internal": 165,
+    "not_prioritized": 5969,
+    "predictive_stability_only": 28,
+    "robust_single_domain": 1909
+  },
+  "source_feature_rows": 8071
+}

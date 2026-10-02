@@ -1,0 +1,8 @@
+{
+  "balanced_accuracy": 0.9642857142857142,
+  "model": "elastic_net",
+  "pair_orientation_accuracy": 0.9761904761904762,
+  "patients": 42,
+  "roc_auc": 0.9846938775510203,
+  "view": "abundance"
+}

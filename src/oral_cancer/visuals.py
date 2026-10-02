@@ -168,3 +168,37 @@ def phase5_permutation_figure(result_dir: Path, permutation: pd.DataFrame, obser
     draw.line((margin, height - margin, width - margin, height - margin), fill="#374151", width=2)
     image.save(figure_dir / "paired_permutation_null.png")
 
+
+def phase6_figures(result_dir: Path, scenarios: pd.DataFrame, evidence: pd.DataFrame) -> None:
+    figure_dir = result_dir / "figures"
+    figure_dir.mkdir(parents=True, exist_ok=True)
+
+    ordered = scenarios.sort_values("core_supported_features")
+    width, row_height, left, right = 1100, 26, 600, 55
+    height = 70 + len(ordered) * row_height
+    image = Image.new("RGB", (width, height), "white")
+    draw = ImageDraw.Draw(image)
+    draw.text((20, 18), "Phase 6 multiverse core-support counts", fill="#111827")
+    maximum = max(int(ordered["core_supported_features"].max()), 1)
+    for row, (_, item) in enumerate(ordered.iterrows()):
+        y = 48 + row * row_height
+        draw.text((20, y), str(item["scenario_id"])[:85], fill="#374151")
+        length = int(float(item["core_supported_features"]) / maximum * (width - left - right))
+        draw.rectangle((left, y, left + length, y + 13), fill="#0F766E")
+        draw.text((left + length + 4, y), str(int(item["core_supported_features"])), fill="#111827")
+    image.save(figure_dir / "multiverse_core_support.png")
+
+    counts = evidence["integrated_priority_tier"].value_counts().sort_values()
+    width, height, margin = 850, 430, 65
+    image = Image.new("RGB", (width, height), "white")
+    draw = ImageDraw.Draw(image)
+    draw.text((margin, 18), "Integrated evidence tiers", fill="#111827")
+    maximum = max(int(counts.max()), 1)
+    for row, (label, count) in enumerate(counts.items()):
+        y = 70 + row * 70
+        draw.text((margin, y), str(label), fill="#111827")
+        length = int(int(count) / maximum * 500)
+        draw.rectangle((260, y, 260 + length, y + 24), fill="#2563EB")
+        draw.text((270 + length, y + 4), str(int(count)), fill="#111827")
+    image.save(figure_dir / "integrated_evidence_tiers.png")
+

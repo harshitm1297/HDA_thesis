@@ -1,0 +1,15 @@
+{
+  "checks": {
+    "all_42_patients_omitted_once": true,
+    "missingness_strategy_not_invented": true,
+    "multiverse_is_prespecified_cartesian_grid": true,
+    "pathway_release_remains_reactome_v86": true
+  },
+  "lopo_patients": 42,
+  "missingness_strategy_count": 1,
+  "multiverse_scenarios": 24,
+  "pathways_sensitivity_tested": 783,
+  "phase": 6,
+  "stage": "inference_pathway_robustness",
+  "status": "PASS"
+}

@@ -1,0 +1,14 @@
+{
+  "commands": [
+    "scripts/60_robustness.py",
+    "scripts/61_ml_influence.py",
+    "scripts/70_build_evidence_table.py"
+  ],
+  "git_input_commit": "95303a7c12102baf8f0c2c93f3b2f011591eb714",
+  "numpy": "2.3.5",
+  "pandas": "3.0.1",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "scikit_learn": "1.7.2",
+  "scipy": "1.18.1"
+}

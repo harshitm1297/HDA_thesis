@@ -20,8 +20,8 @@ from sklearn.svm import LinearSVC
 
 def make_group_folds(patient_ids: np.ndarray, folds: int, seed: int) -> dict[str, int]:
     unique = np.asarray(sorted(set(patient_ids.astype(str))))
-    if len(unique) % folds != 0:
-        raise ValueError("Patient count must divide evenly across the prespecified folds")
+    if len(unique) < folds:
+        raise ValueError("Patient count must be at least the number of grouped folds")
     shuffled = unique.copy()
     np.random.default_rng(seed).shuffle(shuffled)
     return {patient: int(index % folds) for index, patient in enumerate(shuffled)}

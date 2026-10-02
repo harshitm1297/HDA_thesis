@@ -23,7 +23,7 @@ The source workbook is intentionally excluded from Git. Generated patient-level 
 4. Phase 3: paired abundance and detection inference — modular no-imputation branch implemented; full M3 remains conditional on Phase 2.
 5. Phase 4: pathway interpretation and heterogeneity — implemented, computational checks passed; M4 remains conditional on Phase 2 and full M3 closure.
 6. Phase 5: leakage-safe AI and stability-ranked feature discovery — implemented, computational checks passed; no compact panel declared and M5 remains conditional on upstream closure.
-7. Phase 6: stress testing and reproducible synthesis.
+7. Phase 6: stress testing and reproducible synthesis — implemented, computational checks passed; M6 remains open pending Phase 2 and an independent clean-environment rebuild.
 
 The pre-2024 evidence and locked evaluation rules for Phase 2 imputation and PCA are recorded in `PHASE2_MISSINGNESS_AND_PCA_EVIDENCE_2023.md`.
 
@@ -42,4 +42,12 @@ python scripts/run_phase5.py
 ```
 
 The full command runs 25 repeated grouped nested validations and 200 complete paired-label permutation pipelines, so it is intentionally computationally expensive. Use `python scripts/run_phase5.py --reuse-existing` only to revalidate and fingerprint already completed fits. Results and model limitations are recorded in `results/phase5/PHASE5_RESULTS.md` and `results/phase5/MODEL_CARD.md`.
+
+## Reproduce Phase 6
+
+```powershell
+python scripts/run_phase6.py
+```
+
+The default command executes Phase 6 twice and compares deterministic output hashes. `python scripts/run_phase6.py --verify-against-existing` snapshots an existing completed run, reruns once and compares it, while `--reuse-existing` only revalidates and fingerprints present artifacts. The detailed results and project-level synthesis are in `results/phase6/PHASE6_RESULTS.md` and `results/phase6/FINAL_SCIENTIFIC_SYNTHESIS.md`; implementation safeguards are recorded in `records/PHASE6_IMPLEMENTATION_RECORD.md`.
 
