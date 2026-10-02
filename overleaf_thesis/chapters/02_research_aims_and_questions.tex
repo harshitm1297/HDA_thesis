@@ -1,0 +1,39 @@
+\chapter{Research aims and questions}
+\label{chap:research_aims_and_questions}
+
+\section{Primary aim}
+\label{sec:primary_aim}
+
+The primary aim was to identify internally reproducible within-patient proteomic differences between tumour and matched non-tumour tissue while preserving the uncertainty created by missing values, high dimensionality and incomplete project metadata.
+
+\section{Secondary aims}
+\label{sec:secondary_aims}
+
+The secondary aims were to:
+
+\begin{enumerate}
+\item construct an immutable and auditable data model from the source workbook;
+\item characterise specimen quality, pair concordance, multivariate structure and missingness before differential testing;
+\item estimate paired abundance changes and paired detection differences with multiplicity control;
+\item organise feature-level evidence into versioned biological pathways without converting enrichment into causal claims;
+\item assess whether stable patient response subgroups are supported;
+\item test tissue-state predictability using leakage-controlled machine learning and appropriate baselines;
+\item quantify sensitivity to analytical choices and individual patients;
+\item integrate inference, pathways and predictive stability without allowing one evidence type to substitute for another; and
+\item freeze a prospective validation-readiness package that cannot be redesigned after future outcomes are observed.
+\end{enumerate}
+
+\section{Research questions}
+\label{sec:research_questions}
+
+The analysis addressed the following questions:
+
+\begin{itemize}
+\item Which source features exhibit reproducible quantitative tumour-minus-non-tumour changes?
+\item Which features show reproducible paired detection asymmetry?
+\item Which Reactome pathways organise these changes across both ranked and patient-level views?
+\item Does the patient-change geometry support stable molecular response clusters?
+\item Can tumour and matched non-tumour specimens be distinguished using models evaluated on entirely held-out patients?
+\item Are feature, pathway and prediction conclusions robust to plausible representations, cohort definitions, complete-pair thresholds, estimators, seeds and patient deletions?
+\item Which findings are sufficiently robust for prospective follow-up, and what evidence is still missing?
+\end{itemize}

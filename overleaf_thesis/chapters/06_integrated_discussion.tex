@@ -1,0 +1,58 @@
+\chapter{Integrated discussion}
+\label{chap:integrated_discussion}
+
+\section{Strength and nature of the tumour-associated signal}
+\label{sec:strength_and_nature_of_the_tumour_associated_signal}
+
+The tumour/non-tumour contrast is strong by several measures: coverage, diagnostic PCA, thousands of multiplicity-controlled feature results, hundreds of concordant pathways and high nested classification AUC. Crucially, the signal also survives exact patient deletion, paired-label permutation and multiple analytical scenarios. It is therefore unlikely to be explained by one patient or random label assignment.
+
+Strength does not imply specificity. Tumour tissues have broader detection coverage but lower median observed abundance, and a coverage-only model reaches AUC 0.868. This means part of the predictive signal is tied to global measurement availability. The abundance PCA baseline also approaches the high-dimensional models. The most defensible interpretation is a broad tissue-state difference combining biology, cellular composition and measurement structure.
+
+\section{Abundance and detection are complementary}
+\label{sec:abundance_and_detection_are_complementary}
+
+The absence of strict concordant A-tier features is informative. Quantitative testing requires many both-observed pairs; detection testing requires discordance. Merging these branches would either discard sparse but stable detection patterns or force imputed values into quantitative inference. Maintaining separate evidence tiers respects the data-generating ambiguity and avoids treating absence of measurement as a numerical concentration.
+
+The strong tumour-favouring detection asymmetry may include genuine tumour-associated detectability, but tumour specimens also have higher global coverage. Without raw files, run order, acquisition parameters or feature-level detection probabilities, feature-specific detection effects cannot be separated completely from global tissue-correlated measurement behaviour.
+
+\section{Biological interpretation}
+\label{sec:biological_interpretation}
+
+RNA processing, splicing, translation and immune/antigen-handling enrichment on the positive side are compatible with active biosynthetic and host-response organisation in tumour tissue. Negative mitochondrial respiration, extracellular-matrix, complement and haemostasis signatures suggest altered metabolic and tissue-composition organisation. However, pathway scoring measures coordinated abundance in mixed tissue extracts. It does not measure flux, cell-specific activation or causal regulation.
+
+The negative extracellular and plasma-associated signals may reflect stromal, vascular or extracellular content in matched non-tumour tissue, altered tumour composition, or sampling differences. Similarly, viral-disease-labelled Reactome sets can appear because they share interferon or host machinery and must not be interpreted as evidence of viral infection or HPV status.
+
+\section{Heterogeneity without subtypes}
+\label{sec:heterogeneity_without_subtypes}
+
+Patient-change PCA shows structured heterogeneity, particularly along mitochondrial/metabolic axes, but no cluster solution satisfies stability requirements. Reporting a \texttt{\detokenize{k=2}} visual partition as a subtype would turn an exploratory geometry into a categorical clinical claim. The correct negative result is that stable patient response subtypes were not established in 42 patients under the declared procedure.
+
+\section{Predictive performance and AI contribution}
+\label{sec:predictive_performance_and_ai_contribution}
+
+The AI contribution is methodological rather than promotional. The project demonstrates that complex and simple models can be compared under identical grouped nested validation; that coverage and PCA baselines are essential; that preprocessing and selection must be fold-local; and that a full nested permutation null provides stronger evidence than comparing one observed score with 0.5.
+
+The leading model's high AUC is credible as internal tissue-state separation, but not as clinical diagnosis. There are no healthy participants, benign lesions, inflammatory controls, premalignant lesions, other cancers, prospective samples or independent laboratories. Both samples from each patient are surgically paired tissues. Furthermore, dense elastic-net fits and correlated substitutes prevent a compact mechanistic-panel interpretation.
+
+\section{Robustness and prioritisation}
+\label{sec:robustness_and_prioritisation}
+
+The multiverse shows both stability and choice sensitivity. Many signs are stable, but core-list size changes materially under normalisation, cohort and support thresholds. Patient-deletion results show that most tiered findings are not driven by one individual, while the pathway leading-edge criterion prevents a stable pathway name from hiding unstable supporting proteins.
+
+The 165 high-priority rows are a transparent follow-up queue, not a posterior probability of biomarker validity. Phase 7 further reduces redundancy without creating a weighted score. The 20 locked targets balance branch-specific evidence and future measurement roles. Their validation state remains \texttt{\detokenize{not_executed}}.
+
+\section{What is genuinely new}
+\label{sec:what_is_genuinely_new}
+
+The work's originality lies in the integrated analytical architecture:
+
+\begin{itemize}
+\item simultaneous preservation of quantitative and detection estimands;
+\item a patient-paired empirical-Bayes inference branch with explicit sensitivity cohorts;
+\item two-view pathway evidence and leading-edge traceability;
+\item strict refusal to call unstable clusters subtypes;
+\item repeated nested patient-grouped AI with leakage failure tests and complete permutation reruns;
+\item a 24-scenario inference/pathway multiverse and exact patient influence analysis;
+\item a limitations-aware feature evidence table rather than a decontextualised protein list; and
+\item a Pareto- and redundancy-based prospective hand-off that avoids reusing discovery performance as validation.
+\end{itemize}

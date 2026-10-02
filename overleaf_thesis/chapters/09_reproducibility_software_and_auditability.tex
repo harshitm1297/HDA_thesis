@@ -1,0 +1,45 @@
+\chapter{Reproducibility, software and auditability}
+\label{chap:reproducibility_software_and_auditability}
+
+\section{Repository organisation}
+\label{sec:repository_organisation}
+
+The repository separates:
+
+\begin{itemize}
+\item \texttt{\detokenize{config/}}: frozen analytical thresholds and grids;
+\item \texttt{\detokenize{data/interim/}}: regenerable matrices and manifests;
+\item \texttt{\detokenize{src/oral_cancer/}}: reusable statistical, pathway, ML, robustness and readiness modules;
+\item \texttt{\detokenize{scripts/}}: numbered phase entry points;
+\item \texttt{\detokenize{tests/}}: method contracts, leakage failure tests and output checks;
+\item \texttt{\detokenize{results/phase*/}}: tables, figures, validations and manifests; and
+\item \texttt{\detokenize{records/}}: implementation and decision histories.
+\end{itemize}
+
+\section{Environment}
+\label{sec:environment}
+
+The completed Phase 6–7 environment records Python 3.12.14, NumPy 2.3.5, pandas 3.0.1, SciPy 1.18.1 and scikit-learn 1.7.2 on Windows 11. Random seeds, Reactome release/checksum, source hash, configuration files and output SHA-256 hashes are recorded.
+
+\section{Automated checks}
+\label{sec:automated_checks}
+
+The final Phase 0–7 suite contains 35 passing tests. These cover sample parsing, exact pairing, matrix orientation, tumour-minus-non-tumour sign, missing-data preservation, cohort pairing, multiple-testing functions, pathway resource/version checks, patient scoring, leakage failure states, outer-test prediction completeness, multiverse dimensions, leave-one-patient-out pairing, claim scopes, Pareto dominance, power monotonicity and shortlist containment.
+
+Phase 6 reproduced 22 compared outputs byte-for-byte in the pinned local environment. Phase 7 reproduced 11 core outputs exactly. The full clean-environment, workbook-to-final-output rebuild remains open, so M6 is not described as fully closed.
+
+\section{Regeneration commands}
+\label{sec:regeneration_commands}
+
+\begin{verbatim}
+python scripts/run_phase0.py
+python scripts/run_phase1.py
+python scripts/run_phase3.py
+python scripts/run_phase4.py
+python scripts/run_phase5.py
+python scripts/run_phase6.py
+python scripts/run_phase7.py
+python -m unittest discover -s tests -v
+\end{verbatim}
+
+Phase 5 is computationally expensive because it runs repeated nested validation and 200 complete permutations. Phase 6 additionally executes 42 nested leave-one-patient-out model fits.

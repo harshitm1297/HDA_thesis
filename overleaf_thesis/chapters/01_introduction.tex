@@ -1,0 +1,41 @@
+\chapter{Introduction}
+\label{chap:introduction}
+
+\section{Scientific setting}
+\label{sec:scientific_setting}
+
+Oral cancer is a clinically and biologically heterogeneous disease family. Proteomic analysis of tumour tissue and a matched comparison specimen can reveal coordinated changes in protein abundance, detection and pathway organisation. A paired design is especially valuable because each patient serves as their own comparison, reducing between-patient variation. However, it does not automatically remove confounding by tissue composition, sampling distance, inflammation, field cancerisation, purity, pre-analytical handling or platform effects.
+
+Discovery proteomics creates a characteristic \texttt{\detokenize{p >> n}} problem: thousands of features are measured in relatively few independent patients. Conventional univariate analysis can produce large significant lists if multiplicity, effect size and variance instability are not handled together. Predictive modelling is even more vulnerable because filtering, imputation, scaling, feature selection and tuning can leak information from test samples. Missing abundance values add another difficulty. In mass-spectrometry proteomics, blanks can combine intensity-dependent non-detection, stochastic failure, filtering and other mechanisms; they cannot safely be treated as measured zeros or assumed to share one missing-data mechanism \parencite{webb2015,lazar2016,obrien2018,li2023}.
+
+This project was therefore designed around traceability, patient pairing, separation of quantitative abundance from detection, repeated sensitivity analysis and strict claim boundaries. The work deliberately prioritises a defensible internal evidence package over a large biomarker list.
+
+\section{Contribution of the thesis}
+\label{sec:contribution_of_the_thesis}
+
+The technical contribution is an end-to-end modular workflow that intersects four domains:
+
+\begin{itemize}
+\item \textbf{Proteomics:} preservation of the supplied feature units, positive-intensity scale, measurement missingness and protein-inference uncertainty.
+\item \textbf{Bioinformatics:} versioned Reactome pathway mapping, ranked enrichment, leading-edge analysis and patient pathway scores.
+\item \textbf{Data science:} immutable data modelling, robust QC, missingness atlases, multiverse analysis, Pareto prioritisation, reproducibility manifests and explicit data contracts.
+\item \textbf{Artificial intelligence and machine learning:} elastic-net and linear-SVM classifiers, fold-local preprocessing and feature selection, repeated patient-grouped nested validation, calibration, held-out permutation importance, label-permutation nulls and stability analysis.
+\end{itemize}
+
+Unlike a workflow that ends with a classifier score, this project carries limitations and permitted claims into the final feature table and prospective hand-off. Every source row remains traceable through stable feature keys.
+
+\section{Scope boundary}
+\label{sec:scope_boundary}
+
+Only the supplied workbook contributes patient-level observations, tissue labels and quantitative measurements. Reactome release 86 contributes pathway membership only. Published research through 31 December 2023 supports method selection and interpretation. No literature source supplies missing stage, site, HPV, batch, run order, outcomes, ethics status, instrument settings or missing abundance values.
+
+The term \textbf{matched non-tumour tissue} is used throughout. The dataset does not establish that these specimens are healthy, histologically normal, cancer-free or free of field effects. Similarly, the broad label \textbf{oral cancer} is retained because exact subsite and pathology are unavailable.
+
+\section{Methodological evidence base through 2023}
+\label{sec:methodological_evidence_base_through_2023}
+
+The missing-data strategy is grounded in evidence that label-free proteomics contains multiple missingness mechanisms and that imputation performance depends on those mechanisms \parencite{webb2015,lazar2016,obrien2018,chion2022}. \textcite{li2023} further model detection as intensity dependent rather than purely random or strictly censored. This evidence supports retaining observed abundance and detection as separate views and treating imputation as a benchmarked sensitivity rather than a default prerequisite.
+
+Paired empirical-Bayes inference combines the design efficiency of within-patient contrasts with cross-feature variance stabilisation \parencite{smyth2004,ritchie2015}, while BH correction addresses the expected proportion of false discoveries across thousands of tests \parencite{benjamini1995}. Systems interpretation follows ranked enrichment rather than relying only on a hard feature cutoff \parencite{subramanian2005}, with pathway-overlap cautions from \textcite{khatri2012}.
+
+The predictive design responds to evidence that model selection outside validation folds produces optimistic error estimates \parencite{varma2006} and that leakage is a recurring source of irreproducibility in health-related machine learning \parencite{davis2023,kapoor2023}. Elastic net is used because it regularises correlated high-dimensional predictors \parencite{zou2005}, while stability summaries prevent one fitted coefficient vector from being mistaken for a reproducible panel \parencite{meinshausen2010}. TRIPOD and PROBAST provide the reporting and risk-of-bias boundary, not a certificate of clinical validity \parencite{collins2015,wolff2019}.

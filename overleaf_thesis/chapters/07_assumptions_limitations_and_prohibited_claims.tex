@@ -1,0 +1,76 @@
+\chapter{Assumptions, limitations and prohibited claims}
+\label{chap:assumptions_limitations_and_prohibited_claims}
+
+\section{Operational assumptions}
+\label{sec:operational_assumptions}
+
+\begin{longtable}{@{}p{0.235\textwidth} p{0.235\textwidth} p{0.235\textwidth} p{0.235\textwidth}@{}}
+\caption{Operational assumptions: structured summary}\\
+\toprule
+\textbf{ID} & \textbf{Working assumption} & \textbf{Basis} & \textbf{Confidence and safeguard} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{ID} & \textbf{Working assumption} & \textbf{Basis} & \textbf{Confidence and safeguard} \\
+\midrule
+\endhead
+A01 & \texttt{\detokenize{P<number>N/T}} identifies one matched patient pair & Consistent naming and source report & High; exact one-N/one-T rule and grouped resampling \\
+A02 & Positive values are not conventional log2 values & Range 0.002342–7.311 billion & High; observed values transformed with log2 only \\
+A03 & Blanks are missing/unreported, not measured zero & Workbook representation & Mechanism uncertain; never zero-filled; detection analysed separately \\
+A04 & Source row is the safest feature unit & Protein-group terminology and absent accessions & High; stable keys; no silent splitting or averaging \\
+A05 & Patient is the independent biological unit & Matched design & Verified; paired inference and patient-grouped resampling \\
+A06 & Uncentred and median-centred log2 are plausible views & Unknown upstream normalisation & Moderate; compared in sensitivity analysis \\
+A07 & No-imputation abundance is the primary inference & Unknown missingness mechanism and literature & Moderate-high; detection separated; Phase 2 remains required \\
+A08 & Literature may justify methods but not fill project facts & Data-only scope & High; external knowledge restricted to methods and pathways \\
+\bottomrule
+\end{longtable}
+
+\section{Limitation register}
+\label{sec:limitation_register}
+
+\begin{longtable}{@{}p{0.188\textwidth} p{0.188\textwidth} p{0.188\textwidth} p{0.188\textwidth} p{0.188\textwidth}@{}}
+\caption{Limitation register: structured summary}\\
+\toprule
+\textbf{ID} & \textbf{Missing information or constraint} & \textbf{Consequence} & \textbf{Mitigation} & \textbf{Claims still prohibited} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{ID} & \textbf{Missing information or constraint} & \textbf{Consequence} & \textbf{Mitigation} & \textbf{Claims still prohibited} \\
+\midrule
+\endhead
+L01 & Raw spectra and complete quantitative export & Identification, interference and instrument QC cannot be repeated & Preserve matrix, statistical QC, stable-feature emphasis & Raw-data reprocessing validation \\
+L02 & Instrument, acquisition, Spectronaut version, quantity definition and upstream normalisation & Exact scale generation is uncertain & Restrained representations and multiverse & Exact DIA/acquisition claims \\
+L03 & Search database, peptide evidence, accessions, protein inference and identification FDR & Gene labels do not prove individual proteins/isoforms & Preserve rows and ambiguity flags & Isoform-specific claims or reconstructed ID FDR \\
+L04 & Batch, run order, preparation batch and controls & Technical structure cannot be assigned or corrected & Latent diagnostics and sensitivity analysis & Proof of batch-free data or batch-adjusted causality \\
+L05 & Site, histology, stage, grade, HPV, purity, inflammation, exposures and treatment & Clinical confounding and heterogeneity cannot be modelled & Broad labels and paired tissue estimand & Stage/HPV/subsite/exposure conclusions \\
+L06 & Distance and pathology of non-tumour specimens & Comparison tissue may contain field effects or inflammation & Use “matched non-tumour” & Healthy-control or cancer-free-population claims \\
+L07 & Cause of each missing value & Low abundance and technical filtering cannot be separated & Missingness preserved; detection analysed separately & Blank equals zero or biological absence \\
+L08 & Independent cohort and orthogonal assay & Generalisability and assay transfer unproven & Nested validation, permutation, robustness and locked protocol & Externally validated biomarker or clinical panel \\
+L09 & Outcomes and intended-use population & Prognosis, response and screening cannot be studied & No surrogate outcomes & Survival, recurrence, treatment response or screening \\
+L10 & Ethics, consent, controller and sharing permissions & Public/cross-border sharing not authorised from analysis files & Keep data local and pseudonymous & GDPR/EHDS compliance or unrestricted release \\
+L11 & Only 42 independent patients & High-dimensional estimates remain unstable & Pairing, moderation, shrinkage, grouped nesting and influence analysis & Clinical-grade performance or fine subtypes \\
+L12 & No healthy, benign, premalignant or asymptomatic groups & Cancer specificity and early detection unmeasured & Tissue-state interpretation only & Screening, early diagnosis or differential diagnosis \\
+\bottomrule
+\end{longtable}
+
+\section{Additional analytical limitations}
+\label{sec:additional_analytical_limitations}
+
+Phase 2 is missing, so the thesis cannot claim that findings are invariant to mechanism-aware imputation or missing-aware PCA choices. The empirical-Bayes implementation uses a transparent moment estimator rather than the complete limma software stack. Pathway permutations and Reactome mappings inherit gene-set overlap and database incompleteness. Model performance intervals across repeated folds are resampling distributions over the same patients, not independent-cohort confidence intervals. Pareto fronts depend on the declared objectives and shortlist capacity. Correlation components are sensitive to threshold and can combine features through transitive paths.
+
+\section{Explicitly prohibited conclusions}
+\label{sec:explicitly_prohibited_conclusions}
+
+This thesis does not establish:
+
+\begin{itemize}
+\item an externally validated biomarker or protein panel;
+\item a clinical diagnostic, screening, prognostic or treatment-response test;
+\item oral-cancer specificity or early-disease sensitivity;
+\item causal pathway activation or inhibition;
+\item molecular or clinical patient subtypes;
+\item individual risk probabilities;
+\item platform-independent quantitative concentrations;
+\item a CE-mark-ready or IVDR-conforming device; or
+\item permission for public release of patient-level data.
+\end{itemize}

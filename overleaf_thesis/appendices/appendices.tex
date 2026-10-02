@@ -1,0 +1,59 @@
+\chapter{Principal result artifacts}
+\label{app:principal_result_artifacts}
+
+\begin{longtable}{@{}p{0.470\textwidth} p{0.470\textwidth}@{}}
+\caption{Appendix A. Principal result artifacts: structured summary}\\
+\toprule
+\textbf{Artifact} & \textbf{Purpose} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Artifact} & \textbf{Purpose} \\
+\midrule
+\endhead
+\texttt{\detokenize{data/interim/sample_manifest.csv}} & Immutable specimen/patient/tissue mapping \\
+\texttt{\detokenize{data/interim/feature_manifest.csv}} & Source-row keys and identifier flags \\
+\texttt{\detokenize{results/phase1/feature_missingness.csv}} & Feature-level observation and detection structure \\
+\texttt{\detokenize{results/phase3/integrated_candidate_evidence.csv}} & All feature-level abundance/detection evidence \\
+\texttt{\detokenize{results/phase4/integrated_pathway_evidence.csv}} & Ranked and paired pathway evidence \\
+\texttt{\detokenize{results/phase5/outer_test_predictions.csv}} & Complete outer-test predictions \\
+\texttt{\detokenize{results/phase5/stable_exploratory_panel.csv}} & Stability catalogue, not a validated panel \\
+\texttt{\detokenize{results/phase6/integrated_evidence_table.csv}} & Full 8,071-row cross-phase evidence table \\
+\texttt{\detokenize{results/phase6/claim_ledger.csv}} & Claims, evidence locators and limitations \\
+\texttt{\detokenize{results/phase7/candidate_validation_readiness.csv}} & Pareto and redundancy-aware readiness evidence \\
+\texttt{\detokenize{results/phase7/locked_handoff_shortlist.csv}} & Frozen prospective follow-up targets \\
+\texttt{\detokenize{results/phase7/prospective_validation_protocol.json}} & Machine-readable future-study safeguards \\
+\bottomrule
+\end{longtable}
+
+\chapter{Configuration files}
+\label{app:configuration_files}
+
+Analytical choices are stored in \texttt{\detokenize{config/analysis_contract.yml}}, \texttt{\detokenize{config/phase1.yml}}, \texttt{\detokenize{config/phase3.yml}}, \texttt{\detokenize{config/phase4.yml}}, \texttt{\detokenize{config/phase5.yml}}, \texttt{\detokenize{config/phase6.yml}} and \texttt{\detokenize{config/phase7.yml}}. These files should be archived with any thesis submission so thresholds can be distinguished from results copied into prose.
+
+\chapter{Reporting status}
+\label{app:reporting_status}
+
+This Markdown document is the source thesis manuscript. Candidate name, institution, programme and supervisor remain placeholders. Formatting required by a university—cover page, declaration, acknowledgements, pagination, heading numbering and citation style—should be applied when converting this source to Word, LaTeX or PDF. Numerical results should continue to be generated from saved machine-readable outputs rather than manually edited in the manuscript.
+
+\chapter{Frozen configuration summary}
+\label{app:frozen_configuration_summary}
+
+\begin{longtable}{@{}p{0.470\textwidth} p{0.470\textwidth}@{}}
+\caption{Appendix D. Frozen configuration summary: structured summary}\\
+\toprule
+\textbf{Phase} & \textbf{Frozen settings central to interpretation} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Phase} & \textbf{Frozen settings central to interpretation} \\
+\midrule
+\endhead
+1 & QC observation threshold 80\%; robust-z clipping ±5; specimen flag threshold 3.5 within tissue; at least two diagnostic families; 128 robust-covariance starts; seed 20231031 \\
+3 & Primary complete-pair minimum 30; sensitivity minima 20 and 35; abundance and detection FDR 0.05; abundance effect ≥1 log2; direction consistency ≥0.70; detection difference ≥0.20; at least ten discordant pairs \\
+4 & Reactome release 86; pathway sizes 10–300; 1,000 ranked permutations; 20,000 patient sign flips; FDR 0.05; 500 heterogeneity features; 200 PCA bootstraps; consensus \texttt{\detokenize{k=2–5}}; 200 80\%-patient resamples \\
+5 & 25 outer repeats; six outer and five inner grouped folds; \texttt{\detokenize{C}} grid 0.0001–100; elastic-net L1 ratios 0.1, 0.5, 0.9, 1.0; SVM candidate counts 25, 50, 100; 200 paired-label permutations; stable selection ≥0.60; sign consistency ≥0.80; seed 20231117 \\
+6 & 24 scenarios; integration thresholds: sign ≥0.90, multiverse core ≥0.80, LOPO retention ≥0.80, ML selection ≥0.60; pathway direction ≥0.80 and median leading-edge Jaccard ≥0.30; 1,000 overlap permutations; seed 20231201 \\
+7 & 12 abundance and eight detection slots; abundance complete pairs ≥35; branch LOPO retention ≥0.90; absolute Spearman threshold 0.80 with ≥25 pairs; familywise alpha 0.05; planning power 0.80/0.90 \\
+\bottomrule
+\end{longtable}

@@ -1,0 +1,36 @@
+\chapter{Study material and governing principles}
+\label{chap:study_material_and_governing_principles}
+
+\section{Source workbook}
+\label{sec:source_workbook}
+
+The immutable source is \texttt{\detokenize{OC_Dataset_84Sample_v2_24012024.xlsx}}, worksheet \texttt{\detokenize{Sheet1}}, range \texttt{\detokenize{A1:CG8072}}. Its SHA-256 fingerprint is:
+
+\begin{verbatim}
+65211B375E366D0CF6078E1016A3D29867EFC5E0EBA10D97F1F0282B25161DA8
+\end{verbatim}
+
+The first field contains supplied gene-style protein-group labels; the remaining 84 columns are specimens. Sample IDs follow the anchored expression \texttt{\detokenize{^P(?P<patient>[0-9]+)(?P<tissue>[NT])$}}. This yields patients \texttt{\detokenize{P1}}–\texttt{\detokenize{P42}}, each with one \texttt{\detokenize{N}} and one \texttt{\detokenize{T}} specimen. No sample was removed from the primary cohort.
+
+\section{Unit of analysis and estimands}
+\label{sec:unit_of_analysis_and_estimands}
+
+The patient is the independent biological unit. For patient (i) and feature (j), the quantitative estimand is:
+
+\[
+d_{ij}=\log_2(T_{ij})-\log_2(N_{ij}),
+\]
+
+defined only when both positive abundances are observed. A positive value indicates higher observed abundance in tumour; a negative value indicates higher observed abundance in matched non-tumour tissue.
+
+Detection is represented separately. Let (D\_\{ijT\}) and (D\_\{ijN\}) indicate finite positive measurements. The paired detection contrast is based on tumour-only and non-tumour-only observations. Blank cells remain missing; they are not set to zero.
+
+\section{Feature identity}
+\label{sec:feature_identity}
+
+Stable keys \texttt{\detokenize{F00001}}–\texttt{\detokenize{F08071}} preserve source-row identity. Duplicate labels are not merged, and semicolon-delimited labels are not split. This is necessary because accessions, peptide evidence, protein-inference groups and identification FDR are unavailable. Gene-style labels support cautious annotation, not isoform- or protein-specific certainty.
+
+\section{Evidence states and claim discipline}
+\label{sec:evidence_states_and_claim_discipline}
+
+Repository evidence is classified as \texttt{\detokenize{verified_source}}, \texttt{\detokenize{derived_from_matrix}}, \texttt{\detokenize{literature_supported_assumption}}, \texttt{\detokenize{unresolved}}, or \texttt{\detokenize{not_testable_with_current_data}}. A published convention cannot convert an unresolved project fact into a verified source fact. Final claims are restricted to internal paired-tissue associations, computational robustness and prospective follow-up readiness.

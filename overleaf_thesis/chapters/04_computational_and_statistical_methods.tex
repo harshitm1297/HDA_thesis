@@ -1,0 +1,163 @@
+\chapter{Computational and statistical methods}
+\label{chap:computational_and_statistical_methods}
+
+\section{Phase 0: immutable data model and provenance}
+\label{sec:phase_0_immutable_data_model_and_provenance}
+
+The validator checked workbook identity, worksheet, identifier field, dimensions, unique sample syntax, exact pair completeness, numerical coercion, invalid values and missing identifiers. It created:
+
+\begin{itemize}
+\item \texttt{\detokenize{X_raw}}, an 84 × 8,071 abundance matrix;
+\item \texttt{\detokenize{D}}, an 84 × 8,071 finite-detection matrix;
+\item a sample manifest and feature manifest;
+\item a 42 × 8,071 paired log2-difference matrix; and
+\item a 42 × 8,071 paired detection-state matrix with \texttt{\detokenize{0=neither}}, \texttt{\detokenize{1=N-only}}, \texttt{\detokenize{2=T-only}}, and \texttt{\detokenize{3=both}}.
+\end{itemize}
+
+The source workbook was never modified. Input and output hashes, data dictionaries and schema checks implement FAIR-style traceability \parencite{wilkinson2016} and MIAPE-informed reporting discipline \parencite{taylor2007}, while documenting unavailable metadata rather than implying MIAPE completeness.
+
+\section{Phase 1: quality control and missingness intelligence}
+\label{sec:phase_1_quality_control_and_missingness_intelligence}
+
+QC was performed before feature-level differential analysis. Specimen diagnostics included detected-feature coverage, observed log2 distribution summaries, pairwise-complete Spearman correlations, within-pair detection Jaccard similarity, within-pair absolute log2 differences and label-blind multivariate structure.
+
+A diagnostic feature had to be observed in at least 80\% of specimens. The 3,759 eligible features were median-filled only for this QC view, median/MAD scaled, clipped at robust z-scores of ±5 and decomposed by singular-value decomposition. This filled matrix was never exported for inference or prediction.
+
+Five anomaly families were defined: coverage, observed-value distribution, sample correlation, matched-pair concordance and multivariate structure. Robust z-scores were calculated separately inside \texttt{\detokenize{N}} and \texttt{\detokenize{T}} tissue classes to avoid treating a global tissue difference as a technical anomaly. A specimen required support from at least two families to be flagged. If either specimen was flagged, the entire pair entered the sensitivity-exclusion cohort; the primary cohort retained every pair.
+
+Missingness was summarised by specimen, feature, tissue, patient-pair state and observed-abundance decile. Exact paired binary tests were calculated descriptively but no Phase 1 feature was called significant.
+
+\section{Phase 2: prespecified but unimplemented benchmark}
+\label{sec:phase_2_prespecified_but_unimplemented_benchmark}
+
+Phase 2 was designed to benchmark no-imputation, local-similarity, low-rank/missing-aware PCA, restricted censored and detection-probability approaches. Artificial masks were to combine uniform, intensity-dependent and mixed missingness at the patient-pair level. Evaluation criteria included log2 MAE/RMSE, abundance-decile bias, paired-effect preservation, variance compression, correlation distortion, detection preservation and downstream rank stability.
+
+The PCA benchmark was to compare complete-feature SVD, the Phase 1 diagnostic representation, missing-aware NIPALS or probabilistic PCA, and iterative low-rank reconstruction across observation thresholds. Selection by visual tissue separation, number of significant proteins or non-nested classifier performance was prohibited.
+
+\textbf{This phase has not been implemented.} Consequently, Phases 3–7 operate on the frozen no-imputation branch and remain conditional on the missing preprocessing benchmark. This is the largest incomplete computational dependency in the thesis.
+
+\section{Phase 3: paired abundance and detection inference}
+\label{sec:phase_3_paired_abundance_and_detection_inference}
+
+\subsection{Quantitative abundance}
+
+The primary analysis used uncentred observed log2 abundance, all 42 pairs and a minimum of 30 complete pairs per feature. For each eligible feature, the mean paired difference, ordinary standard error and t statistic were calculated. Feature variances were stabilised using an inverse-chi-square empirical-Bayes prior estimated across eligible features, following the variance-moderation principle of limma \parencite{smyth2004,ritchie2015} without claiming exact implementation equivalence.
+
+The moderated statistic can be represented schematically as:
+
+\[
+t_j^*=\frac{\bar d_j}{\sqrt{s_{j,*}^2/n_j}},
+\]
+
+where \(s_{j,*}^{2}\) combines the feature variance with the cross-feature prior. Two-sided p-values were adjusted with the Benjamini–Hochberg procedure \parencite{benjamini1995}.
+
+The abundance-core rule required:
+
+\begin{itemize}
+\item BH q-value ≤ 0.05;
+\item absolute mean log2 difference ≥ 1;
+\item direction consistency ≥ 70\%; and
+\item at least 30 complete patient pairs.
+\end{itemize}
+
+Stability was then assessed across representation, cohort and complete-pair thresholds. A stable abundance candidate required at least 80\% sign agreement and FDR support across eligible sensitivity runs, plus an unambiguous identifier.
+
+\subsection{Paired detection}
+
+For each feature, discordant pairs were divided into tumour-only and non-tumour-only detections. Under the null, either direction is equally likely conditional on discordance; an exact two-sided binomial/McNemar test was applied. BH adjustment was performed separately from the abundance family.
+
+The detection-core rule required:
+
+\begin{itemize}
+\item detection BH q-value ≤ 0.05;
+\item absolute tumour-minus-non-tumour detection-fraction difference ≥ 0.20; and
+\item at least ten discordant pairs.
+\end{itemize}
+
+The same direction, effect and FDR criteria had to survive the 35-pair unflagged sensitivity cohort. Detection evidence was never described as quantitative abundance.
+
+\section{Phase 4: pathways and patient heterogeneity}
+\label{sec:phase_4_pathways_and_patient_heterogeneity}
+
+\subsection{Ranked pathway enrichment}
+
+Reactome release 86, published in September 2023, was stored locally with a checksum. Ambiguous compound identifiers were excluded. Repeated gene symbols were collapsed by retaining the source row with the largest absolute moderated statistic under a deterministic audit rule. Human pathways containing 10–300 measured symbols were tested.
+
+A weighted running-sum statistic, 1,000 gene-set permutations, sign-specific normalisation and leading-edge extraction implemented a pre-ranked GSEA-like analysis \parencite{subramanian2005}. The finite minimum permutation p-value was 1/1,001. Pathway overlap and hierarchy were retained as interpretive limitations \parencite{khatri2012}.
+
+\subsection{Patient-level pathway scores}
+
+Only unambiguous features observed in all 42 pairs were eligible. Each patient's paired difference was divided by a robust feature scale without centring away the zero null. Pathway scores were means of available standardised changes. Twenty thousand whole-patient sign flips tested whether mean pathway scores differed from zero while preserving within-patient covariance. BH correction was applied separately to this family.
+
+\subsection{Patient-change geometry and clustering}
+
+No imputation was used. From the 1,350 fully observed paired-difference features, the 500 most variable nonconstant rows were robustly scaled and clipped. PCA described patient-change geometry. Bootstrap resampling of whole patients quantified explained-variance stability.
+
+Consensus clustering evaluated \texttt{\detokenize{k=2–5}} with 200 resamples containing 80\% of patients. A solution required PAC ≤ 0.10, mean within-cluster consensus ≥ 0.80, silhouette ≥ 0.25 and at least five patients per cluster. Failure of any threshold prevented subtype claims \parencite{monti2003,senbabaoglu2014}.
+
+\section{Phase 5: leakage-controlled machine learning}
+\label{sec:phase_5_leakage_controlled_machine_learning}
+
+The predictive target was tumour versus matched non-tumour tissue. This is a tissue-state experiment, not a diagnostic model. Both specimens from a patient always occupied the same fold.
+
+Twenty-five outer repeats split the 42 patients into six folds of seven patients. For each outer training set, five grouped inner folds selected preprocessing, hyperparameters and decision thresholds. Outer-test specimens could not influence feature eligibility, abundance medians, scaling, supervised ranking, PCA loadings, SVM calibration or threshold selection. Automated guards deliberately fail when patients overlap, pairs split, preprocessing includes test samples, full-data supervised filters enter a model, or outer-test metrics influence tuning. This follows the need for nested validation in high-dimensional model selection \parencite{varma2006,lewis2023} and the broader leakage cautions of \textcite{davis2023} and \textcite{kapoor2023}.
+
+Nine pipelines were evaluated:
+
+\begin{enumerate}
+\item abundance elastic-net logistic regression;
+\item abundance linear SVM;
+\item detection elastic net;
+\item detection linear SVM;
+\item combined-view elastic net;
+\item combined-view linear SVM;
+\item fold-local abundance PCA logistic baseline;
+\item specimen-coverage logistic baseline; and
+\item intercept-only null baseline.
+\end{enumerate}
+
+Elastic net combined L1 and L2 regularisation to address correlated high-dimensional predictors \parencite{zou2005}. The frozen grid contained seven \texttt{\detokenize{C}} values and four L1 ratios. SVMs used seven \texttt{\detokenize{C}} values and candidate counts of 25, 50 or 100; calibration and thresholds were learned from inner out-of-fold scores.
+
+Metrics included ROC AUC, balanced accuracy, sensitivity, specificity, Brier score and calibration descriptors. Stability outputs included selection frequency, coefficient-sign consistency and held-out permutation importance. Formal stability-selection theory motivated repeated selection but its guarantees were not assumed to transfer unchanged to this workflow \parencite{meinshausen2010}.
+
+The null experiment froze the combined elastic-net pipeline before execution. For each of 200 permutations, \texttt{\detokenize{N/T}} labels were swapped within patients and the complete nested pipeline—including filtering and tuning—was rerun.
+
+\section{Phase 6: stress testing and evidence synthesis}
+\label{sec:phase_6_stress_testing_and_evidence_synthesis}
+
+\subsection{Multiverse}
+
+Twenty-four prespecified scenarios crossed:
+
+\begin{itemize}
+\item uncentred and sample-median-centred log2 representations;
+\item all 42 and 35 unflagged patient pairs;
+\item minimum complete-pair thresholds of 20, 30 and 35;
+\item moderated and ordinary paired t estimators; and
+\item one explicit missingness strategy, \texttt{\detokenize{no_imputation}}.
+\end{itemize}
+
+The singleton missingness dimension documents the Phase 2 gap rather than pretending alternatives were tested. For every feature, the workflow calculated sign agreement, FDR-support frequency, core-support frequency, effect range and rank variability. This follows the multiverse principle of displaying reasonable analytical decisions instead of selecting a preferred result after inspection \parencite{steegen2016}.
+
+\subsection{Patient influence and pathway robustness}
+
+Abundance and detection inference were refitted 42 times, each time removing both specimens from one patient. The leading abundance elastic-net pipeline was also refitted in grouped leave-one-patient-out form, with five inner grouped folds on the remaining 41 patients.
+
+Reactome enrichment was rerun across all 24 scenarios. Pathway robustness required direction agreement ≥ 80\% and median leading-edge Jaccard overlap ≥ 0.30.
+
+\subsection{Integrated evidence}
+
+All joins used \texttt{\detokenize{feature_key}}. Missing evidence remained missing. A high-priority internal feature required unambiguous identity, robust abundance or detection evidence, and at least one additional pathway-leading-edge or stable-ML dimension. Inferential, pathway and predictive columns remained visible separately.
+
+Two negative controls were retained: the Phase 5 paired-label nested-pipeline null and a 1,000-permutation random feature-key overlap test comparing Phase 3 tiered candidates with Phase 5 stable ML features.
+
+\section{Phase 7: validation readiness}
+\label{sec:phase_7_validation_readiness}
+
+Phase 7 was added after the original roadmap ended. It does not perform external validation. All 165 high-priority internal candidates were separated into quantitative-abundance and detection-pattern branches.
+
+Branch-specific nondominated Pareto fronts replaced an arbitrary weighted score. One candidate dominates another only when it is no worse on every declared objective and better on at least one. Abundance objectives were absolute paired effect, adjusted-evidence strength, direction consistency, multiverse support, leave-one-out retention and number of additional evidence dimensions. Detection objectives replaced the abundance-specific fields with detection difference and detection sensitivity.
+
+Abundance redundancy was evaluated from patient-level paired-change vectors using pairwise-complete Spearman correlation. Edges required absolute rho ≥ 0.80 and at least 25 complete patient pairs. Connected components defined redundant candidate groups; one representative per component could enter the fixed-capacity hand-off.
+
+Prospective sample-size grids used assumed standardised effects rather than selected discovery estimates. Abundance calculations used two-sided noncentral-t power with familywise alpha divided across 12 targets. Detection calculations used an explicitly approximate McNemar normal formula across assumed detection differences and discordant fractions. These are sensitivity tables, not enrolment prescriptions.

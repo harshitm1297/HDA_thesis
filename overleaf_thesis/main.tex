@@ -1,0 +1,126 @@
+\documentclass[
+  12pt,
+  a4paper,
+  twoside=semi,
+  open=right,
+  headings=normal,
+  bibliography=totoc,
+  listof=totoc
+]{scrreprt}
+
+\input{metadata}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[british]{babel}
+\usepackage{lmodern}
+\usepackage{newunicodechar}
+\newunicodechar{≥}{\ensuremath{\geq}}
+\newunicodechar{≤}{\ensuremath{\leq}}
+\newunicodechar{±}{\ensuremath{\pm}}
+\newunicodechar{−}{\ensuremath{-}}
+\newunicodechar{×}{\ensuremath{\times}}
+\newunicodechar{→}{\ensuremath{\rightarrow}}
+\newunicodechar{≈}{\ensuremath{\approx}}
+\usepackage{microtype}
+\usepackage[a4paper,inner=35mm,outer=25mm,top=28mm,bottom=30mm,bindingoffset=5mm]{geometry}
+\usepackage{setspace}
+\onehalfspacing
+\usepackage{scrlayer-scrpage}
+\clearpairofpagestyles
+\ihead{\headmark}
+\ohead{\pagemark}
+\automark[section]{chapter}
+\setkomafont{pageheadfoot}{\small}
+
+\usepackage{graphicx}
+\graphicspath{{figures/}}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{tabularx}
+\usepackage{float}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{siunitx}
+\sisetup{detect-all,group-separator={,},group-minimum-digits=4}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*}
+\usepackage{xcolor}
+\definecolor{LinkBlue}{HTML}{174A7E}
+\usepackage{csquotes}
+\usepackage[
+  backend=biber,
+  style=authoryear-comp,
+  sorting=nyt,
+  maxcitenames=2,
+  maxbibnames=99,
+  giveninits=true,
+  doi=true,
+  url=true,
+  isbn=false
+]{biblatex}
+\addbibresource{references.bib}
+\usepackage[hidelinks,colorlinks=true,linkcolor=LinkBlue,citecolor=LinkBlue,urlcolor=LinkBlue]{hyperref}
+\usepackage[nameinlink,noabbrev]{cleveref}
+
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{2}
+\setkomafont{chapter}{\normalfont\huge\bfseries}
+\setkomafont{section}{\normalfont\Large\bfseries}
+\setkomafont{subsection}{\normalfont\large\bfseries}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55em}
+\emergencystretch=2em
+
+\begin{document}
+
+\begin{titlepage}
+  \centering
+  \vspace*{1.5cm}
+  {\Large \InstitutionName\par}
+  \vspace{0.6cm}
+  {\large \ProgrammeName\par}
+  \vfill
+  {\Huge\bfseries \ThesisTitle\par}
+  \vspace{0.7cm}
+  {\Large \ThesisSubtitle\par}
+  \vfill
+  \begin{tabular}{rl}
+    Candidate: & \CandidateName \\
+    Supervisor: & \SupervisorName \\
+    Submission: & \SubmissionDate \\
+    Evidence cutoff: & \EvidenceCutoff
+  \end{tabular}
+  \vfill
+  {\large A thesis submitted in partial fulfilment of the requirements for \ProgrammeName\par}
+\end{titlepage}
+
+\pagenumbering{roman}
+\input{frontmatter/declaration}
+\input{frontmatter/acknowledgements}
+\input{frontmatter/abstract}
+\tableofcontents
+\listoffigures
+\listoftables
+\input{frontmatter/abbreviations}
+\cleardoublepage
+
+\pagenumbering{arabic}
+\input{chapters/01_introduction}
+\input{chapters/02_research_aims_and_questions}
+\input{chapters/03_study_material_and_governing_principles}
+\input{chapters/04_computational_and_statistical_methods}
+\input{chapters/05_results}
+\input{chapters/06_integrated_discussion}
+\input{chapters/07_assumptions_limitations_and_prohibited_claims}
+\input{chapters/08_european_and_translational_alignment}
+\input{chapters/09_reproducibility_software_and_auditability}
+\input{chapters/10_conclusions_and_future_work}
+
+\printbibliography[title={References}]
+
+\appendix
+\input{appendices/appendices}
+
+\end{document}
