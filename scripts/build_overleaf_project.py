@@ -66,11 +66,15 @@ def inline(text: str) -> str:
         lambda match: protect(r"\href{" + match.group(2) + "}{" + escape_plain(match.group(1)) + "}"),
         text,
     )
-    text = re.sub(
-        r"`([^`]+)`",
-        lambda match: protect(r"\texttt{\detokenize{" + match.group(1) + "}}"),
-        text,
-    )
+    def render_code(match: re.Match[str]) -> str:
+        value = match.group(1)
+        # URL's \path form permits line breaks at separators in long file paths
+        # and underscore-heavy machine identifiers while retaining monospace.
+        if re.search(r"[/\\_.]", value):
+            return protect(r"\path{" + value + "}")
+        return protect(r"\texttt{\detokenize{" + value + "}}")
+
+    text = re.sub(r"`([^`]+)`", render_code, text)
     text = re.sub(r"\*\*([^*]+)\*\*", lambda match: protect(r"\textbf{" + escape_plain(match.group(1)) + "}"), text)
     text = re.sub(r"\*([^*]+)\*", lambda match: protect(r"\emph{" + escape_plain(match.group(1)) + "}"), text)
     text = escape_plain(text)
@@ -87,15 +91,42 @@ def table_to_latex(lines: list[str], caption: str) -> list[str]:
     rows = [[cell.strip() for cell in line.strip().strip("|").split("|")] for line in lines]
     rows = [row for row in rows if not all(re.fullmatch(r":?-{3,}:?", cell) for cell in row)]
     column_count = len(rows[0])
-    usable = 0.94 / column_count
-    spec = "@{}" + " ".join([f"p{{{usable:.3f}\\textwidth}}" for _ in range(column_count)]) + "@{}"
+    # Leave room for inter-column padding and use a narrow identifier column
+    # where appropriate. Ragged-right cells avoid the extreme word spacing that
+    # fully justified prose creates in narrow evidence tables.
+    first_header = rows[0][0].lower()
+    if column_count > 2 and first_header == "id":
+        widths = [0.05] + [0.80 / (column_count - 1)] * (column_count - 1)
+    elif column_count > 2 and first_header == "phase":
+        widths = [0.09] + [0.76 / (column_count - 1)] * (column_count - 1)
+    elif column_count == 2 and first_header == "artifact":
+        widths = [0.52, 0.36]
+    elif column_count == 2 and first_header == "phase":
+        widths = [0.12, 0.76]
+    else:
+        widths = [0.88 / column_count] * column_count
+    spec = "@{}" + " ".join(
+        f">{{\\raggedright\\arraybackslash}}p{{{width:.3f}\\textwidth}}"
+        for width in widths
+    ) + "@{}"
     output = [r"\begin{longtable}{" + spec + "}", r"\caption{" + inline(caption) + r"}\\", r"\toprule"]
     output.append(" & ".join(r"\textbf{" + inline(cell) + "}" for cell in rows[0]) + r" \\")
     output.extend([r"\midrule", r"\endfirsthead", r"\toprule"])
     output.append(" & ".join(r"\textbf{" + inline(cell) + "}" for cell in rows[0]) + r" \\")
     output.extend([r"\midrule", r"\endhead"])
     for row in rows[1:]:
-        output.append(" & ".join(inline(cell) for cell in row) + r" \\")
+        rendered = []
+        for cell in row:
+            value = inline(cell)
+            # File-system paths need discretionary breaks at slashes and dots;
+            # \path is provided by hyperref/url and preserves monospace styling.
+            value = re.sub(
+                r"\\texttt\{\\detokenize\{([^{}]*[/\\\\][^{}]*)\}\}",
+                lambda match: r"\\path{" + match.group(1) + "}",
+                value,
+            )
+            rendered.append(value)
+        output.append(" & ".join(rendered) + r" \\")
     output.extend([r"\bottomrule", r"\end{longtable}"])
     return output
 

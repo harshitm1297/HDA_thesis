@@ -7,7 +7,7 @@
 The validator checked workbook identity, worksheet, identifier field, dimensions, unique sample syntax, exact pair completeness, numerical coercion, invalid values and missing identifiers. It created:
 
 \begin{itemize}
-\item \texttt{\detokenize{X_raw}}, an 84 × 8,071 abundance matrix;
+\item \path{X_raw}, an 84 × 8,071 abundance matrix;
 \item \texttt{\detokenize{D}}, an 84 × 8,071 finite-detection matrix;
 \item a sample manifest and feature manifest;
 \item a 42 × 8,071 paired log2-difference matrix; and
@@ -120,7 +120,7 @@ Elastic net combined L1 and L2 regularisation to address correlated high-dimensi
 
 Metrics included ROC AUC, balanced accuracy, sensitivity, specificity, Brier score and calibration descriptors. Stability outputs included selection frequency, coefficient-sign consistency and held-out permutation importance. Formal stability-selection theory motivated repeated selection but its guarantees were not assumed to transfer unchanged to this workflow \parencite{meinshausen2010}.
 
-The null experiment froze the combined elastic-net pipeline before execution. For each of 200 permutations, \texttt{\detokenize{N/T}} labels were swapped within patients and the complete nested pipeline—including filtering and tuning—was rerun.
+The null experiment froze the combined elastic-net pipeline before execution. For each of 200 permutations, \path{N/T} labels were swapped within patients and the complete nested pipeline—including filtering and tuning—was rerun.
 
 \section{Phase 6: stress testing and evidence synthesis}
 \label{sec:phase_6_stress_testing_and_evidence_synthesis}
@@ -134,7 +134,7 @@ Twenty-four prespecified scenarios crossed:
 \item all 42 and 35 unflagged patient pairs;
 \item minimum complete-pair thresholds of 20, 30 and 35;
 \item moderated and ordinary paired t estimators; and
-\item one explicit missingness strategy, \texttt{\detokenize{no_imputation}}.
+\item one explicit missingness strategy, \path{no_imputation}.
 \end{itemize}
 
 The singleton missingness dimension documents the Phase 2 gap rather than pretending alternatives were tested. For every feature, the workflow calculated sign agreement, FDR-support frequency, core-support frequency, effect range and rank variability. This follows the multiverse principle of displaying reasonable analytical decisions instead of selecting a preferred result after inspection \parencite{steegen2016}.
@@ -147,7 +147,7 @@ Reactome enrichment was rerun across all 24 scenarios. Pathway robustness requir
 
 \subsection{Integrated evidence}
 
-All joins used \texttt{\detokenize{feature_key}}. Missing evidence remained missing. A high-priority internal feature required unambiguous identity, robust abundance or detection evidence, and at least one additional pathway-leading-edge or stable-ML dimension. Inferential, pathway and predictive columns remained visible separately.
+All joins used \path{feature_key}. Missing evidence remained missing. A high-priority internal feature required unambiguous identity, robust abundance or detection evidence, and at least one additional pathway-leading-edge or stable-ML dimension. Inferential, pathway and predictive columns remained visible separately.
 
 Two negative controls were retained: the Phase 5 paired-label nested-pipeline null and a 1,000-permutation random feature-key overlap test comparing Phase 3 tiered candidates with Phase 5 stable ML features.
 

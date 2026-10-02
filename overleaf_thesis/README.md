@@ -25,4 +25,4 @@ The project deliberately records Phase 2 as unimplemented and external validatio
 
 ## Validation status
 
-The generator verified all 16 `\\input` targets, all 15 figure files, all 25 citation keys, balanced LaTeX environments, unique labels and the absence of raw Markdown constructs. The Codex built-in LaTeX service could not start its platform runtime (`Unable to find standard directories for platform`), so final PDF compilation must be confirmed after import into Overleaf. This was an environment failure rather than a reported TeX source diagnostic.
+The generator verified all 16 `\\input` targets, all 15 figure files, all 25 citation keys, balanced LaTeX environments, unique labels and the absence of raw Markdown constructs. The project was then compiled locally with MiKTeX using the standard pdfLaTeX--Biber--pdfLaTeX sequence. The final A4 PDF is stored at `../output/pdf/oral_cancer_thesis_report.pdf`; its 76 pages were rasterised and visually reviewed after repairing long-table and long-identifier wrapping.

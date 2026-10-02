@@ -4,7 +4,7 @@
 \section{Phase and milestone summary}
 \label{sec:phase_and_milestone_summary}
 
-\begin{longtable}{@{}p{0.313\textwidth} p{0.313\textwidth} p{0.313\textwidth}@{}}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{0.090\textwidth} >{\raggedright\arraybackslash}p{0.380\textwidth} >{\raggedright\arraybackslash}p{0.380\textwidth}@{}}
 \caption{Phase and milestone summary: structured summary}\\
 \toprule
 \textbf{Phase} & \textbf{Principal output} & \textbf{Status} \\
@@ -78,7 +78,7 @@ Twelve specimens from seven patients (\texttt{\detokenize{P1}}, \texttt{\detoken
 \section{Paired feature inference}
 \label{sec:paired_feature_inference}
 
-The primary abundance rule admits 3,430 features. The empirical-Bayes variance prior has 3.776 prior degrees of freedom and scale 0.718. At BH q≤0.05, 2,194 features have quantitative evidence: 986 positive and 1,208 negative. Adding the effect, direction and support thresholds yields 669 primary core features. Cross-scenario stability and identifier requirements leave 614 \texttt{\detokenize{B_abundance}} candidates: 128 positive and 486 negative.
+The primary abundance rule admits 3,430 features. The empirical-Bayes variance prior has 3.776 prior degrees of freedom and scale 0.718. At BH q≤0.05, 2,194 features have quantitative evidence: 986 positive and 1,208 negative. Adding the effect, direction and support thresholds yields 669 primary core features. Cross-scenario stability and identifier requirements leave 614 \path{B_abundance} candidates: 128 positive and 486 negative.
 
 Examples include PRELP (mean log2 difference −5.346; moderated 95\% interval −6.052 to −4.640) and SERPINH1 (2.425; interval 2.091–2.760). Other precise candidates include OGN, SLC3A2, HSPH1, ALDH9A1, EPHX1, PEBP1, SOD3 and DDAH2.
 
@@ -89,7 +89,7 @@ Examples include PRELP (mean log2 difference −5.346; moderated 95\% interval �
 \label{fig:abundance_volcano}
 \end{figure}
 
-For detection, 2,887 rows have BH q≤0.05; 2,549 meet the primary effect and discordance rule; and 1,831 remain stable in the unflagged cohort. Among these stable patterns, 1,695 favour tumour detection and 136 favour matched non-tumour detection. After excluding ambiguous identifiers, 1,827 rows receive \texttt{\detokenize{C_detection_pattern}}. Leading tumour-detection labels include SLC38A2, NEDD1, KPNA7, NCAPG, NOMO1, HMGA2, WDR75, SLC38A5, POP4 and SLC39A14.
+For detection, 2,887 rows have BH q≤0.05; 2,549 meet the primary effect and discordance rule; and 1,831 remain stable in the unflagged cohort. Among these stable patterns, 1,695 favour tumour detection and 136 favour matched non-tumour detection. After excluding ambiguous identifiers, 1,827 rows receive \path{C_detection_pattern}. Leading tumour-detection labels include SLC38A2, NEDD1, KPNA7, NCAPG, NOMO1, HMGA2, WDR75, SLC38A5, POP4 and SLC39A14.
 
 \begin{figure}[p]
 \centering
@@ -98,7 +98,7 @@ For detection, 2,887 rows have BH q≤0.05; 2,549 meet the primary effect and di
 \label{fig:detection_volcano}
 \end{figure}
 
-No feature meets the strict \texttt{\detokenize{A_concordant}} rule. This is structurally plausible because quantitative eligibility requires many both-observed pairs, whereas strong detection evidence requires many discordant pairs. The branches are complementary rather than failed replicas of one another.
+No feature meets the strict \path{A_concordant} rule. This is structurally plausible because quantitative eligibility requires many both-observed pairs, whereas strong detection evidence requires many discordant pairs. The branches are complementary rather than failed replicas of one another.
 
 \section{Pathway organisation}
 \label{sec:pathway_organisation}
@@ -142,7 +142,7 @@ No consensus-clustering solution passes all frozen criteria. The least ambiguous
 
 Across 25 repeated nested partitions, the main results are:
 
-\begin{longtable}{@{}p{0.235\textwidth} p{0.235\textwidth} p{0.235\textwidth} p{0.235\textwidth}@{}}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{0.220\textwidth} >{\raggedright\arraybackslash}p{0.220\textwidth} >{\raggedright\arraybackslash}p{0.220\textwidth} >{\raggedright\arraybackslash}p{0.220\textwidth}@{}}
 \caption{Machine-learning performance: structured summary}\\
 \toprule
 \textbf{Pipeline} & \textbf{Median ROC AUC} & \textbf{Median balanced accuracy} & \textbf{Interpretation} \\
@@ -200,7 +200,7 @@ Exact leave-one-patient-out inference shows that 583/614 abundance candidates an
 
 Of 783 pathways, 596 meet direction agreement ≥80\% and median leading-edge Jaccard ≥0.30; 563 preserve identical direction across every scenario. The observed overlap between Phase 3 tiered candidates and stable Phase 5 ML features is 140. In 1,000 random feature-key permutations, the median is 45 and maximum 64, giving empirical p=0.000999. This indicates non-random convergence within the dataset, not independent replication.
 
-Frozen integration classifies 165 rows as \texttt{\detokenize{high_priority_internal}}, 1,909 as \texttt{\detokenize{robust_single_domain}}, 28 as \texttt{\detokenize{predictive_stability_only}} and 5,969 as \texttt{\detokenize{not_prioritized}}. The high-priority group contains 107 abundance and 58 detection candidates.
+Frozen integration classifies 165 rows as \path{high_priority_internal}, 1,909 as \path{robust_single_domain}, 28 as \path{predictive_stability_only} and 5,969 as \path{not_prioritized}. The high-priority group contains 107 abundance and 58 detection candidates.
 
 \begin{figure}[p]
 \centering
@@ -232,7 +232,7 @@ The abundance branch contains 14 Pareto fronts, with ten candidates on front 1. 
 
 The locked hand-off contains:
 
-\begin{longtable}{@{}p{0.470\textwidth} p{0.470\textwidth}@{}}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{0.440\textwidth} >{\raggedright\arraybackslash}p{0.440\textwidth}@{}}
 \caption{Phase 7 validation-readiness package: structured summary}\\
 \toprule
 \textbf{Role} & \textbf{Source labels} \\
