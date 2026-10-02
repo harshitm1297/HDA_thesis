@@ -18,15 +18,15 @@ from oral_cancer.pathways import read_gmt  # noqa: E402
 from oral_cancer.robustness import build_multiverse, leave_one_patient_out, pathway_sensitivity  # noqa: E402
 
 
-RESULT_DIR = PROJECT_DIR / "results" / "phase6"
+RESULT_DIR = PROJECT_DIR / "results" / "06_robustness"
 
 
 def main() -> None:
-    config = load_json(PROJECT_DIR / "config" / "phase6.yml")
-    phase4_config = load_json(PROJECT_DIR / "config" / "phase4.yml")
+    config = load_json(PROJECT_DIR / "config" / "06_robustness.yml")
+    phase4_config = load_json(PROJECT_DIR / "config" / "04_pathways_heterogeneity.yml")
     RESULT_DIR.mkdir(parents=True, exist_ok=True)
-    sensitivity = pd.read_csv(PROJECT_DIR / "results" / "phase3" / "paired_abundance_sensitivity.csv")
-    primary_abundance = pd.read_csv(PROJECT_DIR / "results" / "phase3" / "paired_abundance_primary.csv")
+    sensitivity = pd.read_csv(PROJECT_DIR / "results" / "03_paired_inference" / "paired_abundance_sensitivity.csv")
+    primary_abundance = pd.read_csv(PROJECT_DIR / "results" / "03_paired_inference" / "paired_abundance_primary.csv")
     primary_abundance.insert(0, "minimum_complete_pairs", 30)
     primary_abundance.insert(0, "cohort", "all_pairs")
     primary_abundance.insert(0, "representation", "log2_uncentered")
@@ -49,7 +49,7 @@ def main() -> None:
 
     paired = np.load(PROJECT_DIR / "data" / "interim" / "paired_data_model.npz")
     data = load_project_data(PROJECT_DIR)
-    primary = pd.read_csv(PROJECT_DIR / "results" / "phase3" / "integrated_candidate_evidence.csv")
+    primary = pd.read_csv(PROJECT_DIR / "results" / "03_paired_inference" / "integrated_candidate_evidence.csv")
     lopo_summary, lopo_detail = leave_one_patient_out(
         paired["log2_T_minus_N"].astype(float), paired["detection_state"].astype(np.uint8),
         paired["patient_ids"].astype(str), data.feature_manifest, primary, config,
@@ -61,7 +61,7 @@ def main() -> None:
     )
 
     gene_sets = read_gmt(PROJECT_DIR / phase4_config["reactome_gmt"])
-    primary_ranked = pd.read_csv(PROJECT_DIR / "results" / "phase4" / "reactome_ranked_enrichment.csv")
+    primary_ranked = pd.read_csv(PROJECT_DIR / "results" / "04_pathways_heterogeneity" / "reactome_ranked_enrichment.csv")
     pathway_summary, pathway_detail = pathway_sensitivity(
         scenario_tables, gene_sets, primary_ranked,
         phase4_config["pathway_min_measured_genes"], phase4_config["pathway_max_measured_genes"],

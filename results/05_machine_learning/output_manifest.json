@@ -1,0 +1,91 @@
+{
+  "outputs": [
+    {
+      "bytes": 128566,
+      "path": "results/05_machine_learning/feature_stability.csv",
+      "sha256": "B1982D3009E3D87E2DC98E8EF46B5A0A09CE6CA5833AB6AB512B9ED1928D3319"
+    },
+    {
+      "bytes": 16635,
+      "path": "results/05_machine_learning/figures/nested_auc_summary.png",
+      "sha256": "6CEA4199AC3CDDD730BA152698C992DA319CFEAF551078FFAB7FB65BE83B57F0"
+    },
+    {
+      "bytes": 6112,
+      "path": "results/05_machine_learning/figures/paired_permutation_null.png",
+      "sha256": "E172D150C79F3360922EF76DA2D0A2E846A3F206F2838FB99428FA9DD004B2E4"
+    },
+    {
+      "bytes": 928345,
+      "path": "results/05_machine_learning/heldout_permutation_importance.csv",
+      "sha256": "6771DA1E5B3D1013B143F4CDCBA9E17D32A81831BCCC1105B79A8A299D027D33"
+    },
+    {
+      "bytes": 1593594,
+      "path": "results/05_machine_learning/inner_tuning_surface.csv",
+      "sha256": "0EC48F132DFC1CE535D6C9AC5B1604EF4BF42F253F8A1949EE63D684632E3CC6"
+    },
+    {
+      "bytes": 3490,
+      "path": "results/05_machine_learning/learning_curve.csv",
+      "sha256": "CC14B525DFB7C34992A65183B59B7DD13787775E83A448CBEF4A76C89DDDA6D5"
+    },
+    {
+      "bytes": 1998,
+      "path": "results/05_machine_learning/MODEL_CARD.md",
+      "sha256": "3FCC5500028B54345A1553413A1E02A1A95B79C50DD256F8B14630A8F74DA83C"
+    },
+    {
+      "bytes": 415,
+      "path": "results/05_machine_learning/nested_validation_audit.json",
+      "sha256": "012B982410000AFE3D49B44F06F33E20DBD3E5B4D108C1DD4DE399AB07CE3DDD"
+    },
+    {
+      "bytes": 3708183,
+      "path": "results/05_machine_learning/outer_fit_coefficients.csv",
+      "sha256": "5216C2F826D4FA05A9E1F93AF10600DA34CDF9B7B905AC2286926D3995B81AD0"
+    },
+    {
+      "bytes": 19346,
+      "path": "results/05_machine_learning/outer_fold_assignments.csv",
+      "sha256": "C8659B6027B8C705A6099E3A437AD158ED7F4E888AE0EE78056CA5A6FF37EFB7"
+    },
+    {
+      "bytes": 1286831,
+      "path": "results/05_machine_learning/outer_test_predictions.csv",
+      "sha256": "8C19452575A75FC6B3B7FB4056ADC884DF5B541A56F858B9CD2B0DE51B842693"
+    },
+    {
+      "bytes": 14547,
+      "path": "results/05_machine_learning/paired_label_permutation.csv",
+      "sha256": "5A1FECE7A6883FCA31605308959213E8AEAD1447D5FE2D177957DC5F1BDE192E"
+    },
+    {
+      "bytes": 6832,
+      "path": "results/05_machine_learning/performance_summary.csv",
+      "sha256": "47FF10A7C2D38AE8BE443A53E21314E424F2ED755E17B8FF6D159DEB4EFF64F9"
+    },
+    {
+      "bytes": 9402,
+      "path": "results/05_machine_learning/05_RESULTS.md",
+      "sha256": "5A6E27D12A270DAC4EA6F3B4CB09DB54C7CEFABF3067199EA3E82DB8D3646D41"
+    },
+    {
+      "bytes": 1513,
+      "path": "results/05_machine_learning/05_validation.json",
+      "sha256": "DBF0525800F14C6DF07FCFD9B19C8F367B007F406E6CE809F7445831BF085B25"
+    },
+    {
+      "bytes": 38045,
+      "path": "results/05_machine_learning/repeat_level_metrics.csv",
+      "sha256": "8654FAD675BA19C58D8D983AA2F0091E9BAEB20BF50175B711AD38AF56591C4D"
+    },
+    {
+      "bytes": 48620,
+      "path": "results/05_machine_learning/stable_exploratory_panel.csv",
+      "sha256": "39EB7DB81BD8E81DC0EA15BF506A1302BE970FF14633EE86AE34CE0859E4D53A"
+    }
+  ],
+  "phase": 5,
+  "status": "PASS"
+}

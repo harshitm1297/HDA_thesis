@@ -1,0 +1,136 @@
+{
+  "computational_status": "PASS",
+  "outputs": [
+    {
+      "bytes": 4401,
+      "path": "results/06_robustness/claim_ledger.csv",
+      "sha256": "7768511B1012A68277804F93217A4649516E371B5D27BA59DCA59DBBC86B8BC8"
+    },
+    {
+      "bytes": 424,
+      "path": "results/06_robustness/environment_snapshot.json",
+      "sha256": "84B095D8D1945E6A5D0D17ACF50508797265BD447C9EBD68DAFA8438C052B67A"
+    },
+    {
+      "bytes": 9461,
+      "path": "results/06_robustness/figures/integrated_evidence_tiers.png",
+      "sha256": "A022A2A63A78A8605AA1E184E3350E7FD0E948E0D5E222699554B225E8E3A5A8"
+    },
+    {
+      "bytes": 66038,
+      "path": "results/06_robustness/figures/multiverse_core_support.png",
+      "sha256": "2BD31FB24190999D184F24EAD6B2FD23FF816E679D6801904B0C456AD4C57235"
+    },
+    {
+      "bytes": 5392,
+      "path": "results/06_robustness/FINAL_SCIENTIFIC_SYNTHESIS.md",
+      "sha256": "2597690E3096390335830988C45A7224084E3E12B56739E975BB022C183584D6"
+    },
+    {
+      "bytes": 5995660,
+      "path": "results/06_robustness/integrated_evidence_table.csv",
+      "sha256": "0892AF22942C524D40C6087386F60B79913EED0D65B943448E73E7C9C0B4C197"
+    },
+    {
+      "bytes": 966511,
+      "path": "results/06_robustness/lopo_feature_influence.csv",
+      "sha256": "2C3C3F4ADEE41048BB7282521229EC40EAC217021CE43FD3A5186F963F3173D1"
+    },
+    {
+      "bytes": 1899930,
+      "path": "results/06_robustness/lopo_tiered_candidate_detail.csv.gz",
+      "sha256": "721D62F3805612008D121E6C4FBB01289087EC836A96E375F4AB0A08F6B17273"
+    },
+    {
+      "bytes": 935,
+      "path": "results/06_robustness/ml_lopo_parameters.csv",
+      "sha256": "663A5B29DAE227DE8D87B78BC2E5F39ED0D766E19C382054A559E4805C497ED5"
+    },
+    {
+      "bytes": 3922,
+      "path": "results/06_robustness/ml_lopo_predictions.csv",
+      "sha256": "5C99D9A5274418DA4A35DDCFC671AD78596F575D91DBA94807BCD3A021F2B5F7"
+    },
+    {
+      "bytes": 205,
+      "path": "results/06_robustness/ml_lopo_summary.json",
+      "sha256": "ECB656623EFBAC09DBF03F38DF3C61F5E42ED7E30F5E730D6CD1B024B62B2F67"
+    },
+    {
+      "bytes": 60443,
+      "path": "results/06_robustness/ml_outer_prediction_patient_influence.csv.gz",
+      "sha256": "63E38F6D9A071165019612420B539660734BC257AEFC3FE9113DC4E611646754"
+    },
+    {
+      "bytes": 848,
+      "path": "results/06_robustness/ml_patient_influence_summary.csv",
+      "sha256": "7F1A5521202D0016EBBB63C87BE726B557BE415644D9E6D7699790F3D2600B78"
+    },
+    {
+      "bytes": 1191,
+      "path": "results/06_robustness/ml_view_seed_robustness.csv",
+      "sha256": "83B61770817D913EDBCB46B7406BDDD7FE01F5DF56A6BE20140B34393407D9D1"
+    },
+    {
+      "bytes": 1211959,
+      "path": "results/06_robustness/multiverse_core_support_matrix.csv",
+      "sha256": "8091B860DF1E92212E9F0B8D586276DA76CB264DEDC5C2431D31C00391484808"
+    },
+    {
+      "bytes": 528166,
+      "path": "results/06_robustness/multiverse_feature_stability.csv",
+      "sha256": "5ACFD253CA043590D828507EF31DB66AE3F08FE46F42AD803B8CB0DCBA02E4BF"
+    },
+    {
+      "bytes": 48900,
+      "path": "results/06_robustness/multiverse_scenario_similarity.csv",
+      "sha256": "5755C37DBE9CA0092C3656F6E7AF77A8595514C97C0C71EE129F78FD4B6E9F6D"
+    },
+    {
+      "bytes": 3612,
+      "path": "results/06_robustness/multiverse_scenarios.csv",
+      "sha256": "B937316101D89EEFE081F863D0F93742C1E01370C7733DB73439397E1FFF855A"
+    },
+    {
+      "bytes": 311,
+      "path": "results/06_robustness/negative_controls.csv",
+      "sha256": "8B1C7EB81BC7322A76D2F0460CC6A058D96D4EAC74EDC0FEDE9CDEC9303AB9EC"
+    },
+    {
+      "bytes": 68285,
+      "path": "results/06_robustness/pathway_robustness.csv",
+      "sha256": "5CB73163AB9FA744F5FEB0318CA1E012CA1BE392E0623A3909BAB71813438EA8"
+    },
+    {
+      "bytes": 570974,
+      "path": "results/06_robustness/pathway_sensitivity_detail.csv.gz",
+      "sha256": "D0DCD359C40CA38351B8C42947EC7B98591C76B6B7AADE2BCCC409EA3106E007"
+    },
+    {
+      "bytes": 9889,
+      "path": "results/06_robustness/06_RESULTS.md",
+      "sha256": "C2F892C62E176454C21C8C7D474A93D20F4214AAC10BF59FC219A14456DAA4AD"
+    },
+    {
+      "bytes": 781,
+      "path": "results/06_robustness/06_validation.json",
+      "sha256": "75BA8A6506DEBE17916F7ECF817A8A8E7EDCFEA5CA6DB908700C55FDF5F6E362"
+    },
+    {
+      "bytes": 1694846,
+      "path": "results/06_robustness/prioritized_internal_candidates.csv",
+      "sha256": "513402E3F8FB1C278CAB86D45B8F2477B8D8FD6B235838417A72B27B413DFAF6"
+    },
+    {
+      "bytes": 389,
+      "path": "results/06_robustness/reproducibility_gate.json",
+      "sha256": "9D0C42992729D089FD191DEE4FA67157DF644CB7AE0186BC31391FD1B07706C4"
+    },
+    {
+      "bytes": 433,
+      "path": "results/06_robustness/robustness_audit.json",
+      "sha256": "21A15A742525C72915D5C9AE549E0C11B1EDC542C74D472648E8AD17CFAD21F2"
+    }
+  ],
+  "phase": 6
+}

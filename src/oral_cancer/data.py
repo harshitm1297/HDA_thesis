@@ -30,7 +30,7 @@ def load_project_data(project_dir: Path) -> ProjectData:
     raw = np.load(project_dir / "data" / "interim" / "raw_data_model.npz")
     sample_manifest = pd.read_csv(project_dir / "data" / "interim" / "sample_manifest.csv")
     feature_manifest = pd.read_csv(project_dir / "data" / "interim" / "feature_manifest.csv")
-    cohort = pd.read_csv(project_dir / "results" / "phase1" / "cohort_membership.csv")
+    cohort = pd.read_csv(project_dir / "results" / "01_qc_missingness" / "cohort_membership.csv")
     sample_ids = raw["sample_ids"].astype(str)
     return ProjectData(
         sample_ids=sample_ids,

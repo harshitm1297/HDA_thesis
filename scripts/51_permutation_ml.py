@@ -15,11 +15,11 @@ PROJECT_DIR = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(PROJECT_DIR / "src"))
 
 from oral_cancer.data import load_json  # noqa: E402
-from oral_cancer.phase5 import load_ml_data, paired_swapped_labels, pooled_auc, run_nested_repeats  # noqa: E402
+from oral_cancer.modelling import load_ml_data, paired_swapped_labels, pooled_auc, run_nested_repeats  # noqa: E402
 from oral_cancer.visuals import phase5_permutation_figure  # noqa: E402
 
 
-RESULT_DIR = PROJECT_DIR / "results" / "phase5"
+RESULT_DIR = PROJECT_DIR / "results" / "05_machine_learning"
 
 
 def run_one(permutation: int, data, config: dict, assignments: pd.DataFrame) -> dict:
@@ -33,7 +33,7 @@ def run_one(permutation: int, data, config: dict, assignments: pd.DataFrame) -> 
 
 
 def main() -> None:
-    config = load_json(PROJECT_DIR / "config" / "phase5.yml")
+    config = load_json(PROJECT_DIR / "config" / "05_machine_learning.yml")
     data = load_ml_data(PROJECT_DIR)
     assignments = pd.read_csv(RESULT_DIR / "outer_fold_assignments.csv")
     observed_predictions = pd.read_csv(RESULT_DIR / "outer_test_predictions.csv")
@@ -78,7 +78,7 @@ def main() -> None:
     }
     if not all(validation["checks"].values()):
         raise ValueError("Phase 5 validation failed")
-    (RESULT_DIR / "phase5_validation.json").write_text(json.dumps(validation, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    (RESULT_DIR / "05_validation.json").write_text(json.dumps(validation, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     print(f"PASS: {len(permutation)} paired permutations; empirical p={empirical_p:.6g}")
 
 

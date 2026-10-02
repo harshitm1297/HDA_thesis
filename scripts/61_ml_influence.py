@@ -16,15 +16,15 @@ sys.path.insert(0, str(PROJECT_DIR / "src"))
 
 from oral_cancer.data import load_json  # noqa: E402
 from oral_cancer.ml import fit_classifier, fit_fold_transformer, probability_from_score, raw_model_score, validate_grouped_split  # noqa: E402
-from oral_cancer.phase5 import load_ml_data, tune_linear_model  # noqa: E402
+from oral_cancer.modelling import load_ml_data, tune_linear_model  # noqa: E402
 
 
-RESULT_DIR = PROJECT_DIR / "results" / "phase6"
+RESULT_DIR = PROJECT_DIR / "results" / "06_robustness"
 
 
 def main() -> None:
-    config = load_json(PROJECT_DIR / "config" / "phase6.yml")
-    phase5_config = load_json(PROJECT_DIR / "config" / "phase5.yml")
+    config = load_json(PROJECT_DIR / "config" / "06_robustness.yml")
+    phase5_config = load_json(PROJECT_DIR / "config" / "05_machine_learning.yml")
     data = load_ml_data(PROJECT_DIR)
     RESULT_DIR.mkdir(parents=True, exist_ok=True)
     prediction_rows, parameter_rows = [], []
@@ -75,8 +75,8 @@ def main() -> None:
     }
     (RESULT_DIR / "ml_lopo_summary.json").write_text(json.dumps(lopo_summary, indent=2, sort_keys=True) + "\n", encoding="utf-8")
 
-    phase5_predictions = pd.read_csv(PROJECT_DIR / "results" / "phase5" / "outer_test_predictions.csv")
-    phase5_metrics = pd.read_csv(PROJECT_DIR / "results" / "phase5" / "repeat_level_metrics.csv")
+    phase5_predictions = pd.read_csv(PROJECT_DIR / "results" / "05_machine_learning" / "outer_test_predictions.csv")
+    phase5_metrics = pd.read_csv(PROJECT_DIR / "results" / "05_machine_learning" / "repeat_level_metrics.csv")
     influence_rows = []
     for (view, model, repeat), frame in phase5_predictions.groupby(["view", "model", "repeat"]):
         original = phase5_metrics.loc[
@@ -107,8 +107,8 @@ def main() -> None:
     robustness = robustness.join(winner_count, on=["view", "model"]).fillna({"repeat_winner_count": 0})
     robustness.to_csv(RESULT_DIR / "ml_view_seed_robustness.csv", index=False)
 
-    phase3 = pd.read_csv(PROJECT_DIR / "results" / "phase3" / "integrated_candidate_evidence.csv")
-    stable = pd.read_csv(PROJECT_DIR / "results" / "phase5" / "stable_exploratory_panel.csv")
+    phase3 = pd.read_csv(PROJECT_DIR / "results" / "03_paired_inference" / "integrated_candidate_evidence.csv")
+    stable = pd.read_csv(PROJECT_DIR / "results" / "05_machine_learning" / "stable_exploratory_panel.csv")
     tiered = set(phase3.loc[phase3["evidence_tier"].ne("not_tiered"), "feature_key"])
     ml_keys = set(stable["feature_key"])
     observed_overlap = len(tiered & ml_keys)
@@ -119,7 +119,7 @@ def main() -> None:
         for _ in range(config["integration_overlap_permutations"])
     ])
     overlap_p = (1 + int((null >= observed_overlap).sum())) / (1 + len(null))
-    phase5_permutation = pd.read_csv(PROJECT_DIR / "results" / "phase5" / "paired_label_permutation.csv")
+    phase5_permutation = pd.read_csv(PROJECT_DIR / "results" / "05_machine_learning" / "paired_label_permutation.csv")
     controls = pd.DataFrame([
         {
             "negative_control": "paired_within_patient_label_swaps_full_nested_ml",

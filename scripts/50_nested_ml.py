@@ -24,15 +24,15 @@ from oral_cancer.ml import (  # noqa: E402
     summarize_metric_distribution,
     validate_grouped_split,
 )
-from oral_cancer.phase5 import generate_outer_assignments, load_ml_data, run_nested_repeats  # noqa: E402
+from oral_cancer.modelling import generate_outer_assignments, load_ml_data, run_nested_repeats  # noqa: E402
 from oral_cancer.visuals import phase5_performance_figure  # noqa: E402
 
 
-RESULT_DIR = PROJECT_DIR / "results" / "phase5"
+RESULT_DIR = PROJECT_DIR / "results" / "05_machine_learning"
 
 
 def main() -> None:
-    config = load_json(PROJECT_DIR / "config" / "phase5.yml")
+    config = load_json(PROJECT_DIR / "config" / "05_machine_learning.yml")
     data = load_ml_data(PROJECT_DIR)
     RESULT_DIR.mkdir(parents=True, exist_ok=True)
     assignments = generate_outer_assignments(data, config)

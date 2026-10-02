@@ -19,16 +19,16 @@ These files do not contain hidden model reasoning or raw tool logs. When an arch
 
 ## Phase 0 records
 
-- `../PHASE0_RECONSTRUCTED_PROVENANCE.md`: evidence-based reconstruction of the source experiment and unresolved facts.
-- `PHASE0_DETAILED_RESPONSE_RECORD.md`: detailed user-visible Phase 0 response archive.
-- `PHASE0_MILESTONE_RECORD.md`: concise Phase 0 decisions and milestone status.
+- `../00_RECONSTRUCTED_PROVENANCE.md`: evidence-based reconstruction of the source experiment and unresolved facts.
+- `00_DETAILED_RESPONSE_RECORD.md`: detailed user-visible Phase 0 response archive.
+- `00_MILESTONE_RECORD.md`: concise Phase 0 decisions and milestone status.
 
 ## Phase 1 records
 
-- `../PHASE1_PLAN_AND_DECISIONS.md`: maintained import, pairing, identifier-audit, and provenance protocol.
-- `PHASE1_DETAILED_RESPONSE_RECORD.md`: detailed user-visible Phase 1 response archive.
-- `PHASE1_WORK_LOG.md`: chronological Phase 1 work log.
-- `../phase1_outputs/PHASE1_VALIDATION_REPORT.md`: machine-generated validation evidence.
+- `../01_PLAN_AND_DECISIONS.md`: maintained import, pairing, identifier-audit, and provenance protocol.
+- `01_DETAILED_RESPONSE_RECORD.md`: detailed user-visible Phase 1 response archive.
+- `01_WORK_LOG.md`: chronological Phase 1 work log.
+- `../results/01_qc_missingness/01_validation.json`: maintained machine-readable validation evidence. The earlier `legacy_01_outputs/` directory remains local and unversioned.
 
 ## Cross-phase controls
 

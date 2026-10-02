@@ -15,12 +15,12 @@ PROJECT_DIR = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(PROJECT_DIR / "src"))
 
 from oral_cancer.data import load_json, load_project_data, paired_delta  # noqa: E402
-from oral_cancer.phase3 import abundance_inference, detection_inference, integrate_evidence  # noqa: E402
+from oral_cancer.inference import abundance_inference, detection_inference, integrate_evidence  # noqa: E402
 from oral_cancer.visuals import phase3_figures  # noqa: E402
 
 
-CONFIG_PATH = PROJECT_DIR / "config" / "phase3.yml"
-RESULT_DIR = PROJECT_DIR / "results" / "phase3"
+CONFIG_PATH = PROJECT_DIR / "config" / "03_paired_inference.yml"
+RESULT_DIR = PROJECT_DIR / "results" / "03_paired_inference"
 
 
 def sha256(path: Path) -> str:
@@ -114,7 +114,7 @@ def main() -> None:
     }
     if not all(summary["checks"].values()):
         raise ValueError("Phase 3 validation failed")
-    (RESULT_DIR / "phase3_validation.json").write_text(json.dumps(summary, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    (RESULT_DIR / "03_validation.json").write_text(json.dumps(summary, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     print(f"PASS: Phase 3 completed with {summary['primary']['eligible_features']} primary abundance features")
 
 

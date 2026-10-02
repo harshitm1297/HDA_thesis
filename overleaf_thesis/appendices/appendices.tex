@@ -13,23 +13,23 @@
 \endhead
 \path{data/interim/sample_manifest.csv} & Immutable specimen/patient/tissue mapping \\
 \path{data/interim/feature_manifest.csv} & Source-row keys and identifier flags \\
-\path{results/phase1/feature_missingness.csv} & Feature-level observation and detection structure \\
-\path{results/phase3/integrated_candidate_evidence.csv} & All feature-level abundance/detection evidence \\
-\path{results/phase4/integrated_pathway_evidence.csv} & Ranked and paired pathway evidence \\
-\path{results/phase5/outer_test_predictions.csv} & Complete outer-test predictions \\
-\path{results/phase5/stable_exploratory_panel.csv} & Stability catalogue, not a validated panel \\
-\path{results/phase6/integrated_evidence_table.csv} & Full 8,071-row cross-phase evidence table \\
-\path{results/phase6/claim_ledger.csv} & Claims, evidence locators and limitations \\
-\path{results/phase7/candidate_validation_readiness.csv} & Pareto and redundancy-aware readiness evidence \\
-\path{results/phase7/locked_handoff_shortlist.csv} & Frozen prospective follow-up targets \\
-\path{results/phase7/prospective_validation_protocol.json} & Machine-readable future-study safeguards \\
+\path{results/01_qc_missingness/feature_missingness.csv} & Feature-level observation and detection structure \\
+\path{results/03_paired_inference/integrated_candidate_evidence.csv} & All feature-level abundance/detection evidence \\
+\path{results/04_pathways_heterogeneity/integrated_pathway_evidence.csv} & Ranked and paired pathway evidence \\
+\path{results/05_machine_learning/outer_test_predictions.csv} & Complete outer-test predictions \\
+\path{results/05_machine_learning/stable_exploratory_panel.csv} & Stability catalogue, not a validated panel \\
+\path{results/06_robustness/integrated_evidence_table.csv} & Full 8,071-row cross-phase evidence table \\
+\path{results/06_robustness/claim_ledger.csv} & Claims, evidence locators and limitations \\
+\path{results/07_validation_readiness/candidate_validation_readiness.csv} & Pareto and redundancy-aware readiness evidence \\
+\path{results/07_validation_readiness/locked_handoff_shortlist.csv} & Frozen prospective follow-up targets \\
+\path{results/07_validation_readiness/prospective_validation_protocol.json} & Machine-readable future-study safeguards \\
 \bottomrule
 \end{longtable}
 
 \chapter{Configuration files}
 \label{app:configuration_files}
 
-Analytical choices are stored in \path{config/analysis_contract.yml}, \path{config/phase1.yml}, \path{config/phase3.yml}, \path{config/phase4.yml}, \path{config/phase5.yml}, \path{config/phase6.yml} and \path{config/phase7.yml}. These files should be archived with any thesis submission so thresholds can be distinguished from results copied into prose.
+Analytical choices are stored in \path{config/analysis_contract.yml}, \path{config/01_qc_missingness.yml}, \path{config/03_paired_inference.yml}, \path{config/04_pathways_heterogeneity.yml}, \path{config/05_machine_learning.yml}, \path{config/06_robustness.yml} and \path{config/07_validation_readiness.yml}. These files should be archived with any thesis submission so thresholds can be distinguished from results copied into prose.
 
 \chapter{Reporting status}
 \label{app:reporting_status}

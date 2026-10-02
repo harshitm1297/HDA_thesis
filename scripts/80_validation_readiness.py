@@ -14,7 +14,7 @@ PROJECT_DIR = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(PROJECT_DIR / "src"))
 
 from oral_cancer.data import load_json  # noqa: E402
-from oral_cancer.phase7 import (  # noqa: E402
+from oral_cancer.validation import (  # noqa: E402
     correlation_components,
     mcnemar_approximate_required_n,
     nondominated_fronts,
@@ -23,7 +23,7 @@ from oral_cancer.phase7 import (  # noqa: E402
 from oral_cancer.visuals import phase7_figures  # noqa: E402
 
 
-RESULT_DIR = PROJECT_DIR / "results" / "phase7"
+RESULT_DIR = PROJECT_DIR / "results" / "07_validation_readiness"
 
 
 def build_readiness(evidence: pd.DataFrame, config: dict[str, object]) -> pd.DataFrame:
@@ -118,8 +118,8 @@ def build_sample_size_tables(config: dict[str, object], abundance_targets: int, 
 
 def main() -> None:
     RESULT_DIR.mkdir(parents=True, exist_ok=True)
-    config = load_json(PROJECT_DIR / "config" / "phase7.yml")
-    evidence = pd.read_csv(PROJECT_DIR / "results" / "phase6" / "integrated_evidence_table.csv")
+    config = load_json(PROJECT_DIR / "config" / "07_validation_readiness.yml")
+    evidence = pd.read_csv(PROJECT_DIR / "results" / "06_robustness" / "integrated_evidence_table.csv")
     readiness = build_readiness(evidence, config)
 
     paired = np.load(PROJECT_DIR / "data" / "interim" / "paired_data_model.npz", allow_pickle=False)
@@ -219,19 +219,19 @@ def main() -> None:
 
     claims = pd.DataFrame([
         {"claim_id": "P7C01", "claim": f"Phase 7 evaluates all {len(readiness)} Phase 6 high-priority internal candidates without importing new observations.",
-         "evidence_file": "results/phase7/candidate_validation_readiness.csv", "limitation_ids": "L01;L02;L03;L04;L05;L06;L07;L08;L09;L10;L11;L12", "allowed_scope": "validation readiness"},
+         "evidence_file": "results/07_validation_readiness/candidate_validation_readiness.csv", "limitation_ids": "L01;L02;L03;L04;L05;L06;L07;L08;L09;L10;L11;L12", "allowed_scope": "validation readiness"},
         {"claim_id": "P7C02", "claim": f"The hand-off contains {len(abundance_shortlist)} abundance replication anchors and {len(detection_shortlist)} detection-mechanism sentinels selected by frozen branch-specific rules.",
-         "evidence_file": "results/phase7/locked_handoff_shortlist.csv", "limitation_ids": "L01;L02;L03;L07;L08;L11;L12", "allowed_scope": "prospective follow-up design"},
+         "evidence_file": "results/07_validation_readiness/locked_handoff_shortlist.csv", "limitation_ids": "L01;L02;L03;L07;L08;L11;L12", "allowed_scope": "prospective follow-up design"},
         {"claim_id": "P7C03", "claim": "Pareto fronts preserve trade-offs among effect, multiplicity evidence, robustness and cross-domain support without a post-hoc weighted score.",
-         "evidence_file": "results/phase7/candidate_validation_readiness.csv", "limitation_ids": "L08;L11", "allowed_scope": "internal prioritization"},
+         "evidence_file": "results/07_validation_readiness/candidate_validation_readiness.csv", "limitation_ids": "L08;L11", "allowed_scope": "internal prioritization"},
         {"claim_id": "P7C04", "claim": "Correlation components reduce redundant abundance follow-up choices but do not prove shared mechanisms.",
-         "evidence_file": "results/phase7/abundance_redundancy_components.csv", "limitation_ids": "L03;L05;L08;L11", "allowed_scope": "internal redundancy control"},
+         "evidence_file": "results/07_validation_readiness/abundance_redundancy_components.csv", "limitation_ids": "L03;L05;L08;L11", "allowed_scope": "internal redundancy control"},
         {"claim_id": "P7C05", "claim": "Sample-size tables are sensitivity grids over assumed effects, not power guarantees based on selected discovery estimates.",
-         "evidence_file": "results/phase7/abundance_sample_size_sensitivity.csv", "limitation_ids": "L05;L06;L08;L11;L12", "allowed_scope": "prospective planning sensitivity"},
+         "evidence_file": "results/07_validation_readiness/abundance_sample_size_sensitivity.csv", "limitation_ids": "L05;L06;L08;L11;L12", "allowed_scope": "prospective planning sensitivity"},
         {"claim_id": "P7C06", "claim": "No independent, orthogonal or clinical validation was executed in Phase 7.",
-         "evidence_file": "results/phase7/prospective_validation_protocol.json", "limitation_ids": "L08;L09;L12", "allowed_scope": "prohibition"},
+         "evidence_file": "results/07_validation_readiness/prospective_validation_protocol.json", "limitation_ids": "L08;L09;L12", "allowed_scope": "prohibition"},
     ])
-    claims.to_csv(RESULT_DIR / "phase7_claim_ledger.csv", index=False)
+    claims.to_csv(RESULT_DIR / "07_claim_ledger.csv", index=False)
 
     validation = {
         "phase": 7,
@@ -257,7 +257,7 @@ def main() -> None:
     }
     if not all(validation["checks"].values()):
         raise ValueError("Phase 7 validation-readiness checks failed")
-    (RESULT_DIR / "phase7_validation.json").write_text(
+    (RESULT_DIR / "07_validation.json").write_text(
         json.dumps(validation, indent=2, sort_keys=True) + "\n", encoding="utf-8"
     )
     phase7_figures(RESULT_DIR, readiness, components)

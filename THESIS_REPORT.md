@@ -340,25 +340,25 @@ Matched non-tumour specimens contain a median 4,759 detected features (range 2,4
 
 Observed log2 abundance medians move oppositely: 13.084 in matched non-tumour and 12.552 in tumour. Coverage and observed median abundance have pooled Spearman rho −0.914, indicating that missingness and observed abundance structure are strongly related without proving a specific mechanism.
 
-![Coverage versus observed median abundance](results/phase1/figures/coverage_vs_median.png)
+![Coverage versus observed median abundance](results/01_qc_missingness/figures/coverage_vs_median.png)
 
 **Figure 1.** Specimen detection coverage versus median observed log2 abundance. The strong inverse association motivates separate abundance and detection analyses.
 
 Missingness decreases from 78.64% in the lowest observed-abundance decile to 4.45% in the highest. Tumour detection fractions exceed matched non-tumour fractions for 5,413 rows; the reverse occurs for 986 rows and equality for 1,672.
 
-![Missingness by abundance decile](results/phase1/figures/missingness_by_abundance_decile.png)
+![Missingness by abundance decile](results/01_qc_missingness/figures/missingness_by_abundance_decile.png)
 
 **Figure 2.** Mean missingness across observed-abundance deciles, showing strong abundance dependence.
 
 The median within-pair detection Jaccard similarity is 0.708 (range 0.371–0.880), the median pairwise Spearman correlation is 0.745 (range 0.367–0.940), and the median absolute paired log2 difference is 0.734 (range 0.301–1.521).
 
-![Pairwise-complete sample correlations](results/phase1/figures/sample_correlation_heatmap.png)
+![Pairwise-complete sample correlations](results/01_qc_missingness/figures/sample_correlation_heatmap.png)
 
 **Figure 3.** Pairwise-complete sample Spearman correlation heatmap with label-blind clustering order.
 
 Diagnostic PCA explains 20.07% on PC1 and 9.89% on PC2; the first five components explain 46.75%. Tissue centroids differ strongly, but batch, purity, inflammation and sampling metadata are unavailable.
 
-![Label-blind diagnostic PCA](results/phase1/figures/pca_qc.png)
+![Label-blind diagnostic PCA](results/01_qc_missingness/figures/pca_qc.png)
 
 **Figure 4.** Label-blind QC PCA of high-coverage features. Tissue annotations were attached after calculation.
 
@@ -370,13 +370,13 @@ The primary abundance rule admits 3,430 features. The empirical-Bayes variance p
 
 Examples include PRELP (mean log2 difference −5.346; moderated 95% interval −6.052 to −4.640) and SERPINH1 (2.425; interval 2.091–2.760). Other precise candidates include OGN, SLC3A2, HSPH1, ALDH9A1, EPHX1, PEBP1, SOD3 and DDAH2.
 
-![Paired abundance volcano](results/phase3/figures/abundance_volcano.png)
+![Paired abundance volcano](results/03_paired_inference/figures/abundance_volcano.png)
 
 **Figure 5.** Paired abundance effects and BH-adjusted evidence. Highlighting follows the frozen abundance-core rule.
 
 For detection, 2,887 rows have BH q≤0.05; 2,549 meet the primary effect and discordance rule; and 1,831 remain stable in the unflagged cohort. Among these stable patterns, 1,695 favour tumour detection and 136 favour matched non-tumour detection. After excluding ambiguous identifiers, 1,827 rows receive `C_detection_pattern`. Leading tumour-detection labels include SLC38A2, NEDD1, KPNA7, NCAPG, NOMO1, HMGA2, WDR75, SLC38A5, POP4 and SLC39A14.
 
-![Paired detection volcano](results/phase3/figures/detection_volcano.png)
+![Paired detection volcano](results/03_paired_inference/figures/detection_volcano.png)
 
 **Figure 6.** Paired detection-fraction differences and BH-adjusted exact-test evidence.
 
@@ -390,7 +390,7 @@ Positive organisation includes capped-intron pre-mRNA processing (NES 3.297; ran
 
 Negative organisation includes citric-acid-cycle/respiratory-electron transport (NES −2.835; mean score −1.165), respiratory electron transport (NES −2.869; mean score −1.242), collagen degradation (NES −2.082; mean score −0.723), extracellular-matrix degradation (NES −1.974; mean score −0.629), complement cascade (NES −2.129; mean score −0.550) and haemostasis (NES −1.440; mean score −0.323).
 
-![Concordant pathway effects](results/phase4/figures/pathway_evidence.png)
+![Concordant pathway effects](results/04_pathways_heterogeneity/figures/pathway_evidence.png)
 
 **Figure 7.** Largest concordant ranked pathway effects. Pathway names organise measured proteins and do not prove pathway activation or causality.
 
@@ -398,13 +398,13 @@ Negative organisation includes citric-acid-cycle/respiratory-electron transport 
 
 Among 1,350 complete paired-difference features, 500 variable rows entered robust PCA. PC1 explains 41.41% (bootstrap median 42.20%, interval 29.83–52.42%) and PC2 16.13% (median 17.42%, interval 11.72–24.25%). Four components explain 70.72%. Large PC1 loadings include mitochondrial and metabolic proteins such as CYC1, UQCRB, NDUFV1, NDUFS3, SDHB, OGDH and DLD.
 
-![Patient-change PCA](results/phase4/figures/patient_change_pca.png)
+![Patient-change PCA](results/04_pathways_heterogeneity/figures/patient_change_pca.png)
 
 **Figure 8.** PCA of patient-level tumour-minus-non-tumour change profiles.
 
 No consensus-clustering solution passes all frozen criteria. The least ambiguous exploratory `k=2` solution contains 12 and 30 patients, with PAC 0.261, mean within-cluster consensus 0.934 and silhouette 0.372. Because PAC exceeds 0.10, no clinical or molecular subtype is accepted.
 
-![Consensus clustering](results/phase4/figures/consensus_clustering.png)
+![Consensus clustering](results/04_pathways_heterogeneity/figures/consensus_clustering.png)
 
 **Figure 9.** Consensus matrix for the best exploratory `k`; it remains unstable under the prespecified PAC criterion.
 
@@ -424,7 +424,7 @@ Across 25 repeated nested partitions, the main results are:
 | Coverage logistic | 0.868 | 0.786 | Coverage contains substantial signal |
 | Intercept null | 0.500 | 0.500 | Chance baseline |
 
-![Repeated nested AUC](results/phase5/figures/nested_auc_summary.png)
+![Repeated nested AUC](results/05_machine_learning/figures/nested_auc_summary.png)
 
 **Figure 10.** Outer-test ROC AUC distributions from repeated patient-grouped nested validation.
 
@@ -432,7 +432,7 @@ The abundance elastic-net median sensitivity is 0.976 and specificity 0.952. How
 
 The observed paired-label permutation AUC is 0.9768. Across 200 complete nested null reruns, the median is approximately 0.4786 and maximum 0.7319, producing empirical p=(1+0)/(200+1)=0.004975.
 
-![Paired permutation null](results/phase5/figures/paired_permutation_null.png)
+![Paired permutation null](results/05_machine_learning/figures/paired_permutation_null.png)
 
 **Figure 11.** Full nested paired-label permutation null for the frozen combined elastic-net pipeline.
 
@@ -442,7 +442,7 @@ The tuned elastic nets have median selected size 97 and favour L1 ratio 0.1, beh
 
 Across 8,071 source rows, 3,077 have complete effect-sign agreement wherever eligible, 1,757 receive FDR support in at least 80% of eligible scenarios, and 368 meet the full core rule in at least 80%. Core counts vary from approximately 319 under the strict uncentred/unflagged/35-pair scenario to approximately 1,050 under median-centred/all-pair/20-pair scenarios. This demonstrates real sensitivity to analysis choice.
 
-![Multiverse core support](results/phase6/figures/multiverse_core_support.png)
+![Multiverse core support](results/06_robustness/figures/multiverse_core_support.png)
 
 **Figure 12.** Core feature counts across the 24 prespecified multiverse scenarios.
 
@@ -452,7 +452,7 @@ Of 783 pathways, 596 meet direction agreement ≥80% and median leading-edge Jac
 
 Frozen integration classifies 165 rows as `high_priority_internal`, 1,909 as `robust_single_domain`, 28 as `predictive_stability_only` and 5,969 as `not_prioritized`. The high-priority group contains 107 abundance and 58 detection candidates.
 
-![Integrated evidence tiers](results/phase6/figures/integrated_evidence_tiers.png)
+![Integrated evidence tiers](results/06_robustness/figures/integrated_evidence_tiers.png)
 
 **Figure 13.** Counts under the frozen integrated evidence rules.
 
@@ -460,13 +460,13 @@ Frozen integration classifies 165 rows as `high_priority_internal`, 1,909 as `ro
 
 The 107 abundance candidates form 66 correlation components at absolute Spearman rho ≥0.80 with at least 25 complete pairs. There are 58 singleton components, four size-two components, two size-three components, one size-four component and one size-31 component. This large component illustrates extensive predictor redundancy.
 
-![Abundance redundancy components](results/phase7/figures/abundance_redundancy_components.png)
+![Abundance redundancy components](results/07_validation_readiness/figures/abundance_redundancy_components.png)
 
 **Figure 14.** Distribution of abundance correlation-component sizes.
 
 The abundance branch contains 14 Pareto fronts, with ten candidates on front 1. The detection branch contains ten fronts, with two candidates on front 1.
 
-![Phase 7 Pareto fronts](results/phase7/figures/pareto_fronts.png)
+![Phase 7 Pareto fronts](results/07_validation_readiness/figures/pareto_fronts.png)
 
 **Figure 15.** Candidate counts by branch-specific nondominated Pareto front.
 
@@ -615,13 +615,13 @@ Phase 6 reproduced 22 compared outputs byte-for-byte in the pinned local environ
 ## 9.4 Regeneration commands
 
 ```powershell
-python scripts/run_phase0.py
-python scripts/run_phase1.py
-python scripts/run_phase3.py
-python scripts/run_phase4.py
-python scripts/run_phase5.py
-python scripts/run_phase6.py
-python scripts/run_phase7.py
+python scripts/00_run.py
+python scripts/01_run.py
+python scripts/03_run.py
+python scripts/04_run.py
+python scripts/05_run.py
+python scripts/06_run.py
+python scripts/07_run.py
 python -m unittest discover -s tests -v
 ```
 
@@ -725,20 +725,20 @@ Zou H, Hastie T. Regularization and variable selection via the elastic net. *Jou
 | --- | --- |
 | `data/interim/sample_manifest.csv` | Immutable specimen/patient/tissue mapping |
 | `data/interim/feature_manifest.csv` | Source-row keys and identifier flags |
-| `results/phase1/feature_missingness.csv` | Feature-level observation and detection structure |
-| `results/phase3/integrated_candidate_evidence.csv` | All feature-level abundance/detection evidence |
-| `results/phase4/integrated_pathway_evidence.csv` | Ranked and paired pathway evidence |
-| `results/phase5/outer_test_predictions.csv` | Complete outer-test predictions |
-| `results/phase5/stable_exploratory_panel.csv` | Stability catalogue, not a validated panel |
-| `results/phase6/integrated_evidence_table.csv` | Full 8,071-row cross-phase evidence table |
-| `results/phase6/claim_ledger.csv` | Claims, evidence locators and limitations |
-| `results/phase7/candidate_validation_readiness.csv` | Pareto and redundancy-aware readiness evidence |
-| `results/phase7/locked_handoff_shortlist.csv` | Frozen prospective follow-up targets |
-| `results/phase7/prospective_validation_protocol.json` | Machine-readable future-study safeguards |
+| `results/01_qc_missingness/feature_missingness.csv` | Feature-level observation and detection structure |
+| `results/03_paired_inference/integrated_candidate_evidence.csv` | All feature-level abundance/detection evidence |
+| `results/04_pathways_heterogeneity/integrated_pathway_evidence.csv` | Ranked and paired pathway evidence |
+| `results/05_machine_learning/outer_test_predictions.csv` | Complete outer-test predictions |
+| `results/05_machine_learning/stable_exploratory_panel.csv` | Stability catalogue, not a validated panel |
+| `results/06_robustness/integrated_evidence_table.csv` | Full 8,071-row cross-phase evidence table |
+| `results/06_robustness/claim_ledger.csv` | Claims, evidence locators and limitations |
+| `results/07_validation_readiness/candidate_validation_readiness.csv` | Pareto and redundancy-aware readiness evidence |
+| `results/07_validation_readiness/locked_handoff_shortlist.csv` | Frozen prospective follow-up targets |
+| `results/07_validation_readiness/prospective_validation_protocol.json` | Machine-readable future-study safeguards |
 
 ## Appendix B. Configuration files
 
-Analytical choices are stored in `config/analysis_contract.yml`, `config/phase1.yml`, `config/phase3.yml`, `config/phase4.yml`, `config/phase5.yml`, `config/phase6.yml` and `config/phase7.yml`. These files should be archived with any thesis submission so thresholds can be distinguished from results copied into prose.
+Analytical choices are stored in `config/analysis_contract.yml`, `config/01_qc_missingness.yml`, `config/03_paired_inference.yml`, `config/04_pathways_heterogeneity.yml`, `config/05_machine_learning.yml`, `config/06_robustness.yml` and `config/07_validation_readiness.yml`. These files should be archived with any thesis submission so thresholds can be distinguished from results copied into prose.
 
 ## Appendix C. Reporting status
 

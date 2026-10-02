@@ -10,12 +10,12 @@ import numpy as np
 import pandas as pd
 from PIL import Image, ImageDraw
 
-from phase0_common import INTERIM_DIR, PROJECT_DIR, RESULT_DIR as PHASE0_RESULT_DIR, sha256, write_json
+from common import INTERIM_DIR, PROJECT_DIR, RESULT_DIR as PHASE0_RESULT_DIR, sha256, write_json
 
 
-RESULT_DIR = PROJECT_DIR / "results" / "phase1"
+RESULT_DIR = PROJECT_DIR / "results" / "01_qc_missingness"
 FIGURE_DIR = RESULT_DIR / "figures"
-CONFIG_PATH = PROJECT_DIR / "config" / "phase1.yml"
+CONFIG_PATH = PROJECT_DIR / "config" / "01_qc_missingness.yml"
 
 
 def robust_z(values: np.ndarray) -> np.ndarray:
@@ -353,7 +353,7 @@ def main() -> None:
     correlation.to_csv(RESULT_DIR / "sample_spearman_correlation.csv")
     pd.DataFrame({"cluster_position": np.arange(1, n_samples + 1), "sample_id": [sample_ids[index] for index in order]}).to_csv(RESULT_DIR / "cluster_order.csv", index=False)
     cohort.to_csv(RESULT_DIR / "cohort_membership.csv", index=False)
-    np.savez_compressed(INTERIM_DIR / "phase1_qc_objects.npz", pca_scores=scores, pca_explained_fraction=explained, qc_feature_mask=eligible, cluster_order=np.asarray(order))
+    np.savez_compressed(INTERIM_DIR / "01_qc_objects.npz", pca_scores=scores, pca_explained_fraction=explained, qc_feature_mask=eligible, cluster_order=np.asarray(order))
 
     svg_scatter(FIGURE_DIR / "pca_qc.svg", scores[:, 0], scores[:, 1], sample_ids, sample_qc["tissue_code"].tolist(), "Label-blind diagnostic PCA", f"PC1 ({explained[0]:.1%})", f"PC2 ({explained[1]:.1%})")
     svg_scatter(FIGURE_DIR / "coverage_vs_median.svg", sample_qc["detected_fraction"].to_numpy(), sample_qc["median_log2"].to_numpy(), sample_ids, sample_qc["tissue_code"].tolist(), "Coverage and observed abundance", "Detected-feature fraction", "Median observed log2 abundance")
@@ -390,7 +390,7 @@ def main() -> None:
     }
     if not all(validation["checks"].values()):
         raise ValueError("Phase 1 validation failed")
-    write_json(RESULT_DIR / "phase1_validation.json", validation)
+    write_json(RESULT_DIR / "01_validation.json", validation)
     print(f"PASS: Phase 1 outputs created; {validation['flagged_patient_pairs']} sensitivity pair(s) flagged")
 
 

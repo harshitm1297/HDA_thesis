@@ -1,7 +1,0 @@
-claim_id,claim,evidence_file,limitation_ids,allowed_scope
-P7C01,Phase 7 evaluates all 165 Phase 6 high-priority internal candidates without importing new observations.,results/phase7/candidate_validation_readiness.csv,L01;L02;L03;L04;L05;L06;L07;L08;L09;L10;L11;L12,validation readiness
-P7C02,The hand-off contains 12 abundance replication anchors and 8 detection-mechanism sentinels selected by frozen branch-specific rules.,results/phase7/locked_handoff_shortlist.csv,L01;L02;L03;L07;L08;L11;L12,prospective follow-up design
-P7C03,"Pareto fronts preserve trade-offs among effect, multiplicity evidence, robustness and cross-domain support without a post-hoc weighted score.",results/phase7/candidate_validation_readiness.csv,L08;L11,internal prioritization
-P7C04,Correlation components reduce redundant abundance follow-up choices but do not prove shared mechanisms.,results/phase7/abundance_redundancy_components.csv,L03;L05;L08;L11,internal redundancy control
-P7C05,"Sample-size tables are sensitivity grids over assumed effects, not power guarantees based on selected discovery estimates.",results/phase7/abundance_sample_size_sensitivity.csv,L05;L06;L08;L11;L12,prospective planning sensitivity
-P7C06,"No independent, orthogonal or clinical validation was executed in Phase 7.",results/phase7/prospective_validation_protocol.json,L08;L09;L12,prohibition

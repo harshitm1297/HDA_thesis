@@ -17,7 +17,7 @@ from oral_cancer.data import load_json  # noqa: E402
 from oral_cancer.visuals import phase6_figures  # noqa: E402
 
 
-RESULT_DIR = PROJECT_DIR / "results" / "phase6"
+RESULT_DIR = PROJECT_DIR / "results" / "06_robustness"
 
 
 def joined_unique(values: pd.Series) -> str:
@@ -25,17 +25,17 @@ def joined_unique(values: pd.Series) -> str:
 
 
 def main() -> None:
-    config = load_json(PROJECT_DIR / "config" / "phase6.yml")
-    phase3 = pd.read_csv(PROJECT_DIR / "results" / "phase3" / "integrated_candidate_evidence.csv")
+    config = load_json(PROJECT_DIR / "config" / "06_robustness.yml")
+    phase3 = pd.read_csv(PROJECT_DIR / "results" / "03_paired_inference" / "integrated_candidate_evidence.csv")
     multiverse = pd.read_csv(RESULT_DIR / "multiverse_feature_stability.csv")
     lopo = pd.read_csv(RESULT_DIR / "lopo_feature_influence.csv")
-    pathway_edges = pd.read_csv(PROJECT_DIR / "results" / "phase4" / "feature_pathway_network_edges.csv")
+    pathway_edges = pd.read_csv(PROJECT_DIR / "results" / "04_pathways_heterogeneity" / "feature_pathway_network_edges.csv")
     pathways = pathway_edges.groupby("feature_key").agg(
         leading_edge_pathway_ids=("pathway_id", joined_unique),
         leading_edge_pathway_names=("pathway_name", joined_unique),
         leading_edge_pathway_count=("pathway_id", "nunique"),
     ).reset_index()
-    ml = pd.read_csv(PROJECT_DIR / "results" / "phase5" / "stable_exploratory_panel.csv")
+    ml = pd.read_csv(PROJECT_DIR / "results" / "05_machine_learning" / "stable_exploratory_panel.csv")
     ml_summary = ml.groupby("feature_key").agg(
         ml_views=("view", joined_unique), ml_modalities=("modality", joined_unique),
         ml_max_selection_frequency=("selection_frequency", "max"),
@@ -106,10 +106,10 @@ def main() -> None:
     pathway_robustness = pd.read_csv(RESULT_DIR / "pathway_robustness.csv")
     ml_lopo = json.loads((RESULT_DIR / "ml_lopo_summary.json").read_text(encoding="utf-8"))
     negative = pd.read_csv(RESULT_DIR / "negative_controls.csv")
-    phase1_validation = load_json(PROJECT_DIR / "results" / "phase1" / "phase1_validation.json")
-    phase3_validation = load_json(PROJECT_DIR / "results" / "phase3" / "phase3_validation.json")
-    phase4_validation = load_json(PROJECT_DIR / "results" / "phase4" / "phase4_validation.json")
-    phase5_validation = load_json(PROJECT_DIR / "results" / "phase5" / "phase5_validation.json")
+    phase1_validation = load_json(PROJECT_DIR / "results" / "01_qc_missingness" / "01_validation.json")
+    phase3_validation = load_json(PROJECT_DIR / "results" / "03_paired_inference" / "03_validation.json")
+    phase4_validation = load_json(PROJECT_DIR / "results" / "04_pathways_heterogeneity" / "04_validation.json")
+    phase5_validation = load_json(PROJECT_DIR / "results" / "05_machine_learning" / "05_validation.json")
     tier_counts = phase3_validation["primary"]["tier_counts"]
     priority_counts = evidence["integrated_priority_tier"].value_counts().to_dict()
     lopo_abundance = evidence.loc[evidence["evidence_tier"].eq("B_abundance"), "lopo_abundance_core_fraction"]
@@ -134,62 +134,62 @@ def main() -> None:
         },
         {
             "claim_id": "C02", "claim": f"Phase 1 retained all 42 pairs for primary analysis and identified {phase1_validation['flagged_patient_pairs']} patient pairs for a whole-pair sensitivity cohort; its label-blind PCA used {phase1_validation['pca_variable_features']} eligible variable features.",
-            "evidence_file": "results/phase1/phase1_validation.json", "evidence_locator": "primary_pairs,flagged_patient_pairs,pca_variable_features",
+            "evidence_file": "results/01_qc_missingness/01_validation.json", "evidence_locator": "primary_pairs,flagged_patient_pairs,pca_variable_features",
             "evidence_state": "derived_from_matrix", "limitation_ids": "L01;L02;L03;L04;L06;L07", "allowed_scope": "internal QC and sensitivity design",
         },
         {
             "claim_id": "C03", "claim": f"Phase 3 identified {tier_counts['B_abundance']} internal paired-abundance candidates and {tier_counts['C_detection_pattern']} internal detection-pattern candidates under its frozen no-imputation primary rules.",
-            "evidence_file": "results/phase3/phase3_validation.json", "evidence_locator": "primary.tier_counts",
+            "evidence_file": "results/03_paired_inference/03_validation.json", "evidence_locator": "primary.tier_counts",
             "evidence_state": "derived_from_matrix", "limitation_ids": "L01;L02;L03;L04;L07;L08;L09", "allowed_scope": "internal tissue-associated inference",
         },
         {
             "claim_id": "C04", "claim": f"Phase 4 found {phase4_validation['pathways_supported_both_views']} Reactome v86 pathways supported by both ranked enrichment and patient-level paired scoring.",
-            "evidence_file": "results/phase4/phase4_validation.json", "evidence_locator": "pathways_supported_both_views,reactome_release",
+            "evidence_file": "results/04_pathways_heterogeneity/04_validation.json", "evidence_locator": "pathways_supported_both_views,reactome_release",
             "evidence_state": "derived_from_matrix", "limitation_ids": "L01;L02;L04;L08;L09;L10", "allowed_scope": "internal pathway interpretation",
         },
         {
             "claim_id": "C05", "claim": "Phase 4 did not accept a stable patient cluster and therefore does not claim molecular or clinical subtypes.",
-            "evidence_file": "results/phase4/phase4_validation.json", "evidence_locator": "accepted_cluster_k",
+            "evidence_file": "results/04_pathways_heterogeneity/04_validation.json", "evidence_locator": "accepted_cluster_k",
             "evidence_state": "derived_from_matrix", "limitation_ids": "L05;L06;L08;L09", "allowed_scope": "negative internal heterogeneity result",
         },
         {
             "claim_id": "C06", "claim": f"Phase 5 evaluated {phase5_validation['evaluated_pipelines']} leakage-controlled pipelines with 25 repeated grouped outer validations and found no defensible compact panel.",
-            "evidence_file": "results/phase5/phase5_validation.json", "evidence_locator": "evaluated_pipelines,outer_repeats,compact_panel_discovered",
+            "evidence_file": "results/05_machine_learning/05_validation.json", "evidence_locator": "evaluated_pipelines,outer_repeats,compact_panel_discovered",
             "evidence_state": "derived_from_matrix", "limitation_ids": "L05;L06;L08;L09;L11;L12", "allowed_scope": "internal tissue-state classification",
         },
         {
             "claim_id": "C07", "claim": f"Phase 6 evaluates {len(scenarios)} no-imputation multiverse scenarios across normalization, cohort, completeness and estimator.",
-            "evidence_file": "results/phase6/multiverse_scenarios.csv", "evidence_locator": "all rows",
+            "evidence_file": "results/06_robustness/multiverse_scenarios.csv", "evidence_locator": "all rows",
             "evidence_state": "derived_from_matrix", "limitation_ids": "L01;L02;L04;L07", "allowed_scope": "computational robustness",
         },
         {
             "claim_id": "C08", "claim": f"Exact leave-one-patient-out refitting was completed for all 42 patients; {int((lopo_abundance >= config['integrated_lopo_retention_threshold']).sum())}/{len(lopo_abundance)} abundance candidates and {int((lopo_detection >= config['integrated_lopo_retention_threshold']).sum())}/{len(lopo_detection)} detection candidates retained core support in at least {config['integrated_lopo_retention_threshold']:.0%} of omissions.",
-            "evidence_file": "results/phase6/lopo_feature_influence.csv", "evidence_locator": "evidence_tier,lopo_abundance_core_fraction,lopo_detection_core_fraction",
+            "evidence_file": "results/06_robustness/lopo_feature_influence.csv", "evidence_locator": "evidence_tier,lopo_abundance_core_fraction,lopo_detection_core_fraction",
             "evidence_state": "derived_from_matrix", "limitation_ids": "L01;L03;L07;L11", "allowed_scope": "internal patient influence",
         },
         {
             "claim_id": "C09", "claim": f"Across the Phase 6 pathway multiverse, {robust_pathways}/{len(pathway_robustness)} Reactome v86 pathways met the prespecified direction-agreement and leading-edge-overlap robustness thresholds.",
-            "evidence_file": "results/phase6/pathway_robustness.csv", "evidence_locator": "pathway_direction_agreement,pathway_leading_edge_jaccard_median",
+            "evidence_file": "results/06_robustness/pathway_robustness.csv", "evidence_locator": "pathway_direction_agreement,pathway_leading_edge_jaccard_median",
             "evidence_state": "derived_from_matrix", "limitation_ids": "L01;L02;L04;L08;L09;L10", "allowed_scope": "internal pathway robustness",
         },
         {
             "claim_id": "C10", "claim": f"The leading Phase 5 abundance elastic-net model has grouped leave-one-patient-out AUC {ml_lopo['roc_auc']:.3f}, balanced accuracy {ml_lopo['balanced_accuracy']:.3f}, and pair-orientation accuracy {ml_lopo['pair_orientation_accuracy']:.3f}.",
-            "evidence_file": "results/phase6/ml_lopo_summary.json", "evidence_locator": "roc_auc",
+            "evidence_file": "results/06_robustness/ml_lopo_summary.json", "evidence_locator": "roc_auc",
             "evidence_state": "derived_from_matrix", "limitation_ids": "L05;L06;L08;L09;L11;L12", "allowed_scope": "internal tissue-state classification",
         },
         {
             "claim_id": "C11", "claim": f"The 200-run paired-label full nested-pipeline negative control gave empirical p={ml_negative['empirical_p_value']:.6f}; the observed AUC ({ml_negative['observed']:.3f}) exceeded the largest permuted AUC ({ml_negative['null_maximum']:.3f}).",
-            "evidence_file": "results/phase6/negative_controls.csv", "evidence_locator": "paired_within_patient_label_swaps_full_nested_ml",
+            "evidence_file": "results/06_robustness/negative_controls.csv", "evidence_locator": "paired_within_patient_label_swaps_full_nested_ml",
             "evidence_state": "derived_from_matrix", "limitation_ids": "L08;L11;L12", "allowed_scope": "within-dataset exchangeability test",
         },
         {
             "claim_id": "C12", "claim": f"The overlap between Phase 3 tiered candidates and stable Phase 5 ML features was {int(overlap_negative['observed'])}, exceeding the maximum overlap ({int(overlap_negative['null_maximum'])}) in 1,000 random feature-key permutations (empirical p={overlap_negative['empirical_p_value']:.6f}).",
-            "evidence_file": "results/phase6/negative_controls.csv", "evidence_locator": "random_feature_key_overlap_phase3_tier_vs_ml_stability",
+            "evidence_file": "results/06_robustness/negative_controls.csv", "evidence_locator": "random_feature_key_overlap_phase3_tier_vs_ml_stability",
             "evidence_state": "derived_from_matrix", "limitation_ids": "L08;L09;L11;L12", "allowed_scope": "internal cross-method convergence",
         },
         {
             "claim_id": "C13", "claim": f"The frozen integration rules classify {priority_counts.get('high_priority_internal', 0)} features as high-priority internal candidates, without implying biomarker validity.",
-            "evidence_file": "results/phase6/integrated_evidence_table.csv", "evidence_locator": "integrated_priority_tier=high_priority_internal",
+            "evidence_file": "results/06_robustness/integrated_evidence_table.csv", "evidence_locator": "integrated_priority_tier=high_priority_internal",
             "evidence_state": "derived_from_matrix", "limitation_ids": "L01;L02;L03;L04;L05;L06;L07;L08;L09;L10;L11;L12", "allowed_scope": "internal evidence prioritization",
         },
         {
@@ -219,7 +219,7 @@ def main() -> None:
     }
     if not all(validation["checks"].values()):
         raise ValueError("Phase 6 integration validation failed")
-    (RESULT_DIR / "phase6_validation.json").write_text(json.dumps(validation, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    (RESULT_DIR / "06_validation.json").write_text(json.dumps(validation, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     print(f"PASS: integrated {len(evidence)} features; priority counts={validation['priority_counts']}")
 
 

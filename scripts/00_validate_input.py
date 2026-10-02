@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from phase0_common import (
+from common import (
     CONFIG_PATH, CONTRACT_PATH, INTERIM_DIR, PROJECT_DIR, RESULT_DIR,
     load_json_yaml, read_source, sha256, validate_source, write_json,
 )

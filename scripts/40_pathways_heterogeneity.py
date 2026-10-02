@@ -20,8 +20,8 @@ from oral_cancer.pathways import collapse_gene_ranking, pathway_scores, ranked_e
 from oral_cancer.visuals import phase4_figures  # noqa: E402
 
 
-CONFIG_PATH = PROJECT_DIR / "config" / "phase4.yml"
-RESULT_DIR = PROJECT_DIR / "results" / "phase4"
+CONFIG_PATH = PROJECT_DIR / "config" / "04_pathways_heterogeneity.yml"
+RESULT_DIR = PROJECT_DIR / "results" / "04_pathways_heterogeneity"
 
 
 def sha256(path: Path) -> str:
@@ -41,7 +41,7 @@ def main() -> None:
         raise ValueError("Reactome GMT checksum does not match frozen Phase 4 configuration")
     gene_sets = read_gmt(gmt_path)
 
-    abundance = pd.read_csv(PROJECT_DIR / "results" / "phase3" / "paired_abundance_primary.csv")
+    abundance = pd.read_csv(PROJECT_DIR / "results" / "03_paired_inference" / "paired_abundance_primary.csv")
     ranking, collapse_audit = collapse_gene_ranking(abundance)
     ranking.to_csv(RESULT_DIR / "collapsed_gene_ranking.csv", index=False)
     collapse_audit.to_csv(RESULT_DIR / "gene_collapse_audit.csv", index=False)
@@ -175,7 +175,7 @@ def main() -> None:
     }
     if not all(validation["checks"].values()):
         raise ValueError("Phase 4 validation failed")
-    (RESULT_DIR / "phase4_validation.json").write_text(json.dumps(validation, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    (RESULT_DIR / "04_validation.json").write_text(json.dumps(validation, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     print(f"PASS: Phase 4 tested {len(ranked)} ranked Reactome pathways; accepted k={accepted_k}")
 
 

@@ -1,6 +1,7 @@
 *.xlsx
 *.xls
 *.pdf
+*.zip
 ~$*
 __pycache__/
 *.py[cod]
@@ -9,5 +10,5 @@ __pycache__/
 tmp/
 data/interim/*
 !data/interim/.gitkeep
-phase1_outputs/
+legacy_01_outputs/
 
